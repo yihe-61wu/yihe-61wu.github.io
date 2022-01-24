@@ -15,7 +15,7 @@ Some technical stuff might be posted entirely in English.[^1]
 
 # Half-blood mathematician
 I have been trained as a mathematician, and always hold a broad interest in natural sciences.
-My research has been focused on theoretical neuroscience.
+My research has been focused on theoretical neuroscience.[^2]
 
 *牧瀬紅莉栖は私の目標ですが...*  **:3**
 
@@ -34,3 +34,4 @@ My research has been focused on theoretical neuroscience.
 
 
 [^1]: Comments added on 2022-01-24.
+[^2]: My academic CV can be found [here](/about/academic_cv).
