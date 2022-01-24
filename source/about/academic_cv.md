@@ -12,13 +12,13 @@ Research Associate
 Cardiff University Brain Research Imaging Centre (CUBRIC)
 Cardiff, Wales, UK
 
----
-
 ## Languages
 
 Human: Wu (Native), Mandarin (Native), English (Working proficiency), Japanese (Limited proficiency)
 
 Computer: Python, Julia, MATLAB, Mathematica, R
+
+***
 
 ## Publications
 
@@ -32,17 +32,13 @@ Lu Yihe, Scott C. Lowe, Penelope A. Lewis, Mark C. van Rossum (2019). [*Program 
 
 ## Talks
 
-Virtual MathPsych/ICCM 2021 (the joint meeting of the Society for Mathematical Psychology and the International Conference on Cognitive Modeling, online):
-- Yihe Lu\*, Tamas Foldes, Penelope Lewis. *Investigating memory reactivation in neural networks: measure and compare exact and generative replay* [(accepted, online from June)](https://mathpsych.org/presentation/488)
-- Tamas Foldes, Yihe Lu, Penelope Lewis. *A simulation model of sleep-dependent memory consolidation* [(accepted, online from June)](https://mathpsych.org/presentation/539)
+*Investigating memory reactivation in neural networks: measure and compare exact and generative replay/episodic memory*, co-authored with Tamas Foldes, Penelope Lewis
+- Virtual MathPsych/ICCM 2021 - the joint meeting of the Society for Mathematical Psychology and the International Conference on Cognitive Modeling, [online](https://mathpsych.org/presentation/488)
+- GEM 2021 - Generative Episodic Memory: Interdisciplinary perspectives from psychology, neuroscience and philosophy, [online](https://www.youtube.com/watch?v=rRXNqVu43IE)
 
-GEM 2021 (Generative Episodic Memory: Interdisciplinary perspectives from psychology, neuroscience and philosophy, online):
-- Yihe Lu\*, Tamas Foldes, Penelope Lewis. *Investigating memory reactivation in neural networks: measure and compare exact and generative episodic memory* [(video)](https://www.youtube.com/watch?v=rRXNqVu43IE):
+*A novel method for computing response functions on complex neuronal networks with branching dendrites*, co-authored with Yulia Timofeeva
+- ECMTB 2016 - the joint meeting of the European Society for Mathematical and Theoretical Biology and the Society for Mathematical Biology, UK
 
-ECMTB 2016 (the joint meeting of the European Society for Mathematical and Theoretical Biology and the Society for Mathematical Biology, UK)
-- Yihe Lu\*, Yulia Timofeeva. *A novel method for computing response functions on complex neuronal networks with branching dendrites*
-
-*\*: the presenter.*
 
 ## Posters
 2020, [online](https://www.youtube.com/watch?v=-Yobu0bKIwc): neuromatch 3.0
@@ -57,13 +53,10 @@ ECMTB 2016 (the joint meeting of the European Society for Mathematical and Theor
 
 ## Teaching
 
-2021-2022, Supervisor of undergraduate final year projects in School of Psychology, Cardiff University:
+2021-2022, Undergraduate supervisor, final year projects *PS3000*, School of Psychology, Cardiff University
 - How has the COVID pandemic impacted on motor performance, through sleep, physical activity and general wellbeing?
 - How different feedback affects perceptual learning of orientation
 
-2016-2017, Teaching Assistant in Warwick Business School, University of Warwick:
-	Quantitative Analysis for Management I *IB121*
-
-2015-2016, Teaching Assistant in Warwick Mathematics Institute, University of Warwick:
-	Introduction to System Biology *MA256*
-
+2015-2017, Teaching assistant, University of Warwick
+- Quantitative Analysis for Management I *IB121*, Warwick Business School
+- Introduction to System Biology *MA256*, Warwick Mathematics Institute
