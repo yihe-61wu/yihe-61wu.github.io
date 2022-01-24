@@ -2,68 +2,25 @@
 title:
 date: 2018-04-28 14:39:01
 ---
+<font size=4>**诗人失格**</font>
+我是破谷。
+这里是我的博客。
+所有的内容源于我，也归于我。
 
-## Lu, Yihe 
-BSc, MSc, PhD, AMIMA (he/him)
-ORCID: 0000-0002-1615-4915
-Email: anish.lu.yihe@gmail.com
+*Sorry for non-Chinese readers...*  **:)**
 
-Research Associate
-Cardiff University Brain Research Imaging Centre (CUBRIC)
-Cardiff, Wales, UK
+***
 
----
+<font size=4>**Half-blood mathematician**</font>
+I have been trained as a mathematician, and always hold a broad interest in natural sciences.
+My research has been focused on theoretical neuroscience.
 
-## Languages
+*牧瀬紅莉栖は私の目標ですが...*  **:3**
 
-Human: Wu (Native), Mandarin (Native), English (Working proficiency), Japanese (Limited proficiency)
+***
 
-Computer: Python, Julia, MATLAB, Mathematica, R
+<font size=4>**麻雀マニア**</font>
+アマのリーチ麻雀選手です。普段は天鳳でやっていますが、イギリスの麻雀活動にもよく出ています。
+中国代表で２０１６ヨーロッパリーチ麻雀大会に出ました。２０１７イギリスの大会に優勝しました。
 
-## Publications
-
-Lu Yihe, Yulia Timofeeva (2020). [*Exact solutions to cable equations in branching neurons with tapering dendrites.*](https://mathematical-neuroscience.springeropen.com/articles/10.1186/s13408-020-0078-z) The Journal of Mathematical Neuroscience, 10(1): 1-31.
-
-Lu Yihe, Yulia Timofeeva (2016). [*Response functions for electrically coupled neuronal network: a method of local point matching and its applications.*](https://link.springer.com/article/10.1007/s00422-016-0681-y) Biological Cybernetics, pp 1-17, 110(2-3):  117-133.  
-
-## Preprint
-
-Lu Yihe, Scott C. Lowe, Penelope A. Lewis, Mark C. van Rossum (2019). [*Program synthesis performance constrained by non-linear spatial relations in Synthetic Visual Reasoning Test.*](https://arxiv.org/abs/1911.07721) arXiv preprint arXiv:1911.07721.  
-
-## Talks
-
-Virtual MathPsych/ICCM 2021 (the joint meeting of the Society for Mathematical Psychology and the International Conference on Cognitive Modeling, online):
-- Yihe Lu\*, Tamas Foldes, Penelope Lewis. *Investigating memory reactivation in neural networks: measure and compare exact and generative replay* [(accepted, online from June)](https://mathpsych.org/presentation/488)
-- Tamas Foldes, Yihe Lu, Penelope Lewis. *A simulation model of sleep-dependent memory consolidation* [(accepted, online from June)](https://mathpsych.org/presentation/539)
-
-GEM 2021 (Generative Episodic Memory: Interdisciplinary perspectives from psychology, neuroscience and philosophy, online):
-- Yihe Lu\*, Tamas Foldes, Penelope Lewis. *Investigating memory reactivation in neural networks: measure and compare exact and generative episodic memory* [(video)](https://www.youtube.com/watch?v=rRXNqVu43IE):
-
-ECMTB 2016 (the joint meeting of the European Society for Mathematical and Theoretical Biology and the Society for Mathematical Biology, UK)
-- Yihe Lu\*, Yulia Timofeeva. *A novel method for computing response functions on complex neuronal networks with branching dendrites*
-
-*\*: the presenter.*
-
-## Posters
-2020, [online](https://www.youtube.com/watch?v=-Yobu0bKIwc): neuromatch 3.0
-2019, UK: Neuroscience@Nottingham
-2018, UK: Replay@CUBRIC
-2017, UK: The second Integrated Systems Neuroscience Workshop
-2016, Greece: EMBO Workshop on Dendritic Anatomy, Molecules and Function
-2016, France: International Conference on Mathematical NeuroScience
-2016, UK: The Dynamics of Complex Systems
-
-
-
-## Teaching
-
-2021-2022, Supervisor of undergraduate final year projects in School of Psychology, Cardiff University:
-- How has the COVID pandemic impacted on motor performance, through sleep, physical activity and general wellbeing?
-- How different feedback affects perceptual learning of orientation
-
-2016-2017, Teaching Assistant in Warwick Business School, University of Warwick:
-	Quantitative Analysis for Management I *IB121*
-
-2015-2016, Teaching Assistant in Warwick Mathematics Institute, University of Warwick:
-	Introduction to System Biology *MA256*
-
+*在英国约一场麻将真是难...*  **:(**
