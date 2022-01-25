@@ -33,5 +33,5 @@ My research has been focused on theoretical neuroscience.[^2]
 
 
 
-[^1]: Comments added on 2022-01-24.
-[^2]: My academic CV can be found [here](/about/academic_cv).
+[^1]: Added on 2022-01-24.
+[^2]: My academic [CV](/about/academic_cv).
