@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/_posts/matchless-palindrome.md",
+            "file": "source/_posts/cats-palindrome.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/matchless-palindrome.md",
+                "file": "source/_posts/cats-palindrome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,7 +89,7 @@
   },
   "active": "a8ec0845b06caf07",
   "lastOpenFiles": [
-    "source/_posts/matchless-palindrome.md",
+    "source/_posts/cats-palindrome.md",
     "source/_posts/asa-kun.md",
     "source/_posts/also-spoke-meine-mutter.md",
     "source/_posts/cat-poems.md"
