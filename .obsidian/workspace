@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "scaffolds/post.md",
+            "file": "source/_posts/wang-zhaojun.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scaffolds/post.md",
+                "file": "source/_posts/wang-zhaojun.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,12 +89,13 @@
   },
   "active": "a8ec0845b06caf07",
   "lastOpenFiles": [
+    "source/_posts/wang-zhaojun.md",
+    "source/_posts/asa-kun.md",
+    "source/_posts/also-spoke-meine-mutter.md",
     "scaffolds/post.md",
     "scaffolds/draft.md",
-    "source/_posts/also-spoke-meine-mutter.md",
     "scaffolds/page.md",
     "source/_posts/cats-palindrome.md",
-    "source/_posts/asa-kun.md",
     "source/_posts/impression-monet.md",
     "source/_posts/cat-poems.md"
   ]
