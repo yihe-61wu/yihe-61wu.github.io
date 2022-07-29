@@ -7,13 +7,13 @@ title: 「 」
 subtitle: 潇潇兮暮雨 浩浩兮无涯 洋洋兮流水 渺渺兮予怀
 description: ''
 keywords:
-author: 破谷-6Y1HE
+author: 得时-61wu
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://anish-lu-yihe.github.io/
+url: https://yihe-61wu.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,5 +103,5 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/anish-lu-yihe/anish-lu-yihe.github.io
+  repo: https://github.com/yihe-61wu/yihe-61wu.github.io
   branch: main
