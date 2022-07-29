@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/_posts/321-ed.md",
+            "file": "source/_drafts/zhaojun-trolley-problem.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/321-ed.md",
+                "file": "source/_drafts/zhaojun-trolley-problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a8ec0845b06caf07",
+  "active": "bb42777feb71a582",
   "lastOpenFiles": [
+    "source/_posts/draft.md",
+    "source/_drafts/zhaojun-trolley-problem.md",
+    "scaffolds/draft.md",
+    "source/_posts/321-ed.md",
     "source/_posts/still-hot.md",
     "source/_posts/red-dragon.md",
     "source/_posts/impression-monet.md",
     "source/_posts/cats-palindrome.md",
     "source/_posts/cat-poems.md",
-    "source/_posts/321-ed.md",
-    "source/_posts/asa-kun.md",
-    "source/_posts/also-spoke-meine-mutter.md",
-    "images/monet_and_architecture.jpg.md",
-    "source/_posts/zhaojun-trolley-problem.md"
+    "source/_posts/asa-kun.md"
   ]
 }
