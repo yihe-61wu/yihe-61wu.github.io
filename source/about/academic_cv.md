@@ -1,16 +1,16 @@
 ---
 title:
-date: 2018-04-28 14:39:01
+date: 2022-07-29 14:15:01
 ---
 
 # Lu, Yihe 
 BSc, MSc, PhD, AMIMA (he/him)
 ORCID: 0000-0002-1615-4915
-Email: anish.lu.yihe@gmail.com
+Email: lu.yihe.61wu@gmail.com
 
 Research Associate
-Cardiff University Brain Research Imaging Centre (CUBRIC)
-Cardiff, Wales, UK
+School of Informatics
+University of Edinburgh
 
 ## Languages
 
