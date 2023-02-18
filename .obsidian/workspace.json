@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/about/academic_cv.md",
+                "file": "source/_posts/chatgpt-chinese-writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/about/academic_cv.md",
+                "file": "source/_posts/chatgpt-chinese-writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,15 +106,15 @@
   },
   "active": "a8ec0845b06caf07",
   "lastOpenFiles": [
-    "scaffolds/post.md",
-    "scaffolds/page.md",
-    "scaffolds/draft.md",
+    "source/_posts/cats-palindrome.md",
+    "source/_posts/chatgpt-chinese-writing.md",
     "source/_posts/321-ed.md",
-    "source/_drafts/zhaojun-trolley-problem.md",
-    "source/_drafts/test.md",
-    "source/_posts/draft.md",
     "source/_posts/still-hot.md",
     "source/_posts/red-dragon.md",
-    "source/_posts/impression-monet.md"
+    "source/_posts/impression-monet.md",
+    "source/_posts/cat-poems.md",
+    "source/_posts/asa-kun.md",
+    "source/_posts/also-spoke-meine-mutter.md",
+    "source/about/academic_cv.md"
   ]
 }
