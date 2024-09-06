@@ -30,8 +30,3 @@ My research has been focused on theoretical neuroscience.[^2]
 *在英国约一场麻将真是难...*  **:(**
 
 世事繁杂，三四年没摸过牌了。[^1]
-
-
-
-[^1]: Added on 2022-01-24.
-[^2]: My academic [CV](/about/academic_cv).
