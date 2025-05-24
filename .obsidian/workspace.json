@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7226111c255a72b8",
+        "id": "0c8b0c0a1f40d399",
         "type": "tabs",
         "children": [
           {
-            "id": "a8ec0845b06caf07",
+            "id": "03e9d1dae2f810e9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/chatgpt-chinese-writing.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "chatgpt-chinese-writing"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/chatgpt-chinese-writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for chatgpt-chinese-writing"
+              "title": "Backlinks"
             }
           }
         ]
@@ -123,10 +118,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a8ec0845b06caf07",
+  "active": "03e9d1dae2f810e9",
   "lastOpenFiles": [
-    "source/_posts/cats-palindrome.md",
+    "source/index.md",
     "source/_posts/chatgpt-chinese-writing.md",
+    "source/_posts/cats-palindrome.md",
     "source/_posts/321-ed.md",
     "source/_posts/still-hot.md",
     "source/_posts/red-dragon.md",

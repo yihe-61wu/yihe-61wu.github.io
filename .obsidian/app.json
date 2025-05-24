@@ -3,5 +3,6 @@
   "livePreview": true,
   "smartIndentList": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "source/_posts"
+  "newFileFolderPath": "source/_posts",
+  "showUnsupportedFiles": false
 }
