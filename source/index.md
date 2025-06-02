@@ -4,9 +4,9 @@ date: 2025-05-31 18:45:00
 layout: page
 ---
 
-Yihe Lu
-Composted in mathematics and statistics
-Cultivating artificial and biological intelligence
+# Yihe Lu
+Composted in mathematics & statistics
+Cultivating artificial & biological intelligence
 
 ---
 
@@ -14,13 +14,13 @@ Cultivating artificial and biological intelligence
 <div style="
   writing-mode: vertical-rl;
   text-orientation: upright;
-  text-align: right; 
+  text-align: right;
 ">
-
-  <div>潇潇兮暮雨<div>
-  <div>浩浩兮无涯<div>
-  <div>洋洋兮流水</div>
-  <div>渺渺兮予怀</div>
-<div>
-<div>
+  <h1>苏至清</h1>
+  潇潇兮暮雨<br>
+  浩浩兮无涯<br>
+  洋洋兮流水<br>
+  渺渺兮予怀<br>
+</div>
+</div>
 
