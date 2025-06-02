@@ -4,16 +4,15 @@ date: 2025-05-31 18:45:00
 layout: page
 ---
 
+Yihe Lu
+Composted in mathematics and statistics
+Cultivating artificial and biological intelligence
 
-I am Yihe Lu, and this is my online shed.
+---
 
 <div style="
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 1.8rem;
-  line-height: 2;
-  text-align: right;
-  margin: 2rem auto;
 ">
 
   <div>潇潇兮暮雨<div>
