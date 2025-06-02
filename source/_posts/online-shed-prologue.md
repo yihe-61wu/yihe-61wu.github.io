@@ -1,38 +1,40 @@
 ---
-title: "Prologue to this Online Shed: Renovation for Innovation"
+title: Prologue to My Online Shed
 category: log
 date: 2025-06-02 10:29:38
 tags:
-  - blog
+  - website-building
+  - writing
 ---
-I used to write too much without reflection. Then I started reflection, reflected too much, and stopped writing—almost the same as composed by [Xin Qiji](https://en.wikipedia.org/wiki/Xin_Qiji) in his famous poetry ([translation](https://chinesepoemsinenglish.blogspot.com/2012/02/?utm_source=chatgpt.com) quoted):
+I used to write too much without reflection. Then I started reflecting, reflected too much, and stopped writing—almost the same as composed by [Xin Qiji](https://en.wikipedia.org/wiki/Xin_Qiji) in his famous poetry ([translation](https://chinesepoemsinenglish.blogspot.com/2012/02/?utm_source=chatgpt.com) quoted):
 > *When young I never did know the taste of woe or sorrow,*
 > *Up to the top floor, I loved to go;*
 > *Up to the top floor, I loved to go—*
 > *For to compose new verses, I feigned my sorrow and woe.*
 
-—except that woe feels too strong a word given my life journey, and that I like the Japanese proverb:
+—except that 'woe' feels too strong a word given my life journey, and that I like the Japanese proverb:
 > *Only smoke and fools love high places*.
 
-To me, while views from high places are figuratively stunning, gazing up at something higher are literately stunning, especially when it stands on the same level as mine—a feeling of falling overwhelms me, yet I can't tell whether it or me will fall down and/or apart.
+<!-- more -->
+To me, while views from high places are figuratively stunning, gazing up at something higher are literally stunning, especially when it stands on the same level as mine—a feeling of falling overwhelms me, yet I can't tell whether it or me will fall down and/or apart.
 
-So, while the word-to-word translation to the new name of this personal web-site of mine would be *'Cloud Shed'*, this site is just a shed for me to store my gadgets and crafts, and it happens to be hosted on a remote server, commonly dubbed as cloud—a jargon coined by tech people trying to be posh and poetic.
+So, while the word-for-word translation of the new name of this personal web-site of mine would be *'Cloud Shed'*, this site is just a shed for me to store my gadgets and crafts, and it happens to be hosted on a remote server, commonly dubbed as 'cloud'—a jargon coined by tech people trying to be posh and poetic.
 
-I'm not against the jargon or the people. After all, I am one of them, and I speak such jargons frequently (for work and fun) that the generations of my parents and before rarely use, even if they are able to understand. Nevertheless, it becomes increasingly clear to me that, when jargons enters public domain, they turn into buzzwords immediately—below I quote the meaning of buzzword according to the online Cambridge Dictionary:
+I'm not against the jargon or the people. After all, I am one of them, and I speak such jargons frequently (for work and fun) that the generations of my parents and before rarely use, even if they are able to understand. Nevertheless, it becomes increasingly clear to me that, when jargons enter the public domain, they turn into buzzwords immediately—below I quote the meaning of 'buzzword' according to the online Cambridge Dictionary:
 > *a word or expression from a particular subject area that has become fashionable by being used a lot*
 
 —yes, trying to be posh it is.
 
-Apparently, being posh have a 'best before' date. In the case of clouds, or remote servers, or more specifically, writing/blogging and hosting/archiving one's blog on a remote server has sadly become a unsustainable business. It was probabily unprofitable right from its beginning/booming more than two decades ago. I used to post regularly on Qzone, Sina blog, Renren, Lofter, and Jianshu. All of them were good enough—as I was skilled at turning blind to digital aesthetics—until some of my articles were forced to become 'unseen', if not removed completely, due to some stupid, presumbaly brutal-force, censorship algorithm.
+Apparently, being posh have a 'best before' date. In the case of clouds, or remote servers, or more specifically, writing/blogging and hosting/archiving one's blog on a remote server has sadly become a unsustainable business. It was probabily unprofitable right from its beginning/booming more than two decades ago. I used to post regularly on Qzone, Sina blog, Renren, Lofter, and Jianshu. All of them were good enough—as I was skilled at turning a blind eye to digital aesthetics—until some of my articles were forced to become 'private', if not removed completely, due to some stupid, presumbaly brute-force, censorship algorithm.
 
-While I have neither grounds nor intentions to argue against their T&Cs, which I have never read anyway, I can't help feeling disappointed that one social contract is breached after another. In the most recent case regarding Jianshu—the most serious as involves money—I put a request to cash in ¥175.21 (about £18 per today's exchange rate; all came from my generous readers) on 21 Jan 2025, yet I have not seen a penny, despite the platform's promise of transfer within 30 working days and my multiple attempts to contact them within the platform and via email and social media. 
+While I have neither grounds nor intentions to argue against their T&Cs, which I have never read anyway, I can't help feeling disappointed that one social contract is breached after another. In the most recent case regarding Jianshu—the most serious as it involves money—I put in a request to cash in ¥175.21 (about £18 per today's exchange rate; all came from my generous readers) on 21 Jan 2025, yet I have not seen a penny, despite the platform's promise of transfer within 30 working days and my multiple attempts to contact them within the platform and via email and social media. 
 
 I bet I'm not alone with such disappointment, which has been one of many reasons why less and less people stop blogging as I did—My last post on Jianshu was in 2017, and I started to host my own website on GitHub since 2018.
 
-My passion in writing has not been restored, though. I have had no platforms to blame, except that GitHub is not consistently accessible in mainland China while my posts are mostly in Chinese. The real issue is, apparently, that I've been busy building an academic career—a career infamous for its instability and uncertainty—and I'd have been lost without my supportive SO. 
+My passion in writing has not been restored fully, though. I have had no platforms to blame, except that GitHub is not consistently accessible in mainland China while my posts are mostly in Chinese. The real issue is, apparently, that I've been busy building an academic career—infamous for its instability and uncertainty—and I'd have been lost without my supportive SO. 
 
-Fast-forward to 2025, there is one more reason for people not writing any more—Large Language Models, or more generally, generative AI—Why bother to *'sit down at a typewriter and bleed'*, if words generated by machines, in bulk and in short time, are readible, informative, and even entertaining?
+Fast-forward to 2025, there is one more reason for people not writing any more—Large Language Models, or more generally, generative AI—why bother to *'sit down at a typewriter and bleed'*, if words generated by machines, in bulk and in a short time, are readible, informative, and even entertaining?
 
-I don't have a good answer and don't bother to come up with one, because I think the question is irrelevant—it is extremely unlikely for most writers, professional or not, to be as good as Hemingway or Xin Qinji, but writing is not a dead activity. Indeed, both Hemingway and Xin Qinji lived through wars and they kept writing—Why bother?
+I don't have a good answer and don't bother to come up with one, because I think the question is irrelevant—it is extremely unlikely for most writers, professional or not, to be as good as Hemingway or Xin Qinji, but writing is not a dead activity of human. Indeed, both Hemingway and Xin Qinji lived through wars and they kept writing—Why bother?
 
-So, am I going to restart writing regularly, or is this post just coming out of a moment of impulse? I'm not completely sure, and that's why I decide to call this renovated site a shed, for now. I'd like to at least sort out what I have learned and produced from the past, in case the future me want a revisit. 
+So, am I going to restart writing regularly, or is this post just coming out of a moment of impulse? I'm not completely sure, and that's why I decide to call this renovated site a shed, for now. I'd like to at least sort out what I have learned and produced from the past, in case the future me wants a revisit. With some tidying up of the shed, hopefully I'll take some space and time to lay back down on the floor, gazing up—through ever-moving clouds—at twinkling stars.
