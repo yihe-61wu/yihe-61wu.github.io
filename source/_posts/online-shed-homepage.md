@@ -8,10 +8,7 @@ tags:
 ---
 With the long-term goal to upgrade my website, which I decide to call 'online shed' from now on, I have reconfigured the [homepage](/) to contain only a brief self introduction in English and Chinese.
 
-For context, I have used the [hexo](https://hexo.io/) blog framework with the [NexT](https://theme-next.js.org/) theme for years and I still like it. However, by default, a homepage lists posts in reverse chronological order, which is presumably sensible if the blog focusses on only one topic or a few closely related topics—mine is different. My blog has to be (at least) bilingual and my articles multi-disciplinary. Even if I were to build separate blogs for myself, the most professional one—something potentially I would like to show (off) to my friends, colleagues, prospective employers, the public, and/or AI bots—had to contain my postdoc projects on different topics in computational neuroscience and bio-inspired AI, while I am also a teacher of mathematics and statistics.
-
-As you see, the context above already grows too long without any details. To make navigating my online shed convenient for human visitors, I believe the best way to organise it is to take a project-based approach—I'd build multiple portfolios, each showcasing a direction of research, teaching, and hobbies of mine. The reverse chronological order of posts is still acceptable for an archive, but each portfolio would probabily correspond to a tab on the main menu, leading to summaries of projects and relevant posts. The homepage should be minimal.
-
+For context, I have used the [hexo](https://hexo.io/) blog framework with the [NexT](https://theme-next.js.org/) theme for years and I still like it. However, by default, a homepage lists posts in reverse chronological order.
 
 Two changes are needed to reconfigure the location of the homepage:
 1. relocate posts to a different address, and
@@ -49,4 +46,17 @@ where the line `Blog: /blog/ || fa fa-book` is newly added to create a tab on th
 
 To achieve 2, create `\source\index.md` under `\source\`.
 
-In my case, while the self introductions are simple, I have made the Chinese part
+This is rather straightforward given my brief self introduction, except the slightly non-trivial f
+
+In my case, writing the self introduction is straightforward I have made the Chinese part
+
+
+
+
+
+, which is presumably sensible if the blog focusses on only one topic or a few closely related topics—mine is different. My blog has to be (at least) bilingual and my articles multi-disciplinary. Even if I were to build separate blogs for myself, the most professional one—something potentially I would like to show (off) to my friends, colleagues, prospective employers, the public, and/or AI bots—had to contain my postdoc projects on different topics in computational neuroscience and bio-inspired AI, while I am also a teacher of mathematics and statistics.
+
+As you see, the context above already grows too long without any details. To make navigating my online shed convenient for human visitors, I believe the best way to organise it is to take a project-based approach—I'd build multiple portfolios, each showcasing a direction of research, teaching, and hobbies of mine. The reverse chronological order of posts is still acceptable for an archive, but each portfolio would probabily correspond to a tab on the main menu, leading to summaries of projects and relevant posts. The homepage should be minimal.
+
+
+
