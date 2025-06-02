@@ -10,9 +10,11 @@ Cultivating artificial and biological intelligence
 
 ---
 
+<div style="display: flex; justify-content: flex-end;">
 <div style="
   writing-mode: vertical-rl;
   text-orientation: upright;
+  text-align: right; 
 ">
 
   <div>潇潇兮暮雨<div>
@@ -20,5 +22,5 @@ Cultivating artificial and biological intelligence
   <div>洋洋兮流水</div>
   <div>渺渺兮予怀</div>
 <div>
-
+<div>
 
