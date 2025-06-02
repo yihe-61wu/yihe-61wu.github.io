@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/index.md",
+                "file": "source/_posts/online-shed.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "online-shed"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1e8d360820bfa55a",
@@ -124,16 +125,17 @@
   },
   "active": "03e9d1dae2f810e9",
   "lastOpenFiles": [
-    "source/index.md",
-    "source/_posts/chatgpt-chinese-writing.md",
-    "source/_posts/cats-palindrome.md",
-    "source/_posts/321-ed.md",
-    "source/_posts/still-hot.md",
-    "source/_posts/red-dragon.md",
-    "source/_posts/impression-monet.md",
-    "source/_posts/cat-poems.md",
-    "source/_posts/asa-kun.md",
     "source/_posts/also-spoke-meine-mutter.md",
+    "source/_posts/online-shed.md",
+    "source/_posts/red-dragon.md",
+    "source/_posts/asa-kun.md",
+    "source/_posts/cat-poems.md",
+    "source/_posts/cats-palindrome.md",
+    "source/_posts/chatgpt-chinese-writing.md",
+    "source/_posts/impression-monet.md",
+    "source/_posts/still-hot.md",
+    "source/index.md",
+    "source/_posts/321-ed.md",
     "source/about/academic_cv.md"
   ]
 }
