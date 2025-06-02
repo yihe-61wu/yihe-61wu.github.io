@@ -12,7 +12,7 @@ I used to write too much without reflection. Then I started reflection, reflecte
 > *Up to the top floor, I loved to go—*
 > *For to compose new verses, I feigned my sorrow and woe.*
 
-—except that woe feels too strong a word for my experience, and that I like the Japanese proverb:
+—except that woe feels too strong a word given my life journey, and that I like the Japanese proverb:
 > *Only smoke and fools love high places*.
 
 To me, while views from high places are figuratively stunning, gazing up at something higher are literately stunning, especially when it stands on the same level as mine—a feeling of falling overwhelms me, yet I can't tell whether it or me will fall down and/or apart.
@@ -24,4 +24,4 @@ I'm not against the jargon or the people. After all, I am one of them, and I spe
 
 —yes, trying to be posh it is.
 
-Apparently, being posh have a 'best before' date. In the case of clouds, or remote servers, or more specifically, writing/blogging and hosting/archiving one's blog on a remote server has sadly become a unsustainable business. It was probabily unprofitable since its booming two decades ago
+Apparently, being posh have a 'best before' date. In the case of clouds, or remote servers, or more specifically, writing/blogging and hosting/archiving one's blog on a remote server has sadly become a unsustainable business. It was probabily unprofitable right from its beginning/booming more than two decades ago. I used to post regularly on Qzone, Sina blog, Renren, Lofter, and Jianshu. All of them were good enough until some of my articles were forced to be set as 
