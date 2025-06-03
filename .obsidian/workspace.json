@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/cats-palindrome.md",
+                "file": "source/_posts/impression-monet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cats-palindrome"
+              "title": "impression-monet"
             }
           },
           {
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1e8d360820bfa55a",
@@ -140,23 +139,32 @@
   },
   "active": "e361c556a14f869f",
   "lastOpenFiles": [
-    "source/_posts/cats-palindrome.md",
+    "public/2018/08/09/still-hot/index.html",
+    "public/2018/08/09/still-hot",
+    "public/2018/08/09",
+    "public/2018/08",
+    "public/2018/05/05/impression-monet/index.html",
+    "public/2018/05/05/impression-monet",
+    "public/2018/05/05",
+    "public/2018/05",
+    "public/js/third-party/tags/pdf.js",
+    "public/js/third-party/tags/mermaid.js",
+    "public/js/third-party/statistics/lean-analytics.js",
+    "public/images/favicon-32x32-next.png",
+    "public/images/logo.svg",
+    "public/images/avatar.gif",
+    "public/images/favicon-16x16-next.png",
+    "public/images/logo-algolia-nebula-blue-full.svg",
+    "public/images/apple-touch-icon-next.png",
+    "source/_posts/impression-monet.md",
     "source/_posts/who-responsible-for-machine.md",
-    "db.json",
-    "source/_data/styles.styl",
-    "source/_data",
+    "source/images/the-next-rembrandt.webp",
+    "source/_posts/cats-palindrome.md",
+    "source/_drafts/who-responsible-for-machine-2.md",
     "source/_posts/online-shed-homepage.md",
-    "public/blog/page/2/index.html",
-    "public/blog/page/2",
-    "public/blog/page",
-    "public/archives/page/2/index.html",
-    "public/archives/page/2",
-    "public/archives/page",
-    "public/2025/06/02/online-shed-homepage/index.html",
     "source/index.md",
     "source/_posts/online-shed-prologue.md",
     "source/_posts/asa-kun.md",
-    "source/_posts/impression-monet.md",
     "source/_posts/cat-poems.md",
     "source/_posts/also-spoke-meine-mutter.md",
     "source/_posts/red-dragon.md",

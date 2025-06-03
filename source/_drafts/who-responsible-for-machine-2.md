@@ -1,20 +1,126 @@
 ---
-title: 程序出错，谁的责任？
-category: 补档
-date: 2017-10-19 23:30:00
+title: Whose Fault When Machines Err? / 程序出错，谁的责任？
+category: 考察
+date: 2025-06-03 11:00:28
 tags:
-  - AI
-  - 程序
-  - 自主性
-  - 伦理
-  - 责任
-  - 法律
-  - 人机关系
+  - 旧作
+---
+This is the translation of my article originally in Chinese published online on 19 Oct 2017. The original post on Jianshu has been 'locked' by the platform and is no more publically accessible. Here I make a new post, because I believe the discussion of ethics in AI is more important than ever.
+
+To save time, I used ChatGPT (4o date: 3 Jul 2025) to produce a first draft of the translation, and then modified the draft as needed. 
+
+The original article in Chinese was attached in the end of this post.
+
+
+chatgpt failed to:
+mention 李世乭
+
+IBM quote
+
+---
+
+> *Starting __tabula rasa__, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo.* —Mastering the game of Go without human knowledge [^1]
+
+# I. Machines and Program
+'Program' is typically associated with computers and programmers. Together with other computer science jargons, such as artificial intelligence, machine learning, pattern recognition, neural networks. they have been brought into the public domain thanks to recent technological achievements. For instance, AlphaGo stunned the world by defeating the world Go champion, Lee Sedol, and the new version, AlphaGo Zero, decisively beated AlphaGo with a 100:0 record. Autonomous vehicles, once running only in laboratories, now frequently makes headlines as deployed on real-world roads. 
+
+However, the concept of 'program' can be extended beyond machines—to people, organisations, nations, even the entire (human) world. For example, if someone discovers extraterrestrial life, they are obligated by the United Nations' [Space Law](http://www.unoosa.org/oosa/en/ourwork/spacelaw/index.html) to notify the Secretary-General. International laws, treaties, and agreements such as [Nuclear Non-Proliferation Treaty](https://www.un.org/disarmament/wmd/nuclear/npt/)—irritating the U.S. President Trump—and the [Paris Agreement](http://unfccc.int/paris_agreement/items/9485.php)—from which Trump orderd to exit, irritating the rest of the world—are other examples of 'programs' for regulating human behaviours. At a smaller scale, a country may have explicit laws for protecting children, a political party or a company may have a charter, and individual people may use a fixed routine for their weddings, funerals, or their morning Tai Chi exercises.
+
+Indeed, any sequence of actions or operations that must be executed in a specific way can be considered as a 'program'. The (nearly) same concept may be called differently given different contexts. 'Code' is probabily a word with greater compatibility with both machines and humans, but 'program' is used here for less ambiguity.
+
+It's actually meaningful to consider all examples above as 'programs', because they all aim to achieve specific results through a fixed set of actions. An alarm clock set for 7:00 will ring at 7:00—mechanical or digital. The U.S. holds a presidential election every four years. Programs usually work—but they can fail. The alarm might run out of power. The president might be assassinated.
+
+_'What happens when things go wrong?'_ is the most immediate question for programs—operating a mechnical/digital or legal systems, and our answers reveal differences of such systems. A dead battery requires recharging. A sudden presidential death invokes automatic succession. But note: recharging must be done externally—the powerless machine can’t act. A government without a president can appoint one—it’s already part of the legal process.
+
+'Autonomy' is the crucial difference between humans and machines. Machine programs are mandatory, logical, and grounded in physical laws. Their strength is efficiency and reliability—within expected error tolerance. But beyond the tolerance, they crash. Legal systems are also compulsory but strive to minimise coercion, because they deal with the most peculiar human trait—freedom. Typically, they regulate human behaviour by encouraging 'good' conduct and penalising 'bad' to promote collective benefit.
+
+At this point, readers may argue machines can evolve toward autonomy—given enough complexity and advancement. Self-driving once struggled with real-world unpredictability—challenges gradually overcome by ever-evolving technology. One day, computers may not only complete tasks but also analyse massive data sets to assist human decision-making, and achieve other amazing things. I’ll address this argument in the following sections.
+
+---
+
+## II. Learning and Understanding
+
+Modern AI owes its strength to the rapid development of "machine learning." This essay won’t delve into technicalities—suffice it to say that today’s programs can solve problems without explicit instructions. Recall AlphaGo Zero: it didn’t study human game records. Given only the basic rules—how to play, capture, and win—it played itself for three days and nights, mastered Go, and surpassed all humans and its predecessor.
+
+It received from its creators only one thing: the _ability to learn_. Though lacking intelligence, it used its vast computation and memory, its tireless persistence, to develop techniques—a strategy for playing and winning. It thus differs from basic programs. This was a program birthed _from_ another program called "learning." Machine learning thrives precisely because this learning algorithm can be applied across vastly different fields—including, incredibly, _art_.
+
+Above is a Rembrandt-style painting created by an AI after learning from the master's works. Dazzling—thrilling or chilling?
+
+But I must say—
+
+_So what?_
+
+I don’t doubt the technology. But like those who ask, “What’s the use of your research?” I ask, what’s the use of machine learning?
+
+If the answer is problem-solving, I have no objection. I got my driver’s license after high school and never drove once. Full self-driving? Perfect. Research shows machine drivers are safer than humans. Automatic elevators were once controversial too; now they’re safer and better-prepared for emergencies.
+
+But my own research aims to deepen understanding of neural signal transmission. It’s rationalist in methodology, supported by empiricism—using mathematical models to deduce theory, then comparing it with experiments. I’m not trying to simulate a neuron or get perfect predictive outputs—though those might happen. If I just wanted results, I’d use off-the-shelf software. Likewise, why spend decades proving mathematical conjectures already tested millions of times? Because the point is not (only) results—it’s deeper _understanding_ of nature.
+
+Back to Go. Machines have proven they can win—far beyond the best humans. No doubt. But what good does that do us? AlphaGo Zero's creators claim it can discover knowledge. So can I, a beginner, learn from it and become a Go master? In reality, many of its moves defy comprehension. To improve, we still need human guidance.
+
+Also, is Go really about winning? A recent case involved a Japanese shogi player suspended for allegedly using a phone to consult an AI mid-game. If all players used AIs, fine. But selectively doing so is unfair—like doping. Acknowledging AI’s usefulness doesn’t mean it's ethically appropriate. There’s a moral gap between completing a task and adhering to laws and norms. Using machine programs to replace legal ones carries ethical risks. In human contests, _fairness before victory_ isn’t empty talk.
+
+Then should we fairly allow everyone to use machines? Perhaps. Chess tournaments now allow human-AI teams. Unlike doping, using computer advice doesn’t harm health. But why do we still run races when anyone on a motorcycle outruns Olympic champions? Machines could make us "faster, higher, stronger" than the Greek gods. So why uphold the Olympic spirit?
+
+Before answering that, let me summarise. While machines outperform humans in specific tasks, they lack ethics and spirit. Some may object—I’ve dodged complexity by dragging in moral and spiritual ambiguity. If those could be clearly defined, surely machines could replace legal codes?
+
+Yet, even if we intuitively _understand_ such concepts, how do we define them? A final, imperfect example: with the same board and pieces, we can play Go, Gomoku, or Reversi. We can teach ourselves or machines any of these. Soon, we lose at all of them. Yet we prefer some, excel at some, hate others—maybe we’re too crushed to play again. We grasp the joy and pain of play. But that machine winning everything?
+
+I originally meant to end here, provoking thought with “I told you—legal codes regulate ambiguity.” But to avoid accusations of evasive mysticism, I’ll pose more concrete questions in the next section.
+
+---
+
+## III. Programs and Responsibility
+
+Let’s return to the problem: unclear goals, legal and moral ambiguity, human emotion—these are hard not because of machines, but _because of us_. Machine programs struggle with them precisely because _we_ don’t understand them. Can legal codes do better?
+
+**_No._**
+
+Legal codes—whether law, certificates, contracts, or ethics, customs, agreements—are never perfect. Even the simplest task, like parents waking a child for school, can fail because humans can choose not to act. But _because_ humans are autonomous, they can also adapt—call someone else, ask for help.
+
+Such programs are flexible not just technically, but because _humans_, their agents, are infinitely adaptable. A tomato-egg dish, following a recipe, won’t go wrong. A machine can make it too. Prefer sweeter? Add sugar—easily done. But maybe today you’re tired of sweets, or want a prettier plate for guests, or in clanging pots invent a new tune that becomes a hit… A machine focused on taste won’t care for beauty or sound. Add those? Try finding an investor for a "singing, automated tomato-egg chef."
+
+But more critically, the key issue isn’t “_what to do when things go wrong_” (technical)—it’s “_who’s responsible_” (ethical). Back to self-driving. Many places allow autonomous cars on roads. But when accidents happen, the _driver_ remains legally liable. Even though self-driving is safer, the one who “hired” the elite AI driver pays the price.
+
+If we compare to elevators, maintenance and liability fall to manufacturers, who must ensure no sabotage—thus full surveillance and monitoring. At that point, who needs the elite driver?
+
+This brings to mind Stanislav Petrov, the Soviet officer who died recently. In 1983, an early-warning system falsely indicated U.S. missiles en route. Petrov, on duty, broke protocol, judged it a false alarm, and _did not_ report. In Cold War conditions, reporting likely meant retaliation—and possibly none of us here today.
+
+In an interview, he recalled: “_The computer data was clear. If I had reported it, no one would have doubted me._” Thankfully, the USSR didn’t entrust humanity’s fate to a machine—whether due to tech limits or power politics is irrelevant. What matters is: when humans are in the loop, _they_ bear responsibility. Legal codes make people most accountable _precisely_ when they break the code.
+
+Another trait: the more people involved in a legal code, the smaller the individual responsibility. “The law doesn’t punish the masses.” Corporations with fewer investors tend toward unlimited liability; those with many lean toward limited. Machine programs don’t share this feature. Their design _reduces_ human involvement—ironically making designers or operators more culpable.
+
+Setting aside system design or power structures, we return to the essential ethical dilemma:
+
+> **_When a program fails, who is responsible?_**
+
+Theoretically simple—like Liu Bang’s three laws: “Killers die, attackers and thieves are punished.” But in practice—how to prove murder? What equals punishment? Many truths remain forever unknown. Legal codes are flawed, exploitable. But the people they regulate—and those who exploit them—are flawed too. Because no one controls them fully, and they can’t control all, legal codes are both error-prone and vital: a compromise of individual will and collective wisdom.
+
+1. A is immoral;
+    
+2. B is immoral;
+    
+3. The person in question must choose A or B.
+    
+
+---
+
+## Conclusion
+
+1. Of all the challenges machine programs face, technical ones are trivial; ethical ones are not.
+    
+2. Ethical challenges matter because _we_ don’t fully understand them.
+    
+3. We can’t hand ethical decisions to machines because when they fail, we don’t know _who_ to blame.
+    
+
+Finally, I wanted to quote the Enlightenment, but couldn’t improve on an [earlier piece](http://www.jianshu.com/p/2def48672024):
+
+> _The Enlightenment's praise of reason—should not only guide scientific research but also self-knowledge and social civilisation._
+
 ---
 
 >*Starting __tabula rasa__, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo.* -- Mastering the game of Go without human knowledge [^1]
-
-<!-- more -->
 
 [^1]: Silver D, Schrittwieser J, Simonyan K, et al. (2017) [Mastering the game of Go without human knowledge](https://www.nature.com/nature/journal/v550/n7676/pdf/nature24270.pdf). *Nature*, 550: 354–359.
 
@@ -42,7 +148,7 @@ tags:
 
 它从（制）作者那里得到的东西只有一个，那就是「学习」本身的能力。虽然它天资愚钝，但凭借计算机超人的运算量与记忆力，以及不吃饭不睡觉的铁人意志，它掌握了一套技术，一套应变下棋然后获得胜利的技术，亦即一个程序。因此，它跟前文提到的简单的程序不一样，是一个借由名为「学习」的程序「自主地」孕育了「下棋」的程序。「机器学习」之所以在学界与业界大行其道，风靡一时，正是因为这套名为「学习」的程序可以运用到许多截然不同的领域。不仅仅是游戏、科技、生活，甚至是人类引以为豪的——艺术。
 
-![下一个伦勃朗](/image/the-next-rembrandt.webp)
+![下一个伦勃朗](http://upload-images.jianshu.io/upload_images/3052093-926b69723fc8999a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 上图即为用人工智能学习伦勃朗的画作后，由计算机新绘的仿作[^3]。这般美轮美奂，是让人觉得欣喜若狂，还是背脊发凉？
 
