@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/index.md",
+                "file": "source/_posts/cats-palindrome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "cats-palindrome"
             }
           },
           {
@@ -140,22 +140,23 @@
   },
   "active": "e361c556a14f869f",
   "lastOpenFiles": [
-    "source/index.md",
-    "source/_posts/online-shed-homepage.md",
-    "source/_posts/online-shed-prologue.md",
+    "public/blog/page/2/index.html",
+    "public/blog/page/2",
+    "public/blog/page",
+    "public/archives/page/2/index.html",
+    "public/archives/page/2",
+    "public/archives/page",
+    "public/2025/06/02/online-shed-homepage/index.html",
+    "public/2025/06/02/online-shed-homepage",
+    "public/tags/hexo/index.html",
+    "public/tags/hexo",
     "source/_posts/cats-palindrome.md",
+    "source/_posts/online-shed-homepage.md",
+    "source/index.md",
+    "source/_posts/online-shed-prologue.md",
     "source/_posts/asa-kun.md",
     "source/_posts/impression-monet.md",
     "public/2025/06/02/online-shed-prologue/index.html",
-    "public/2025/06/02/online-shed-prologue",
-    "public/2025/06/02",
-    "public/2025/06",
-    "public/2025",
-    "public/tags/writing/index.html",
-    "public/tags/writing",
-    "public/tags/website-building/index.html",
-    "public/tags/website-building",
-    "public/categories/log/index.html",
     "source/_posts/cat-poems.md",
     "source/_posts/also-spoke-meine-mutter.md",
     "source/_posts/red-dragon.md",
