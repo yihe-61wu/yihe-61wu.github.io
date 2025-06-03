@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/online-shed-prologue.md",
+                "file": "source/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "online-shed-prologue"
+              "title": "index"
             }
           },
           {
@@ -140,9 +140,11 @@
   },
   "active": "e361c556a14f869f",
   "lastOpenFiles": [
-    "source/_posts/online-shed-prologue.md",
-    "source/_posts/asa-kun.md",
+    "source/index.md",
     "source/_posts/online-shed-homepage.md",
+    "source/_posts/online-shed-prologue.md",
+    "source/_posts/cats-palindrome.md",
+    "source/_posts/asa-kun.md",
     "source/_posts/impression-monet.md",
     "public/2025/06/02/online-shed-prologue/index.html",
     "public/2025/06/02/online-shed-prologue",
@@ -154,13 +156,11 @@
     "public/tags/website-building/index.html",
     "public/tags/website-building",
     "public/categories/log/index.html",
-    "source/_posts/cats-palindrome.md",
     "source/_posts/cat-poems.md",
     "source/_posts/also-spoke-meine-mutter.md",
     "source/_posts/red-dragon.md",
     "source/_posts/chatgpt-chinese-writing.md",
     "source/_posts/still-hot.md",
-    "source/index.md",
     "source/_posts/321-ed.md",
     "source/about/academic_cv.md"
   ]

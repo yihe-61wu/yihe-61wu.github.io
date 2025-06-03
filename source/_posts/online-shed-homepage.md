@@ -8,7 +8,7 @@ tags:
 ---
 With the long-term goal to upgrade my website, which I decide to call 'online shed' from now on, I have reconfigured the [homepage](/) to contain only a brief self introduction in English and Chinese.
 
-For context, I have used the [hexo](https://hexo.io/) blog framework with the [NexT](https://theme-next.js.org/) theme for years and I still like it. However, by default, a homepage lists posts in reverse chronological order.
+For context, I have used the [hexo](https://hexo.io/) blog framework with the [NexT](https://theme-next.js.org/) theme for years and I still like it. However, by default, a homepage lists posts in reverse chronological order[^1].
 
 Two changes are needed to reconfigure the location of the homepage:
 1. relocate posts to a different address, and
@@ -27,7 +27,7 @@ index_generator:
 ```
 where the value `blog` after `path:` is newly added to relocate posts to `\blog\`. By default, there is no value for `path` (the homepage address is always `\`). 
 
-Then, in `\_config.next.yml` and `\themes\next\_config.yml`, find the same code blog as below:
+Then, in `\_config.next.yml` and `\themes\next\_config.yml`, find the same code block as below:
 ```
 # ---------------------------------------------------------------
 # Menu Settings
@@ -42,21 +42,35 @@ menu:
   Blog: /blog/ || fa fa-book
   #about: /about/ || fa fa-user
 ```
-where the line `Blog: /blog/ || fa fa-book` is newly added to create a tab on the main menu.
+where the line `Blog: /blog/ || fa fa-book` is newly added to create a tab on the main menu. There were some weird behaviours when the two blocks in the two files were inconsistent, but I haven't got time to explore or learn the logic behind.
+
 
 To achieve 2, create `\source\index.md` under `\source\`.
 
-This is rather straightforward given my brief self introduction, except the slightly non-trivial f
+This is rather straightforward given my brief self introduction, except the slightly non-trivial formatting for the Chinese part—the characters are arranged from top to bottom in colums instead of rows, and the columns should flow from righ to left, as in traditional Chinese.
 
-In my case, writing the self introduction is straightforward I have made the Chinese part
+As markdown doesn't care about formatting and hexo doesn't support vertical columns natively[^2], the desired formatting is achieved by embedding the following html block inside `\source\index.md`:
+```
+<div style="display: flex; justify-content: flex-end;">
+<div style="
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: right;
+">
+  <h1>苏至清</h1>
+  潇潇兮暮雨<br>
+  浩浩兮无涯<br>
+  洋洋兮流水<br>
+  渺渺兮予怀<br>
+</div>
+</div>
+```
+I found `writing-mode: vertical-rl; text-orientation: upright;` rather self-explanatory, but `text-align: right;` a bit confusing, as `right` here actually means 'bottom'—`writing-mode` effectively rotates the orientation of writing, which is different from `text-orientation`, as well as the orientation of `text-align`. 
 
 
 
-
-
-, which is presumably sensible if the blog focusses on only one topic or a few closely related topics—mine is different. My blog has to be (at least) bilingual and my articles multi-disciplinary. Even if I were to build separate blogs for myself, the most professional one—something potentially I would like to show (off) to my friends, colleagues, prospective employers, the public, and/or AI bots—had to contain my postdoc projects on different topics in computational neuroscience and bio-inspired AI, while I am also a teacher of mathematics and statistics.
-
-As you see, the context above already grows too long without any details. To make navigating my online shed convenient for human visitors, I believe the best way to organise it is to take a project-based approach—I'd build multiple portfolios, each showcasing a direction of research, teaching, and hobbies of mine. The reverse chronological order of posts is still acceptable for an archive, but each portfolio would probabily correspond to a tab on the main menu, leading to summaries of projects and relevant posts. The homepage should be minimal.
+[^1]: The reverse chronological order is presumably sensible if the blog focusses on only one topic or a few closely related topics—mine is different. My blog has to be (at least) bilingual and my articles multi-disciplinary. Even if I were to build separate blogs for myself, the most professional one—something potentially I would like to show (off) to my friends, colleagues, prospective employers, the public, and/or AI bots—had to contain my postdoc projects on different topics in computational neuroscience and bio-inspired AI, while I am also a teacher of mathematics and statistics. So, to make navigating my online shed convenient for human visitors, I believe the best way to organise it is to take a project-based approach—I'd build multiple portfolios, each showcasing a direction of research, teaching, and hobbies of mine. The reverse chronological order of posts is still acceptable for an archive, but each portfolio would probabily correspond to a tab on the main menu, leading to summaries of projects and relevant posts. The homepage should be minimal.
+[^2]: Apparently, Hexo was originally created by Tommy Chen, who happens to blog in traditional Chinese.
 
 
 
