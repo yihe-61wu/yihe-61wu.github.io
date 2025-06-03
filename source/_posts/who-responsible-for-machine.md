@@ -12,14 +12,21 @@ To save time, I used ChatGPT (40 date: 3 Jul 2025) to produce a first draft of t
 The original article in Chinese was attached in the end of this post.
 
 
+chatgpt failed to:
+mention 李世乭
+
 IBM quote
 
 ---
 
 >*Starting __tabula rasa__, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo.* -- Mastering the game of Go without human knowledge [^1]
 
-# I. Machines and Rules
+# I. Machines and Code
+'Code' is typically associated with computers and programmers. Computer science jargons, such as artificial intelligence, machine learning, pattern recognition, neural networks. have been brought into the public domain thanks to recent technological achievements. For instance, AlphaGo stunned the world by defeating the world Go champion, Lee Sedol, and the new variant, AlphaGo Zero, decisively beated AlphaGo with a 100:0 record. Autonomous vehicles, once running only in laboratories, now frequently makes headlines as deployed on real-world roads. 
 
+However, 'code' is not a concept limited to instructions for operation on and of machines. It applied to people, organisations, nations, even the entire (human) world. For example, if someone discovers extraterrestrial life, they are obligated by the United Nations' [Space Law](http://www.unoosa.org/oosa/en/ourwork/spacelaw/index.html)--a set of codes--to notify the Secretary-General. International laws, treaties, and agreements such as [Nuclear Non-Proliferation Treaty](https://www.un.org/disarmament/wmd/nuclear/npt/)--irritating the U.S. President Trump--and the [Paris Agreement](http://unfccc.int/paris_agreement/items/9485.php)--from which Trump orderd to exist, irritating the rest of the world--are other examples of codes for regulating human behaviours
+
+r take  which the U.S. President has struggled with (or unilaterally exited, causing global headaches). Or national laws like the Law on the Protection of Minors. Or the charter of a political party or a company. Or even a person’s wedding, funeral, or morning Tai Chi routine.
 
 
 
