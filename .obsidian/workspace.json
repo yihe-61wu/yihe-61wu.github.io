@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/online-shed-homepage.md",
+                "file": "source/_posts/who-responsible-for-machine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "online-shed-homepage"
+              "title": "who-responsible-for-machine"
             }
           }
         ],
@@ -140,6 +140,11 @@
   },
   "active": "e361c556a14f869f",
   "lastOpenFiles": [
+    "db.json",
+    "source/_data/styles.styl",
+    "source/_data",
+    "source/_posts/online-shed-homepage.md",
+    "source/_posts/who-responsible-for-machine.md",
     "public/blog/page/2/index.html",
     "public/blog/page/2",
     "public/blog/page",
@@ -148,15 +153,11 @@
     "public/archives/page",
     "public/2025/06/02/online-shed-homepage/index.html",
     "public/2025/06/02/online-shed-homepage",
-    "public/tags/hexo/index.html",
-    "public/tags/hexo",
     "source/_posts/cats-palindrome.md",
-    "source/_posts/online-shed-homepage.md",
     "source/index.md",
     "source/_posts/online-shed-prologue.md",
     "source/_posts/asa-kun.md",
     "source/_posts/impression-monet.md",
-    "public/2025/06/02/online-shed-prologue/index.html",
     "source/_posts/cat-poems.md",
     "source/_posts/also-spoke-meine-mutter.md",
     "source/_posts/red-dragon.md",
