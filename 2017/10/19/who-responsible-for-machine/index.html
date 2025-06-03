@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yihe-61wu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo. – Mastering the game of Go without huma">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序出错，谁的责任？">
+<meta property="og:url" content="https://yihe-61wu.github.io/2017/10/19/who-responsible-for-machine/index.html">
+<meta property="og:site_name" content="云栈">
+<meta property="og:description" content="Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo. – Mastering the game of Go without huma">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://yihe-61wu.github.io/image/the-next-rembrandt.webp">
+<meta property="article:published_time" content="2017-10-19T22:30:00.000Z">
+<meta property="article:modified_time" content="2025-06-03T14:16:18.337Z">
+<meta property="article:author" content="Yihe Lu&#x2F;苏至清">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="程序">
+<meta property="article:tag" content="自主性">
+<meta property="article:tag" content="伦理">
+<meta property="article:tag" content="责任">
+<meta property="article:tag" content="法律">
+<meta property="article:tag" content="人机关系">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yihe-61wu.github.io/image/the-next-rembrandt.webp">
+
+
+<link rel="canonical" href="https://yihe-61wu.github.io/2017/10/19/who-responsible-for-machine/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2017/10/19/who-responsible-for-machine/","path":"2017/10/19/who-responsible-for-machine/","title":"程序出错，谁的责任？"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>程序出错，谁的责任？ | 云栈</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">云栈</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">an online shed of trial and error</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-blog"><a href="/blog/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%9C%BA%E5%99%A8%E4%B8%8E%E5%BE%8B%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">一、机器与律法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%90%86%E8%A7%A3"><span class="nav-number">2.</span> <span class="nav-text">二、学习与理解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%A8%8B%E5%BA%8F%E4%B8%8E%E8%B4%A3%E4%BB%BB"><span class="nav-number">3.</span> <span class="nav-text">三、程序与责任</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yihe Lu/苏至清</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yihe-61wu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yihe-61wu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lu.yihe.61wu@gmail.com" title="E-Mail → mailto:lu.yihe.61wu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2017/10/19/who-responsible-for-machine/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yihe Lu/苏至清">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云栈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          程序出错，谁的责任？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-10-19 23:30:00" itemprop="dateCreated datePublished" datetime="2017-10-19T23:30:00+01:00">2017-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-06-03 15:16:18" itemprop="dateModified" datetime="2025-06-03T15:16:18+01:00">2025-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%A1%A5%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">补档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><blockquote>
+<p><em>Starting <strong>tabula rasa</strong>, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo.</em> – Mastering the game of Go without human knowledge <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Silver D, Schrittwieser J, Simonyan K, et al. (2017) [Mastering the game of Go without human knowledge](https://www.nature.com/nature/journal/v550/n7676/pdf/nature24270.pdf). *Nature*, 550: 354–359.">1</span></a></sup></p>
+</blockquote>
+<span id="more"></span>
+
+
+
+<h1 id="一、机器与律法"><a href="#一、机器与律法" class="headerlink" title="一、机器与律法"></a>一、机器与律法</h1><p>如今说起「程序」，我们大抵会联想到计算机，程序员。新版本AlphaGo Zero横空出世，更是以100：0的战绩完胜之前击败李世乭的AlphaGo；自动驾驶在前些年还是实验室里的理想，现在国内外自动驾驶汽车上路的新闻不绝于耳。如此种种，顺道把一些理论名词也带入了当代人的常识之中：人工智能，机器学习，模式识别，神经网络……</p>
+<p>但程序不仅仅是指上述这些可以用来运作机器的计算机程序，它也可以用来调控人、组织、国家，乃至整个世界。譬如一旦有人发现外星人，联合国有一套规则（<a target="_blank" rel="noopener" href="http://www.unoosa.org/oosa/en/ourwork/spacelaw/index.html">Space Law</a>）指明他有义务通知联合国秘书长。譬如最近让美国总统头疼的《<a target="_blank" rel="noopener" href="https://www.un.org/disarmament/wmd/nuclear/npt/">不扩散核武器条约</a>》以及他让别人头疼退出的《<a target="_blank" rel="noopener" href="http://unfccc.int/paris_agreement/items/9485.php">巴黎协定</a>》等等国际公约。譬如《未成年人保护法》之类的法律。再譬如一个政党或一个公司的章程。甚至可以是个人的婚礼、葬礼，或他每天起床后都要打一套陈氏太极。</p>
+<p>凡是一套特定的行动或操作必须以相同的方式执行，都可以叫做程序。其实在英文或港台用语里，两者是用不同的单词的。这个广义的程序就叫做「程序（procedure）」，而较为狭义的计算机程序则是「程式（program）」。另外，法律程序在英文里则用另一个单词「process」。注意在本文中为了避免定义误会导致歧义，笔者使用「律法」这个较为不常用的词来指代与机器程序相对应的，所有暧昧的非机器的程序。在这里强调「暧昧」有两个原因。其一是因为这个定义本身暧昧，其二则是因为它所调整的对象「人」是极其暧昧不清的。</p>
+<p>说起来中文之所以把上述所有不同的程序都译作程序，并非毫无道理。因为所有程序的目的都是通过既定的行为操作，以期达成既定的结果。譬如一个设定在七点响铃的闹钟，无论是机械的还是电子的，只要不出问题都会在七点响铃。譬如美国每四年进行一次总统大选，一般情况下也正是如此。然而，上述程序均可能出错。闹钟（或手机）可能没电了，总统可能被暗杀了。</p>
+<p>「<em>出现问题了怎么办？</em>」是机器程序与律法程序最直接面对的问题，回答这个问题的不同方式也正好反映了两者的不同。没电了要充电，总统在任期内突然死亡则副总统继任——这两个解决方法看似一致，无非是填补上程序缺少的东西。但充电不是一个没有电的机器可以自己完成的事，新总统继任则是一个没有总统的政府可以做到的，或者说这样的考虑早是法律条文，已经成为了程序的一部分。</p>
+<p>「自主性」正是人与机器的最大不同，也因此导致两种程序大不相同。机器程序是强制性的、命令性的，利用或具备自然规律的数理逻辑。好处是其目的性强，不容易出错（尤其对于一个具有相当容错率的程序来说），坏处是一旦错误超出预期（处理能力），就会死机。律法程序虽然也是强制性的，但却试图把强制的成分降到最少，因为这里涉及到只有人类才有的最为奇怪的东西——「自由」。一般来说，律法通过鼓励「好的」行为，惩处「坏的」行为，来调整个体的行为，以达到有利于集体的目的<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="当然，上文已经说过，律法程序是暧昧的产物，因此既有试图违反乱纪的个人，亦有采取命令手段剥夺个人自由的组织。这些特例很有探讨价值，但与本文主旨无关，在此不作展开。">2</span></a></sup>。</p>
+<p>讲到这里，大概有读者会想争论机器的可能性，毕竟只要够复杂、够先进，机器或许就能「自主地」完成任务，弥补过失。就拿自动驾驶这个例子来说，前些年最大的挑战无非是现实中复杂的路况让机器无法迅速适应，但这样的课题随着技术进步都被逐一解决。总有一天，计算机不仅能处理这些既定的任务，还能通过分析海量的数据，帮助人类做出决策……如此云云，笔者将在后文给出回应。</p>
+<hr>
+<h1 id="二、学习与理解"><a href="#二、学习与理解" class="headerlink" title="二、学习与理解"></a>二、学习与理解</h1><p>如今的人工智能之所以厉害，离不开一个名为「机器学习」的领域突飞猛进的发展。本文无意探讨任何具体的技术手段，总之现在的计算机程序，可以在不给出强制命令的情况下，找到最好的解决问题的手段。让我们回到开头的AlphaGo Zero的例子，它不需要像任何围棋选手或爱好者一样学习棋谱，只需要教会它最基础的走子吃子与胜负判定的规则，它跟自己玩了三天三夜，就参悟了棋道，超越所有人类以及前辈AlphaGo，成为了世界最强的围棋选手。</p>
+<p>它从（制）作者那里得到的东西只有一个，那就是「学习」本身的能力。虽然它天资愚钝，但凭借计算机超人的运算量与记忆力，以及不吃饭不睡觉的铁人意志，它掌握了一套技术，一套应变下棋然后获得胜利的技术，亦即一个程序。因此，它跟前文提到的简单的程序不一样，是一个借由名为「学习」的程序「自主地」孕育了「下棋」的程序。「机器学习」之所以在学界与业界大行其道，风靡一时，正是因为这套名为「学习」的程序可以运用到许多截然不同的领域。不仅仅是游戏、科技、生活，甚至是人类引以为豪的——艺术。</p>
+<p><img src="/image/the-next-rembrandt.webp" alt="下一个伦勃朗"></p>
+<p>上图即为用人工智能学习伦勃朗的画作后，由计算机新绘的仿作<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="图片引自网络，参见「下一个伦勃朗（[The Next Rembrandt](https://www.nextrembrandt.com)）」。">3</span></a></sup>。这般美轮美奂，是让人觉得欣喜若狂，还是背脊发凉？</p>
+<p>然而笔者要说——<br>So what?<br>那又怎么样？</p>
+<p>笔者无意质疑「机器学习」的技术，但就像所有会问笔者「你做的研究有什么用」的人一样，笔者也一样问：机器学习有什么用？</p>
+<p>如果答案是解决问题，笔者毫无异议。譬如笔者自高考结束后考了驾照，至今没有一次上路过，如果能有全自动驾驶，真是再好不过。实际上许多支持自动驾驶的研究都表明，由机器驾驶会比由人力驾驶安全许多，我们应该大力推进自动驾驶。笔者看到的针对反对声音最有意思的辩驳是当年升降电梯从人工改成自动操作时，社会上也是许多反对，觉得没有操作员在电梯里怎么可能安全，实际上全新的自动电梯安全许多，也做好了充分的应对万一的准备。</p>
+<p>但譬如笔者的研究的目的是增加人类对于神经元传递信号过程的理解，方法论是理性主义为主，辅之以经验主义。换个简单的说法，用数学工具推演自己的理论，最后把结果同实验数据比较，以证明理论是有道理的。笔者的目的绝不是做一个仿真的神经元出来，也不是为了让计算的结果完全与现实相符——虽然这些目的可能顺便达成，但如果只是为了达成目的，大可使用现成的软件。同理，许多难攻不破的数学猜想被多少人试验了几千万次，找不到一个反例，但为什么不直接认为它们就是正确的，仍要费尽心思去作证明呢？因为重点不（仅仅）是得到一个答案，而是增进人类对于自然的理解<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="当然对于不同的人来说，对待不同问题的态度可能截然相反，有些人费劲一生去理解的东西，对于另一些可能只要一个结果就行。举一个不贴切的例子：一个尝遍全世界米其林三星的吃货，他只需要有钱消费就行了，他不需要会做菜。">4</span></a></sup>。</p>
+<p>再回到下棋，事实已经证明机器可以赢得比赛，远比世界冠军的人类要来得厉害。这是没错，可这对我们又有什么益处呢？AlphaGo Zero的作者宣称它能自己发现知识，那笔者作为一个围棋初学者，是不是可以拜它为师，从此登上人类围棋的顶峰呢？实际上机器下出来的棋谱有许多让人无法理解的地方，想要学习围棋提高水平，我们还只能跟着先「人」的脚步<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="当年AlphaGo的棋谱还是得靠围棋选手来解说。">5</span></a></sup>。机器是否通过图灵测试，是否具有「意志」这类形而上学问题姑且不论，如果它的知识无法让我们理解，我们又怎么能知道？我们又怎能放心？</p>
+<p>另外，下棋的目的真的是为了赢得比赛吗？近年有新闻传出，日本一名将棋选手因为被怀疑比赛过程中以上厕所之名偷用手机借鉴计算机程序，被禁赛半载。如果所有选手都允许使用机器姑且不论，只是部分人偷用，就好像运动员偷用禁药一样，是极其不公平的。虽然这反而在客观上承认了机器的有用，但「完成既定任务」意义上的有用与「在不违反法律规定风序良俗」前提下的有用是截然不同的。换句话说，用机器程序代替律法程序是存在道德风险的，因为对于人与人之间的比赛来说「公平第一，比赛第二」绝非空谈。</p>
+<p>那么是否公平地允许所有人使用机器就可以了呢？或许是的。这世上确有国际象棋世界比赛，允许人类与机器的组合。而且使用计算机的建议与禁药不同，不会危害选手的身体健康。然而笔者要问，人类一早发明了各种交通工具，普通人骑个摩托车，也一定比田径世界冠军跑得快，我们为什么还热衷于运动与竞技？只要借助机器的力量，我们可以比希腊众神「更快，更高，更强」，那我们为什么还要宣扬奥林匹克精神呢？</p>
+<p>在试图回答这个问题之前，笔者略微整理一下本文目前为止的观点。虽然机器程序在完成特定任务上已经显示出超越人类的水平，但机器似乎不考虑伦理道德，也没有精神意志可言。——说到这里可能有人沉不住气要骂笔者了，第一节结尾留下的问题虽然得到了看似正面的应答，却把任务的复杂度偷换成了诸如道德或精神这些暧昧不清的问题，只要这些问题可以被定义清楚，那机器程序代替律法程序岂不是指日可待？</p>
+<p>虽然我们每个人都或多或少地「理解」这些暧昧的概念，但到底该怎么清晰定义呢？在这里继续用围棋举个不恰当的例子：我们可以用棋子与棋盘下围棋，也可以下五子棋，甚至如果不嫌麻烦，可以下黑白棋；我们可以教会我们自己或机器这些使用同样器具的规则不同的游戏；很快，我们都在每一个游戏上输给机器——但不管输赢，我们会偏爱某个，擅长某个，讨厌某个，甚至因为输得太惨再也不愿意玩某个。我们当然地理解自己在游戏中得到的喜怒哀乐，那么那台无论哪个游戏都很擅长的机器呢？</p>
+<p>虽然笔者原本想在这里就结束文章并且用一句「我早告诉过你们律法调整的对象是暧昧的」来引发读者的思考，但为了避免被人指摘是为了装逼才故意说得云里雾里，就容笔者在后文里提出更切实具体的疑问吧。</p>
+<hr>
+<h1 id="三、程序与责任"><a href="#三、程序与责任" class="headerlink" title="三、程序与责任"></a>三、程序与责任</h1><p>我们再来重复一下机器程序的难题：任务目标不明确怎么办？道德法律风险如何折算？人类情绪该作何考量？……在这里笔者再次明确地指出，这些难题并非源于机器，而是源于我们自身。机器程序难以解决这些问题，正是因为我们人类对于诸多概念暧昧不清。那么，用以调整人类行为的律法程序可以解决这些问题吗？</p>
+<p><em><strong>不可以。</strong></em></p>
+<p>律法程序，或是具有法律效益的法律、证明、合同，或是具有其他影响的道德、风俗、约定，绝没有一个完美不出问题的。哪怕是再简单的一个任务，譬如父母每天早上叫醒小孩去上学，既是由人来做，就会出现各种各样的问题。因为人是自主的，父母可以选择不做。但也因为人是自主，父母即使双双出差，也可以打电话，或是请别人来做。</p>
+<p>这些非机器的程序不仅仅在面对问题的时候善于变通（变通对于机器程序来说不是困难的），更因为这些程序的主体是人，其本身便具有了无限维度的改善可能。譬如做一个番茄炒蛋，照着菜谱做不会太糟，但可能让一台机器来做也无非如此。但喜欢甜的人可能会放糖，没错，要机器多放点糖也没什么困难。但也许今天甜食吃腻了想吃得淡一点，也许有客人来所以摆盘的时候要好看一点。又突然在锅碗瓢盆叮叮当当的过程中哼出了段新旋律，作了一支新曲，风行一时……而机器为了完美地执行既定的美味任务，是不会在意好看甚至好听的——那是不是只要提前给这机器加上优化摆盘与噪音的任务，它就可以超越人类了呢？谁去加一个试试，笔者保证没有人想投资「会唱歌的全自动番茄炒蛋机」。</p>
+<p>更进一步，我们必须清楚地意识道，「<em>出现问题了怎么办？</em>」只是一个小问题（技术问题），「<em>出现问题了谁负责？</em>」才是现实中最本质的问题（伦理问题）。在这里，让我们回到自动驾驶的例子。笔者在写此文的此时此刻，全世界虽然已经有不少国家或地区在法律上允许自动驾驶的汽车上路，但一旦发生车祸，相关责任依然按照现行的法律，由驾车人承担。前文已经提到，自动驾驶的技术日趋成熟，其事故率将远低于一般司机；也就是说，一个人聘请了一个世界顶级的老司机，一旦出事，却需要由这个雇主负责。如果要类比自动升降电梯的例子，那当然该有相关厂家全权负责维护修理，而厂家为了确保不是有特定个人在其中搞事情，势必得装上无死角的摄像头，最好还配上物业派人监管——真是这样的话，那老司机是没什么存在价值了。</p>
+<p>写到这里，笔者想到了今年去世的前苏联军官斯坦尼斯拉夫·彼得罗夫。1983年9月26日凌晨，一个位于莫斯科核攻击早期预警基地的仪器显示多枚导弹正从美国袭来，当晚值班的彼得罗夫违反规定，独断这项预警乃是一场误会，决定不向上级汇报。在当时的冷战环境下，苏联中央一旦接到警报，几乎一定会还击……那估计我们中大多数人都不在这里了。试问，如果当时那个预警仪器直接接上了苏联核武器发射装置会怎么样？</p>
+<p>彼得罗夫在接受采访时回忆道，「<em>电脑的读数很齐全（显示正有导弹袭来）。如果我将其上报，没有人会质疑的。</em>」我们必须庆幸，苏联没有鲁莽到把事关人类存亡的重要决定交给一台机器来做。这可能是碍于当时的技术水平，也可能是某些人通过掌握核武器使用权这一事实满足了个人的权力欲望……理由并不重要，重要的是一旦程序中牵扯到人，程序中的人就必须为此负责。而律法程序的最大特点在于，程序中的人最需要负责的时候，恰恰是违反程序的时候。</p>
+<p>另外，律法程序还有个特点就是涉及的人越多，个体的责任就越小。一方面，常言道「法不责众」是说违法的人多了也就不好追责了。另一方面，对于律法的订立，判决或执行来说也一样。有些例子太敏感就不提，拿企业来说，投资者越少越倾向于无限责任，投资者越多则越倾向于有限责任。机器程序则很难说具有这个特点，毕竟它在原则与宗旨上就尽量减少人类对于中间环节的干涉，而这理应成为该程序，亦即该程序的主导者需要承担更多责任的理由。</p>
+<p>不考虑制度设计、权力结构等等复杂的问题，我们终归是回到了上面所提的那个最为本质的伦理问题——</p>
+<blockquote>
+<p><em><strong>程序一旦出错，到底是谁的责任？</strong></em></p>
+</blockquote>
+<p>这个问题在理论上或许是简单的<sup id="fnref:6"><a href="#fn:6" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="事实上就理论而言，也并不简单。让我们考虑一下道德悖论（也叫伦理困境），诸如电车难题。在这里，我们无需了解具体悖论的细节，只需要知道大多数悖论无非由这三个要素构成：
+一、甲是不道德的；
+二、乙是不道德的；
+三、身处悖论中的人必须做出或甲或乙的选择。">6</span></a></sup>，刘邦攻占咸阳后与百姓约法三章：「<em>杀人者死、伤人及盗抵罪</em>。」可在现实中，到底怎样才能证明凶杀？到底用什么东西才能抵罪？有太多事情的真相，我们或许永远也不得而知。律法程序不完美，有空子可钻，但在它调整之下的人，与那些试图利用它来达到自己目的的人一样，也是一样不完美的。恰恰因为没有人可以完全掌控它，恰恰因为它不可能掌控所有人，它才是最有用，也经常容易出错，最可信，也时刻遭人怀疑的，人类个体欲求的无奈妥协与群体意志的智慧结晶。</p>
+<hr>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><ol>
+<li>在机器程序面临的诸多难题中，技术问题是小事，伦理问题才是大问题。</li>
+<li>伦理问题之所以关键，乃是因为我们人类自己都没有搞清楚这些问题。</li>
+<li>我们之所以不能把伦理问题交给机器解决，乃是因为一旦出错，我们不知道该由谁来承担责任。</li>
+</ol>
+<p>最后，笔者再想把启蒙运动搬出来，却又想不出什么新辞，便只好援引<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/2def48672024">旧文</a>了：</p>
+<blockquote>
+<p><em>启蒙运动推崇理性——不应只是在科学研究之中，更应是在人性的自我发现与整个社会文明之中。</em></p>
+</blockquote>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Silver D, Schrittwieser J, Simonyan K, et al. (2017) <a target="_blank" rel="noopener" href="https://www.nature.com/nature/journal/v550/n7676/pdf/nature24270.pdf">Mastering the game of Go without human knowledge</a>. <em>Nature</em>, 550: 354–359.<a href="#fnref:1" rev="footnote">↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">当然，上文已经说过，律法程序是暧昧的产物，因此既有试图违反乱纪的个人，亦有采取命令手段剥夺个人自由的组织。这些特例很有探讨价值，但与本文主旨无关，在此不作展开。<a href="#fnref:2" rev="footnote">↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">图片引自网络，参见「下一个伦勃朗（<a target="_blank" rel="noopener" href="https://www.nextrembrandt.com">The Next Rembrandt</a>）」。<a href="#fnref:3" rev="footnote">↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">当然对于不同的人来说，对待不同问题的态度可能截然相反，有些人费劲一生去理解的东西，对于另一些可能只要一个结果就行。举一个不贴切的例子：一个尝遍全世界米其林三星的吃货，他只需要有钱消费就行了，他不需要会做菜。<a href="#fnref:4" rev="footnote">↩</a></span></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">当年AlphaGo的棋谱还是得靠围棋选手来解说。<a href="#fnref:5" rev="footnote">↩</a></span></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">6.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">事实上就理论而言，也并不简单。让我们考虑一下道德悖论（也叫伦理困境），诸如电车难题。在这里，我们无需了解具体悖论的细节，只需要知道大多数悖论无非由这三个要素构成：
+一、甲是不道德的；
+二、乙是不道德的；
+三、身处悖论中的人必须做出或甲或乙的选择。<a href="#fnref:6" rev="footnote">↩</a></span></li></ol></div></div>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/%E7%A8%8B%E5%BA%8F/" rel="tag"># 程序</a>
+              <a href="/tags/%E8%87%AA%E4%B8%BB%E6%80%A7/" rel="tag"># 自主性</a>
+              <a href="/tags/%E4%BC%A6%E7%90%86/" rel="tag"># 伦理</a>
+              <a href="/tags/%E8%B4%A3%E4%BB%BB/" rel="tag"># 责任</a>
+              <a href="/tags/%E6%B3%95%E5%BE%8B/" rel="tag"># 法律</a>
+              <a href="/tags/%E4%BA%BA%E6%9C%BA%E5%85%B3%E7%B3%BB/" rel="tag"># 人机关系</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2018/04/22/cat-poems/" rel="next" title="咏猫三首">
+                  咏猫三首 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-cat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yihe Lu/苏至清</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
