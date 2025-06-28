@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/binary-similarity.md",
+                "file": "source/_posts/online-shed-homepage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "binary-similarity"
+              "title": "online-shed-homepage"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1e8d360820bfa55a",
@@ -153,6 +154,7 @@
   },
   "active": "ce69fecec71a6c92",
   "lastOpenFiles": [
+    "source/_posts/binary-similarity.md",
     "public/2020/09/13/binary-similarity/index.html",
     "public/2020/09/01/fourier-laplace-transforms/index.html",
     "public/2020/09/13/binary-similarity",
@@ -163,9 +165,7 @@
     "public/2020",
     "public/archives/2020/09/index.html",
     "public/archives/2020/09",
-    "public/archives/2020/index.html",
     "source/_posts/fourier-laplace-transforms.md",
-    "source/_posts/binary-similarity.md",
     "source/_posts/impression-monet.md",
     "source/_posts/edinburgh-lerobot-hackathon.md",
     "source/_posts/chatgpt-chinese-writing.md",
