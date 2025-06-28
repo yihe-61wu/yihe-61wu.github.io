@@ -140,19 +140,20 @@
   },
   "active": "e361c556a14f869f",
   "lastOpenFiles": [
+    "node_modules/hexo-renderer-pandoc/lib/renderer.js",
+    "node_modules/hexo-renderer-pandoc/lib/parseArgs.js",
+    "node_modules/hexo-renderer-pandoc/README.md",
+    "node_modules/hexo-renderer-pandoc/package.json",
+    "node_modules/hexo-renderer-pandoc/LICENSE",
+    "node_modules/hexo-renderer-pandoc/lib",
+    "node_modules/hexo-renderer-pandoc/index.js",
+    "node_modules/hexo-renderer-pandoc",
     "node_modules/url-parse/dist/url-parse.min.js.map",
     "node_modules/url-parse/dist/url-parse.min.js",
     "node_modules/url-parse/dist/url-parse.js",
     "node_modules/url-parse/README.md",
     "node_modules/url-parse/LICENSE",
-    "node_modules/url-parse/package.json",
-    "node_modules/url-parse/index.js",
-    "node_modules/url-parse/dist",
-    "node_modules/url-parse",
     "node_modules/serve-static/node_modules/encodeurl/README.md",
-    "node_modules/serve-static/node_modules/encodeurl/package.json",
-    "node_modules/serve-static/node_modules/encodeurl/LICENSE",
-    "node_modules/serve-static/node_modules/encodeurl/index.js",
     "node_modules/send/node_modules/statuses/README.md",
     "node_modules/send/node_modules/statuses/HISTORY.md",
     "node_modules/send/node_modules/on-finished/README.md",
@@ -184,7 +185,6 @@
     "public/images/monet_and_architecture.jpg",
     "public/images/logo.svg",
     "public/images/logo-algolia-nebula-blue-full.svg",
-    "node_modules/hexo-renderer-marked/README.md",
-    "node_modules/jsdom/README.md"
+    "node_modules/hexo-renderer-marked/README.md"
   ]
 }
