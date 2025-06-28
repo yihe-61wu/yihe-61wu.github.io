@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yihe-61wu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="It was in the first half hour of my PhD viva, when one examiner asked me why I used the Laplace transform instead of the Fourier transform, and the other examiner kept smilence1. He surely knew that I">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lessons I Learned from Fourier and Laplace Transforms">
+<meta property="og:url" content="https://yihe-61wu.github.io/2020/09/01/fourier-laplace-transforms/index.html">
+<meta property="og:site_name" content="云栈">
+<meta property="og:description" content="It was in the first half hour of my PhD viva, when one examiner asked me why I used the Laplace transform instead of the Fourier transform, and the other examiner kept smilence1. He surely knew that I">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-01T21:22:22.000Z">
+<meta property="article:modified_time" content="2025-06-28T15:55:44.829Z">
+<meta property="article:author" content="Yihe Lu&#x2F;苏至清">
+<meta property="article:tag" content="mathematics">
+<meta property="article:tag" content="Laplace">
+<meta property="article:tag" content="Fourier">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://yihe-61wu.github.io/2020/09/01/fourier-laplace-transforms/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2020/09/01/fourier-laplace-transforms/","path":"2020/09/01/fourier-laplace-transforms/","title":"Lessons I Learned from Fourier and Laplace Transforms"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Lessons I Learned from Fourier and Laplace Transforms | 云栈</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">云栈</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">an online shed of trial and error</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-blog"><a href="/blog/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yihe Lu/苏至清</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">40</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yihe-61wu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yihe-61wu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lu.yihe.61wu@gmail.com" title="E-Mail → mailto:lu.yihe.61wu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2020/09/01/fourier-laplace-transforms/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yihe Lu/苏至清">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云栈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Lessons I Learned from Fourier and Laplace Transforms
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-09-01 22:22:22" itemprop="dateCreated datePublished" datetime="2020-09-01T22:22:22+01:00">2020-09-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-06-28 16:55:44" itemprop="dateModified" datetime="2025-06-28T16:55:44+01:00">2025-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/log/" itemprop="url" rel="index"><span itemprop="name">log</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>It was in the first half hour of my PhD viva, when one examiner asked me why I used the <em>Laplace transform</em> instead of the <em>Fourier transform</em>, and the other examiner kept smilence<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Smile and keep silence ([Urban Dictionary](https://www.urbandictionary.com/define.php?term=smilence)). This is a Chinglish word, somewhat old-fashioned.  
+">1</span></a></sup>. He surely knew that I cited his papers in which the two transforms are treated in the same way: the <em>Laplace</em> dances with the theoretical deduction in the main text, while the <em>Fourier</em> hides in the numerical calculation in the appendix.<span id="more"></span></p>
+<p>The <em>Laplace-Fourier</em> relationship (not that of the two great mathematicians) remained unsettled in my heart even after I passed the viva, for I had spent several weeks digging into the literature, yet I only saw claims that the two transforms are related, on top of their apparently similar mathematical expressions. To summarise roughly, they both transform a function from the time domain into the frequency domain. In common practice, the <em>Laplace transform</em> is unilateral, while the <em>Fourier transform</em> is bilateral, meaning that the former acts only on the positive time line (<em>t</em>&gt;0), but the latter on the entire time line. Conventionally they are applied in different areas, although they can be used in (almost) the same way to solve linear differential equations.</p>
+<p>There are more subtle differences between the two transforms. One seemingly important difference lies in the frequencies: the <em>Fourier</em> frequencies are treated mostly as real numbers, and the <em>Laplace</em> frequencies are complex-valued. Such characteristics are reflected in the two inverse transforms. The <em>inverse Laplace transform</em> is much more a pain, and is usually performed by looking up tables in theoretic deductions, or by the equivalent <em>inverse Fourier transform</em> in numerical calculations (as in my thesis). However, to any mathematician, this difference is superficial as one can simply extend the real-valued <em>Fourier</em> frequency to a complex number. So, why don’t we get rid of the two names? Or, why don’t we have a <em>Laplace-Fourier transform</em>? As a matter of fact, some people do use this combined term, but why don’t we popularise it?</p>
+<p>I believed that mathematics was extremely pure and elegant, so there had to be a reason that people kept the two transforms distinct by mostly addressing them with different terms, instead of a combined one. I was naive, and very likely I was stupid. My concerns about the <em>Laplace-Fourier</em> relationship was soundly cleared recently, thanks to this Dr. Steve Brunton’s YouTube lecture, <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=7UvtU75NXTg&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC&index=38&t=0s"><em>The Laplace Transform: A Generalized Fourier Transform</em></a>. I strongly recommend to anyone who, like me, is ever puzzled by the relationship between the two transforms. In very simple pseudo-mathematical language,</p>
+<blockquote>
+<p>Laplace &#x3D; Fourier <em>∘</em> Heaviside,</p>
+</blockquote>
+<p>where <em>Heaviside</em> is a transform of an arbitrary function which multiplies it by the <em>Heaviside step function</em>, and ∘ means composition of the two transforms.</p>
+<p>Once getting the idea, everything seems intuitive and trivial. I can now easily navigate myself on the Wikipedia page of <em>Laplace transform</em>, and find a short piece of description on the <em>bilateral Laplace transform</em>, that does mention the multiplication by the <em>Heaviside step function</em>, which links to the main article <em>Two-sided Laplace transform</em>, that does claim explicitly its equivalence to the <em>Fourier</em> transform. Although the younger me did notice their similarity and used them in a complementary way, I got lost; there were too many articles, books and other learning sources that I could access, but I missed a single Wikipedia page.</p>
+<p>The lessons I learned were more than the technical details of the <em>Laplace-Fourier</em> relationship, or even the intuitive idea behind. Perhaps, not like the naive me, you have had a crystal clear understanding of the two transforms. I say you are lucky, because either you are smarter, or you must have learned from a great lecturer or a great book. By ‘great’, I mean no longer purity and elegance in mathematics, but simplicity and easy-to-access. Yet for the true ‘easy-to-access’ mathematics I think there is a long long way ahead<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="">3</span></a></sup>.</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Smile and keep silence (<a target="_blank" rel="noopener" href="https://www.urbandictionary.com/define.php?term=smilence">Urban Dictionary</a>). This is a Chinglish word, somewhat old-fashioned.<a href="#fnref:1" rev="footnote">↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">I’m saying the last sentence in the particular tune of a neuroscientist.<a href="#fnref:2" rev="footnote">↩</a></span></li></ol></div></div>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mathematics/" rel="tag"># mathematics</a>
+              <a href="/tags/Laplace/" rel="tag"># Laplace</a>
+              <a href="/tags/Fourier/" rel="tag"># Fourier</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/11/14/also-spoke-meine-mutter/" rel="prev" title="答辩通过，母亲大人如是说">
+                  <i class="fa fa-chevron-left"></i> 答辩通过，母亲大人如是说
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/09/13/binary-similarity/" rel="next" title="Thoughts on Similarity Measure for Binary Vectors">
+                  Thoughts on Similarity Measure for Binary Vectors <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-cat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yihe Lu/苏至清</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

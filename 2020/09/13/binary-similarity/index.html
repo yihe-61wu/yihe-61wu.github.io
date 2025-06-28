@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yihe-61wu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="A similarity measure can be mathematically defined as a function that maps two vector spaces onto the real numbers between 0 and 1 (inclusive). There are various similarity measures. The only universa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thoughts on Similarity Measure for Binary Vectors">
+<meta property="og:url" content="https://yihe-61wu.github.io/2020/09/13/binary-similarity/index.html">
+<meta property="og:site_name" content="云栈">
+<meta property="og:description" content="A similarity measure can be mathematically defined as a function that maps two vector spaces onto the real numbers between 0 and 1 (inclusive). There are various similarity measures. The only universa">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-13T21:22:22.000Z">
+<meta property="article:modified_time" content="2025-06-28T16:07:25.904Z">
+<meta property="article:author" content="Yihe Lu&#x2F;苏至清">
+<meta property="article:tag" content="similarity">
+<meta property="article:tag" content="ANN">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://yihe-61wu.github.io/2020/09/13/binary-similarity/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2020/09/13/binary-similarity/","path":"2020/09/13/binary-similarity/","title":"Thoughts on Similarity Measure for Binary Vectors"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Thoughts on Similarity Measure for Binary Vectors | 云栈</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">云栈</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">an online shed of trial and error</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-blog"><a href="/blog/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yihe Lu/苏至清</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">40</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yihe-61wu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yihe-61wu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lu.yihe.61wu@gmail.com" title="E-Mail → mailto:lu.yihe.61wu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2020/09/13/binary-similarity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yihe Lu/苏至清">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云栈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Thoughts on Similarity Measure for Binary Vectors
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2020-09-13 22:22:22" itemprop="dateCreated datePublished" datetime="2020-09-13T22:22:22+01:00">2020-09-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-06-28 17:07:25" itemprop="dateModified" datetime="2025-06-28T17:07:25+01:00">2025-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/log/" itemprop="url" rel="index"><span itemprop="name">log</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>A similarity measure can be mathematically defined as a function that maps two vector spaces onto the real numbers between 0 and 1 (inclusive). There are various similarity measures. The only universal property is: the value of the measure is larger, if the two vectors are more similar. <span id="more"></span>Any similarity measure naturally pairs with a dissimilarity measure. The two measures are sometimes denoted by <strong>S</strong> and <strong>D</strong> with subscriptions referring to the specific function in use, e.g., Cosine, Jaccard. <strong>D</strong> is also a common notation for distances, which is closely related to dissimilarity. In many cases, they are treated as interchangeable; for example, a Euclidean distance can be considered as a useful dissimilarity measure, or can be literally named as a Euclidean dissimilarity. For binary vectors, the Hamming distance is perhaps the most widely used in computer science. However, there exist(-ed?) arguments over if counting the number of mismatches is the best similarity measure, and many alternatives are proposed, e.g., the Jaccard index.</p>
+<p>To my knowledge and mainly to my concern, the main issue is whether or not to address the asymmetry between 0’s and 1’s. Not like a typical binary code in information theory, a 1 means the presence of some feature, and a 0 means the absence of some feature. Intuitively, a match of 1’s (a shared presence) is more important than a match of 0’s (a shared absence). The first paper I found reflecting this intuition is <a target="_blank" rel="noopener" href="https://link.springer.com/content/pdf/10.1007/BF00377169.pdf"><em>Asymmetric binary similarity measures</em></a> by Dr. D. P. Faith; it points out that the Jaccard index is not completely satisfactory in addressing such asymmetry. Faith proposed his novel similarity measure for binary vectors, which rewards a shared presence for 1 point, punishes a mismatch for 1 point, and considers a shared absence neutral, worthy of 0 points. After normalising the overall similarity so that it varies between 0 and 1, the Faith similarity measure asserts:</p>
+<blockquote>
+<p><strong><em>S</em></strong>_Faith &#x3D; <em>(</em>#1-match <em>+</em> #0-match <em>&#x2F;</em> <em>2) &#x2F;</em> #total.</p>
+</blockquote>
+<p>I like the idea, but Google scholar tells me it is not a widely accepted idea, with 63 citations; several of them are review papers, and most of the rest are papers in the same discipline about ecology, biodiversity, etc. I appreciate the idea, because I am working with neural networks, and neural coding tends to be sparse, i.e., 1’s are rare. Why does nobody use this similarity measure in machine learning or computational neuroscience? There must be hundreds of researchers smarter than me. Don’t they want to use something seemingly better?</p>
+<p>After two days digging into the literature, I haven’t got a good answer. My best guess is that nowadays we have much better classifiers. A complicated (dis-)similarity is like a transform of the distance, particularly the Hamming distance for binary vectors. As the modern classifiers are much more powerful than the 80’s, it is unnecessary to summarise data in a similarity measure. For example, one can easily train a perceptron to classify binary vectors. Moreover, I don’t know any approach is particularly similarity-dependent in unsupervised training. Therefore, I was attempted to use a past tense in the last sentence of the first paragraph; nowadays we may pay little attention to this question, ‘which similarity measure is the best’.</p>
+<p>Nonetheless, I think a similarity measure has more to offer than a classifier. One can at least visualise a data set with some similarity measure, despite a difficult thing to do with high-dimensional data. Why do we like visualisation? We humans are somewhat a black box capable of unsupervised learning when looking at data points. If we see a small cluster of data points sitting between two big clusters, we may think the small cluster is a result of some kind of interference between the two big clusters. A classifier cannot make such a decision without predetermined categories. The decision might be totally wrong if we visualise data in a deceptive way, and naturally some automated cluster detector is desired. However, can such a detector take over all usefulness from a similarity measure? Isn’t it always better to use a detector that directly deals with high-dimensional data, rather than a similarity measure that reduces multiple-bit information to one real value? Probably yes, if there is no extra computational complexity. For people caring only about their data and any information that can be extracted from it, an automated cluster detector must be a better tool than a simple similarity measure; some additional computational expense is not problematic nowadays. For people studying unsupervised learning machines, however, a similarity measure can be used as a benchmark, when comparing multiple methods.</p>
+<p>To machine learning researchers, a similarity measure might seem ridiculously simple. If the relations between high-dimensional binary vectors can reduce to a single real-valued similarity, the data set might be boring in the sense that its clusters are probably linearly separable. The interesting and challenging problems are those desperately longing for a kernel support vector machine, but proper kernels are never known beforehand. Thereby, all hail deep neural networks!</p>
+<p>As a computational neuroscientist, I study artificial neural networks, too. I care about their final performance, measured by classification accuracy, etc., but I care also about their ‘anatomy’ and the corresponding functions. I have no wet lab skills so I cannot dissecting a real brain, but I can dissect an artificial neural network. What should I do when there is no known underlying truth when comparing two things? Specifically, two binary vectors? If my unsupervised learning model can ‘recall’ some pattern with errors, how many bits of errors can be tolerated? If I use an existing classifier or detector to make the decision for me, what threshold of the confidence levels or error rates should I set for the classifier&#x2F;detector?</p>
+<p>Coming from a mathematical background, these questions are constantly annoying me when I read non-mathematical, scientific papers. In one seminar room, people develop some models, capable of generating a neuronal dendritic tree. How convincing the theory is! How beautiful the figures are! How can one be sure a generated dendritic morphology is similar to a real one? In another room, people show their demos of simulations on swarming intelligence. It really looks like a flock of birds; they can even use it to control robots, how nice! Again, how can I tell if the movements of the dots on the screen are similar to flying birds? Are our raw eyes good enough to make such decisions (if at least the data can be visualised in a low-dimensional space)? Or do we need an ultimate measure of usefulness, e.g., how many collisions a group of robots can minimise when running together?</p>
+<p>Another reason that, I think, makes a similarity measure for binary vectors still an interesting topic to discuss, is really about modelling per se. The first thing one has to do when builds a computational model is to quantify observables. It is often quite natural to think of continuous observables as real numbers, e.g., distance. Discrete observables that can be ranked can be considered as natural numbers, and could sometimes be treated as a real number, e.g., population. In some cases, discrete observables are labels, categories, or binary states, that are indifferent if one permutes the labels, e.g., student id number. In many real applications like medical diagnosis, biogeographical characterisation, however, I agree with Faith that there is an asymmetric between 1’s (presence) and 0’s (absence).</p>
+<p>Moreover, the binary asymmetry hypothesis is independent of any potential correlations among features (bits), which should probably be left to classifiers&#x2F;detectors to deal with. The hypothesis seems more applicable in artificial neural networks, because we don’t have any prior knowledge in the significance of individual neurons, but we know a firing event is relatively rare. I recommend anybody working with binary neurons to think through perhaps the Faith similarity measure, although I’m unsure if the particular scoring scheme (1 for a 1-match, 0 for a 0-match, and -1 for a mismatch) is optimal; I guess it is possible to set the scores based on the expected sparsity in a neural network. Although we don’t expect a similarity measure to be helpful in improving classifier&#x2F;detector performance, we should still expect two similar vectors to belong to the same category&#x2F;cluster after all.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/similarity/" rel="tag"># similarity</a>
+              <a href="/tags/ANN/" rel="tag"># ANN</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/09/01/fourier-laplace-transforms/" rel="prev" title="Lessons I Learned from Fourier and Laplace Transforms">
+                  <i class="fa fa-chevron-left"></i> Lessons I Learned from Fourier and Laplace Transforms
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/02/01/asa-kun/" rel="next" title="朝菌">
+                  朝菌 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-cat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yihe Lu/苏至清</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
