@@ -73,6 +73,7 @@ It turned out, for me, my eyes were easier to use than cameras. I'll do some dat
 We also ran into other technical issues. For example, we had to fix the duration of an episode beforehand and didn't find a way to early stop an episode—Longer time than necessary was spent as in later episodes I could mostly complete the task 10s before the episode ended.
 
 At the same time when I was teleoperating the robot, another teammate started to fine tune the SmolVLA model using our first 10 episodes of the robot picking up a single block and moving it to the target area. Checkpoints were set for every 2k training epochs, and in the afternoon we tested the fine-tuned models, and we observed:
+
 - At 2k epochs, the robot would 'stand up' from its resting position. Then it seemed to reach out for something but never touch any block.
 - At 4k epochs, the robot seemingly reached out and fixated on a block, but it rarely used its gripper.
 - At 6k epochs, the robot seemd to use more its gripper, but it didn't manage to grasp anything. When we put the block directly into its gripper, somehow it knew to move towards the target area—The block was dropped midway, and then the robot decided to return to the resting position.
