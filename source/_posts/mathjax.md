@@ -39,4 +39,17 @@ npm i hexo-renderer-pandoc
 
 It turned out that I didn't have `pandoc` on my machine at all, so I installed it.
 
-The maths part seems alright, but `pandoc` complaints a lot. I was stunned by so many warnings. Indeed, some formatting appeared odd.
+The maths part seems alright, but `pandoc` complaints a lot when rendering. I was stunned by so many warnings. Moreover, some formatting is indeed problematic:
+
+- Bullet points and numbered lists
+
+
+# Why and How to Fix
+
+## Wrong Attempt 1
+
+My first thought was that I might have installed `hexo-renderer-pandoc` incorrectly. After all, `npm` reported vulnerabilities and some of them were high and even critical. I ran `npm audit fix` and some vulnerability remained unresolved, requiring manual inspection.
+
+With little knowledge of `npm`, I consulted `Gemini 2.5 Flash` and decided to address the only vulnerability with a high rating, which was related to `hexo-footnote`. The suggestions were mostly confusing to me, except one reminding me of possibilities that some dependencies could be outdated. As I only restarted updating this website but not yet updated hexo, I thought I should update things first.
+
+I updated `Node.js`
