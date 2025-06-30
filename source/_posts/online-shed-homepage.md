@@ -12,14 +12,17 @@ With the aim of upgrading my personal website, which I've decide to call 'online
 For context, I have used the [hexo](https://hexo.io/) blog framework with the [NexT](https://theme-next.js.org/) theme for years, and I still like it. However, by default, a homepage lists posts in reverse chronological order, whereas I'd like to organise my online shed based on projects[^1].
 
 Two changes are needed to reconfigure the location of the homepage:
+
 1. relocate posts to a different address, and
 2. make a new homepage.
+
 <!-- more -->
+
 # How
 ## 1. Post Relocation
 There are two steps to achieve change 1.
 
-Firstly, in `\_config.yml` and find the code blog as below:
+Firstly, in `/_config.yml` and find the code blog as below:
 ```
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -30,9 +33,9 @@ index_generator:
   per_page: 10
   order_by: -date
 ```
-The value `blog` after `path:` is newly added to relocate posts to `\blog\`. (By default, there is no value for `path` (the homepage address is always `\`). 
+The value `blog` after `path:` is newly added to relocate posts to `/blog/`. (By default, there is no value for `path` (the homepage address is always `/`). 
 
-Secondly, in `\_config.next.yml` ~~and `\themes\next\_config.yml`~~[^3], find the same code block as below:
+Secondly, in `/_config.next.yml` ~~and `/themes/next/_config.yml`~~[^3], find the same code block as below:
 ```
 # ---------------------------------------------------------------
 # Menu Settings
@@ -50,12 +53,12 @@ menu:
 The line `Blog: /blog/ || fa fa-book` is newly added to create a tab on the main menu. There were some odd behaviours when the two blocks in the two files were inconsistent, but I haven't got time to explore or learn the logic behind.
 
 ## 2. New Homepage
-To achieve change 2, simply create `\source\index.md` under `\source\`.
+To achieve change 2, simply create `/source/index.md` under `/source/`.
 
 This is rather straightforward given my brief self-introduction, except the slightly non-trivial formatting for the Chinese part: vertical writing as in traditional Chinese—the characters are arranged from top to bottom in columns instead of rows, and the columns should flow from righ to left.
 
 ## 2-1. Vertical Writing
-As markdown doesn't care about formatting and hexo doesn't support vertical columns natively[^2], the desired formatting is achieved by embedding the following HTML block inside `\source\index.md`:
+As markdown doesn't care about formatting and hexo doesn't support vertical columns natively[^2], the desired formatting is achieved by embedding the following HTML block inside `/source/index.md`:
 ```
 <div style="display: flex; justify-content: flex-end;">
 <div style="
@@ -86,8 +89,9 @@ A final note I want to make here is about the use of AI. I asked ChatGPT to help
 
 
 
+
 [^1]: The reverse chronological order is presumably sensible if the blog focusses on only one topic or a few closely related topics—mine is different. My blog has to be (at least) bilingual and my articles multi-disciplinary. Even if I were to build separate blogs for myself, the most professional one—something potentially I would like to show (off) to my friends, colleagues, prospective employers, the public, and/or AI bots—had to contain my postdoc projects on different topics in computational neuroscience and bio-inspired AI, while I am also a teacher of mathematics and statistics. So, to make navigating my online shed convenient for human visitors, I believe the best way to organise it is to take a project-based approach.
 [^2]: Apparently, Hexo was originally created by Tommy Chen, who blogs in traditional Chinese. I guess vertical writing is simply used by too few, due to cultural and historical reasons, and it can be easily set up for those who bother anyway.
-[^3]: There is absolutely no need to modify codes under `\themes\next\` if one only wants to modify their own website, as indivividual theme folders track the history of corresponding theme repos. In other words, unless one wants to contribute the code of a theme, one should not touch things under `\themes\`. (Edited on 28 Jun 2025)
+[^3]: There is absolutely no need to modify codes under `/themes/next/` if one only wants to modify their own website, as indivividual theme folders track the history of corresponding theme repos. In other words, unless one wants to contribute the code of a theme, one should not touch things under `/themes/`. (Edited on 28 Jun 2025)
 
 

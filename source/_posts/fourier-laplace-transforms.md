@@ -1,5 +1,6 @@
 ---
 title: Lessons I Learned from Fourier and Laplace Transforms
+mathjax: true
 category: log
 date: 2020-09-01 22:22:22
 tags:
@@ -7,6 +8,7 @@ tags:
   - Laplace
   - Fourier
 ---
+
 It was in the first half hour of my PhD viva, when one examiner asked me why I used the _Laplace transform_ instead of the _Fourier transform_, and the other examiner kept smilence[^1]. He surely knew that I cited his papers in which the two transforms are treated in the same way: the _Laplace_ dances with the theoretical deduction in the main text, while the _Fourier_ hides in the numerical calculation in the appendix.<!-- more -->
 
 The _Laplace-Fourier_ relationship (not that of the two great mathematicians) remained unsettled in my heart even after I passed the viva, for I had spent several weeks digging into the literature, yet I only saw claims that the two transforms are related, on top of their apparently similar mathematical expressions. To summarise roughly, they both transform a function from the time domain into the frequency domain. In common practice, the _Laplace transform_ is unilateral, while the _Fourier transform_ is bilateral, meaning that the former acts only on the positive time line ($t>0$), but the latter on the entire time line. Conventionally they are applied in different areas, although they can be used in (almost) the same way to solve linear differential equations.
@@ -15,7 +17,7 @@ There are more subtle differences between the two transforms. One seemingly impo
 
 I believed that mathematics was extremely pure and elegant, so there had to be a reason that people kept the two transforms distinct by mostly addressing them with different terms, instead of a combined one. I was naive, and very likely I was stupid. My concerns about the _Laplace-Fourier_ relationship was soundly cleared recently, thanks to this Dr. Steve Brunton’s YouTube lecture, [_The Laplace Transform: A Generalized Fourier Transform_](https://www.youtube.com/watch?v=7UvtU75NXTg&list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC&index=38&t=0s). I strongly recommend to anyone who, like me, is ever puzzled by the relationship between the two transforms. In very simple pseudo-mathematical language,
 
-> Laplace = Fourier _∘_ Heaviside,
+> Laplace = Fourier ∘ Heaviside,
 
 where _Heaviside_ is a transform of an arbitrary function which multiplies it by the _Heaviside step function_, and ∘ means composition of the two transforms.
 

@@ -5,7 +5,7 @@ layout: page
 ---
 
 # Yihe Lu
-Composted in mathematics & statistics
+Composted in mathematics & statistics  
 Cultivating artificial & biological intelligence
 
 ---
