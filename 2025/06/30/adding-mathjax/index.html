@@ -20,31 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"yihe-61wu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="人言：「好奇害死猫。」 　　大概确是年岁的缘故，与猫同寿的我竟在诸多时候，接受了这庸常的忠告似的，不敢越雷池半步。譬如这博客的搭建过程中，出现的最大问题，让我拖延了好几天才让它正常上线的原因，竟只是我没有更新Git——而我却差点因此放弃了。 　　「做自己喜欢的事，而不仅仅是自己擅长的事。」这明明是我最自负，也最自以为是的矜持。 　　自一年一度「猫の日」过去两个月，现在重发旧作只是为这寒酸">
+<meta name="description" content="Why Although my research is mostly about or inspired from brains, I identify myself largely as a mathematician. LaTeX is a must-have, especially when I’m writing (blogging) something technical. Fo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="咏猫三首">
-<meta property="og:url" content="https://yihe-61wu.github.io/2018/04/22/cat-poems/index.html">
+<meta property="og:title" content="Adding MathJax in Hexo.NexT">
+<meta property="og:url" content="https://yihe-61wu.github.io/2025/06/30/adding-mathjax/index.html">
 <meta property="og:site_name" content="云栈">
-<meta property="og:description" content="人言：「好奇害死猫。」 　　大概确是年岁的缘故，与猫同寿的我竟在诸多时候，接受了这庸常的忠告似的，不敢越雷池半步。譬如这博客的搭建过程中，出现的最大问题，让我拖延了好几天才让它正常上线的原因，竟只是我没有更新Git——而我却差点因此放弃了。 　　「做自己喜欢的事，而不仅仅是自己擅长的事。」这明明是我最自负，也最自以为是的矜持。 　　自一年一度「猫の日」过去两个月，现在重发旧作只是为这寒酸">
+<meta property="og:description" content="Why Although my research is mostly about or inspired from brains, I identify myself largely as a mathematician. LaTeX is a must-have, especially when I’m writing (blogging) something technical. Fo">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2018-04-22T18:07:36.000Z">
-<meta property="article:modified_time" content="2022-02-22T15:21:27.462Z">
+<meta property="article:published_time" content="2025-06-30T13:54:17.000Z">
+<meta property="article:modified_time" content="2025-06-30T19:39:51.989Z">
 <meta property="article:author" content="Yihe Lu&#x2F;苏至清">
-<meta property="article:tag" content="旧作">
-<meta property="article:tag" content="夏">
-<meta property="article:tag" content="雨">
-<meta property="article:tag" content="猫">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://yihe-61wu.github.io/2018/04/22/cat-poems/">
+<link rel="canonical" href="https://yihe-61wu.github.io/2025/06/30/adding-mathjax/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2018/04/22/cat-poems/","path":"2018/04/22/cat-poems/","title":"咏猫三首"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2025/06/30/adding-mathjax/","path":"2025/06/30/adding-mathjax/","title":"Adding MathJax in Hexo.NexT"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>咏猫三首 | 云栈</title>
+<title>Adding MathJax in Hexo.NexT | 云栈</title>
   
 
 
@@ -121,7 +117,10 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E6%9C%88"><span class="nav-number">1.</span> <span class="nav-text">八月</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B2%A1%E6%9C%89%E5%A5%B9%E7%9A%84%E9%9B%A8%E5%A4%9C"><span class="nav-number">2.</span> <span class="nav-text">没有她的雨夜</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E5%89%8D%E5%BE%80%E4%BD%A0%E7%9A%84%E8%B7%AF%E4%B8%8A"><span class="nav-number">3.</span> <span class="nav-text">在前往你的路上</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#why"><span class="nav-number">1.</span> <span class="nav-text">Why</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#how"><span class="nav-number">2.</span> <span class="nav-text">How</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#failed-attempt"><span class="nav-number">3.</span> <span class="nav-text">Failed Attempt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#how-to-fix"><span class="nav-number">4.</span> <span class="nav-text">
+How to Fix
+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#soft-line-break"><span class="nav-number">4.1.</span> <span class="nav-text">Soft Line Break</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bullet-point-numbered-list-and-block-quotation"><span class="nav-number">4.2.</span> <span class="nav-text">Bullet Point,
+Numbered List, and Block Quotation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#backslash"><span class="nav-number">4.3.</span> <span class="nav-text">Backslash</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#final-warnings"><span class="nav-number">5.</span> <span class="nav-text">Final Warnings</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2018/04/22/cat-poems/">
+    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2025/06/30/adding-mathjax/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -208,7 +207,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          咏猫三首
+          Adding MathJax in Hexo.NexT
         </h1>
 
         <div class="post-meta-container">
@@ -218,15 +217,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2018-04-22 19:07:36" itemprop="dateCreated datePublished" datetime="2018-04-22T19:07:36+01:00">2018-04-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-02-22 15:21:27" itemprop="dateModified" datetime="2022-02-22T15:21:27+00:00">2022-02-22</time>
+      <time title="Created: 2025-06-30 14:54:17 / Modified: 20:39:51" itemprop="dateCreated datePublished" datetime="2025-06-30T14:54:17+01:00">2025-06-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -234,7 +227,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AF%97%E6%AD%8C/" itemprop="url" rel="index"><span itemprop="name">诗歌</span></a>
+          <a href="/categories/log/" itemprop="url" rel="index"><span itemprop="name">log</span></a>
         </span>
     </span>
 
@@ -248,44 +241,97 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>　　人言：「好奇害死猫。」
-　　大概确是年岁的缘故，与猫同寿的我竟在诸多时候，接受了这庸常的忠告似的，不敢越雷池半步。譬如这博客的搭建过程中，出现的最大问题，让我拖延了好几天才让它正常上线的原因，竟只是我没有更新Git——而我却差点因此放弃了。
-　　「<em>做自己喜欢的事，而不仅仅是自己擅长的事。</em>」这明明是我最自负，也最自以为是的矜持。</p>
-<p>　　自一年一度「猫の日」过去两个月，现在重发旧作只是为这寒酸的个人网络空间码上第一方础石而已。
-　　按时间正序，《八月》写于五年前，首发在人人网。《没有她的雨夜》则于三年前发在LOFTER，属《七月的诗》系列。而去年作《在前往你的路上》，当时使用的是简书。</p>
-<p>　　这三首打油诗姑且算是连缀起了一组故事——一只一生爱雨，一身湿零零的猫的故事。
-　　而过几年便转换网络平台的我，一样爱雨，也一样好奇着乌云之上的蓝天罢。</p>
+        <h1 id="why">Why</h1>
+<p>Although my research is mostly about or inspired from brains, I
+identify myself largely as a mathematician. LaTeX is a must-have,
+especially when I’m writing (blogging) something technical.</p>
+<p>For example, below is something from my undergraduate (handwritten)
+notebook that becomes quite puzzling to me now:</p>
+<p><span class="math display">$$\begin{align}
+\forall R &gt; 0, U \in D'(I; R), X(U) \in H(D'(I; R)) \\
+\exists n \in \mathbb{Z}, X(U) = \sum_{n=-\infty}^{+\infty} C_n (U -
+I)^n \\
+\forall m \in \mathbb{Z}, \exists n &lt; m, C_n \neq 0
+\end{align}$$</span></p>
 <span id="more"></span>
-<hr />
-<h1 id="八月">八月</h1>
-<p>——献给还未被团长选中的三味线</p>
-<p>等一场急雨 见证自己的无能为力 借一把阳伞 假装晴天的灿烂心情</p>
-<p>闲望窗外 期待谁一跃扑蝶 独坐天边 渐升起一支下弦</p>
-<p>那射向群星的飞矢 到底是金是铅 这穿越银河的弧线 何时坠落凡间</p>
-<p>仲夏夜的残梦 再度被蝉鸣唤醒 淹没这蝉鸣的 则是早市的辛勤</p>
-<p>擦拭生锈的面孔 梳理纠结的青丝 又是一个流金铄石的早晨
-又是一个漫无止境的八月</p>
-<p><em>2013年7月31日</em></p>
-<hr />
-<h1 id="没有她的雨夜">没有她的雨夜</h1>
-<p>我终于学会喜欢晴天 跟几只同类走过屋檐 围坐在天台不近人烟
-晒晒太阳趴到了饭点   现在的饲主更爱忠犬 猫科的野性令他生厌
-可我若晴天窝着缩蜷 他又偏要带我去体检   曾经的主人叫我怀念
-抱我在雨夜滴答入眠 她已往多雨之地搬迁 留我在这里不舍流连  
-她还会为我寄来信笺 他的回复总是明信片 自费印制资费一两千
-宠物们以及他的笑颜   我的小窝被整修重建 隔音玻璃与防水软垫
-我喜欢雨声却听不见 想玩水却勾不到雨帘   她跟我一样爱雨脱线
-抱着我漫步雨中花田 如今到雨夜只能闭眼 继续讨厌落雨的表演  
-<em>20150717于比瓯堂</em></p>
-<hr />
-<h1 id="在前往你的路上">在前往你的路上</h1>
-<p>在室内跳跃 可上不得台面 往屋顶漫步 但走不了太远</p>
-<p>咕噜噜地吟诵 没人能听懂语言 喵咪咪地黏人 只有是吃饭时间</p>
-<p>在漆黑中兴奋 在阳光下安眠 在梦见你的雨中 我想起了一些</p>
-<p>折梅赠香 五瓣落时鱼雁 侧耳听曲 七弦拂过春秋 曾联</p>
-<p>今啸 日尚三竿催美酒 危楼百尺问昙天 即时即日相濡雨 何月何年不忘檐</p>
-<p>在月光下奔跑 在树丛中稍歇 在前往你的路上 我丢失了一切</p>
-<p><em>20170705于隐红居</em></p>
+<p>Rendering LaTeX wasn’t possible within old blogging platforms I used,
+which was fine as I blogged mostly non-technical, personal thoughts in
+Chinese, but no longer fitted for this blog.</p>
+<p>Besides, I’ve been aware of the feature of maths equetions in NexT
+for long. It should be as simple as Overleaf, isn’t it?</p>
+<h1 id="how">How</h1>
+<p>The official documentation for Math Equations in NexT can be found <a
+target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/math-equations">here</a>.</p>
+<p>I enabled <code>mathjax</code> as <code>katex</code> seemed more
+restrictive in terms of mathematical notations, but I did not enabled
+<code>math</code> for <code>every_page</code>.</p>
+<p>Then, I uninstalled the original renderer
+<code>hexo-renderer-marked</code>, and installed
+<code>hexo-renderer-pandoc</code> by:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked</span><br><span class="line">npm i hexo-renderer-pandoc</span><br></pre></td></tr></table></figure>
+<p>It turned out that I didn’t have <code>pandoc</code> on my machine at
+all, so I installed it.</p>
+<p>The maths part seems alright, but <code>pandoc</code> complaints a
+lot when rendering. I was stunned by so many warnings. Moreover, some
+formatting is indeed problematic (see <a href="#how-to-fix"><strong>How
+to Fix</strong></a>).</p>
+<h1 id="failed-attempt">Failed Attempt</h1>
+<p>My first thought was that I might have installed
+<code>hexo-renderer-pandoc</code> incorrectly. After all,
+<code>npm</code> reported vulnerabilities and some of them were high and
+even critical. I ran <code>npm audit fix</code> and some vulnerability
+remained unresolved, requiring manual inspection.</p>
+<p>With little knowledge of <code>npm</code>, I consulted
+<code>Gemini 2.5 Flash</code> and decided to address the only
+vulnerability with a high rating, which was related to
+<code>hexo-footnote</code>. The suggestions were mostly confusing to me,
+except one reminding me of possibilities that some dependencies could be
+outdated. As I only restarted updating this website but not yet updated
+hexo, I thought I should update things first.</p>
+<p>I updated <code>Node.js</code>, which was the <strong>only right
+thing</strong> I did within this failed attempt.</p>
+<p>Consequently, however, commands like <code>hexo clean</code> yielded
+<code>command note found</code> errors (but <code>npx hexo clean</code>
+worked), which was fixed by <code>npm install -g hexo-cli</code>.</p>
+<p>I then updated hexo, or I thought I did. Luckily I used Git and found
+the ‘new’ hexo was actually outdated and the previous hexo version was
+quite up-to-date. I thus reverted hexo version.</p>
+<p>I double-checked that there were no more critical vulnerabilities
+with <code>npm audit</code> (ignoring the non-critical). Nevertheless,
+warnings in rendering remained.</p>
+<h1 id="how-to-fix">
+How to Fix
+</h1>
+<p>The rendering issues were rooted in <code>pandoc</code> being more
+versatile in dealing with different syntax and consequently being more
+strict about the syntax.</p>
+<h2 id="soft-line-break">Soft Line Break</h2>
+<p>Given <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">first line</span><br><span class="line">second line</span><br></pre></td></tr></table></figure> will be rendered by For example,
+<code>hexo-renderer-marked</code> as:</p>
+<p>first line<br />
+second line</p>
+<p>However, <code>hexo-renderer-pandoc</code> yields:</p>
+<p>first line second line</p>
+<p>To achieve soft line break with <code>pandoc</code>, two extra spaces
+need to be added after <code>first line</code>.</p>
+<h2 id="bullet-point-numbered-list-and-block-quotation">Bullet Point,
+Numbered List, and Block Quotation</h2>
+<p>With <code>hexo-renderer-pandoc</code>, extra blank lines were needed
+before and after such blocks.</p>
+<p>If such a block is to be nested in another, the space is between
+markers are important, e.g., <code>&gt; 1.</code> works, but not
+<code>&gt;1.</code></p>
+<p>An extra line is also necessary before any
+<strong>(sub-)title</strong>.</p>
+<h2 id="backslash">Backslash</h2>
+<p>It is recommended to use <code>\</code>, because <code>/</code> may
+be interpreted as an escape, which may mess up rendering. I used
+<code>/</code> in footnote and the rendering was clearly broken.</p>
+<h1 id="final-warnings">Final Warnings</h1>
+<p><strong>I have not got rid of all warnings.</strong></p>
+<p>Gemini told me such warnings might be false positives from
+<code>pandoc</code>, but I don’t have a solid answer or solution
+yet.</p>
 
     </div>
 
@@ -294,25 +340,16 @@
     
 
     <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E6%97%A7%E4%BD%9C/" rel="tag"># 旧作</a>
-              <a href="/tags/%E5%A4%8F/" rel="tag"># 夏</a>
-              <a href="/tags/%E9%9B%A8/" rel="tag"># 雨</a>
-              <a href="/tags/%E7%8C%AB/" rel="tag"># 猫</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2017/10/19/who-responsible-for-machine/" rel="prev" title="程序出错，谁的责任？">
-                  <i class="fa fa-chevron-left"></i> 程序出错，谁的责任？
+                <a href="/2025/06/17/edinburgh-lerobot-hackathon/" rel="prev" title="Edinburgh LeRobot Hackathon">
+                  <i class="fa fa-chevron-left"></i> Edinburgh LeRobot Hackathon
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2018/04/30/red-dragon/" rel="next" title="红龙之蕊娅侬·梅奇德拉伊格奇">
-                  红龙之蕊娅侬·梅奇德拉伊格奇 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -362,7 +399,7 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
