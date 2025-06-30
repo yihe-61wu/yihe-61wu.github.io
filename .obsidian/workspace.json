@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/impression-monet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "impression-monet"
-            }
-          },
-          {
-            "id": "e361c556a14f869f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "source/_posts/fourier-laplace-transforms.md",
                 "mode": "source",
                 "source": false
@@ -36,35 +22,21 @@
             }
           },
           {
-            "id": "2c087cd1e5f6acf2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/online-shed-homepage.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "online-shed-homepage"
-            }
-          },
-          {
             "id": "7c17b61a8b721cd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/edinburgh-lerobot-hackathon.md",
+                "file": "source/_posts/mathjax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "edinburgh-lerobot-hackathon"
+              "title": "mathjax"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,6 +140,11 @@
   },
   "active": "7c17b61a8b721cd6",
   "lastOpenFiles": [
+    "source/_posts/fourier-laplace-transforms.md",
+    "source/_posts/impression-monet.md",
+    "source/_posts/online-shed-homepage.md",
+    "source/_posts/mathjax.md",
+    "source/_posts/edinburgh-lerobot-hackathon.md",
     "db.json",
     "node_modules/hexo-i18n/lib/i18n.js",
     "node_modules/hexo-i18n/lib",
@@ -178,9 +155,6 @@
     "node_modules/is-plain-object/index.cjs.js",
     "node_modules/warehouse/lib/types/string.js",
     "node_modules/warehouse/lib/types/virtual.js",
-    "node_modules/warehouse/lib/types/number.js",
-    "source/_posts/online-shed-homepage.md",
-    "source/_posts/fourier-laplace-transforms.md",
     "node_modules/hexo-renderer-pandoc/README.md",
     "node_modules/url-parse/README.md",
     "node_modules/serve-static/node_modules/encodeurl/README.md",
@@ -208,8 +182,6 @@
     "themes/next/docs/zh-CN/CODE_OF_CONDUCT.md",
     "themes/next/docs/AUTHORS.md",
     "themes/next/docs/AGPL3.md",
-    "themes/next/languages/README.md",
-    "themes/next/README.md",
     "public/images/the-next-rembrandt.jpg",
     "public/images/monet_and_architecture.jpg",
     "public/images/logo.svg",
