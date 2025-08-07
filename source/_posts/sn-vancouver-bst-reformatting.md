@@ -1,5 +1,5 @@
 ---
-title: Lessons I learned from reformatting LaTex reference
+title: Lessons I Learned from Reformatting LaTex Reference
 category: log
 date: 2025-07-07 13:58:45
 tags:
