@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "道路",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1e8d360820bfa55a",
@@ -153,21 +154,22 @@
   },
   "active": "a1b3f4ef7375890e",
   "lastOpenFiles": [
+    "public/tags/脱口秀/index.html",
+    "public/tags/脱口秀",
+    "public/tags/爱丁堡艺术节/index.html",
+    "public/tags/爱丁堡艺术节",
+    "public/tags/Edinburgh-Fringe/index.html",
+    "public/tags/Edinburgh-Fringe",
+    "public/tags/comedy/index.html",
+    "public/tags/comedy",
+    "public/2025/08/07/matt-parker-fringe-2025/index.html",
+    "public/2025/08/07/matt-parker-fringe-2025",
+    "public/2025/08/07",
     "source/_posts/impression-monet.md",
     "source/_posts/matt-parker-fringe-2025.md",
     "source/_posts/fourier-laplace-transforms.md",
     "source/_posts/online-shed-homepage.md",
     "source/_posts/who-responsible-for-machine.md",
-    "db.json",
-    "public/js/third-party/statistics/lean-analytics.js",
-    "public/js/third-party/statistics/firestore.js",
-    "public/js/third-party/tags/pdf.js",
-    "public/js/third-party/tags/mermaid.js",
-    "public/js/third-party/search/local-search.js",
-    "public/js/third-party/search/algolia-search.js",
-    "public/js/third-party/math/mathjax.js",
-    "public/js/third-party/math/katex.js",
-    "public/js/third-party/comments/utterances.js",
     "public/images/the-next-rembrandt.jpg",
     "public/images/monet_and_architecture.jpg",
     "public/images/logo.svg",
@@ -197,7 +199,6 @@
     "node_modules/psl/node_modules/punycode/README.md",
     "node_modules/minimatch/node_modules/brace-expansion/README.md",
     "node_modules/http-errors/node_modules/statuses/README.md",
-    "node_modules/http-errors/node_modules/statuses/HISTORY.md",
-    "node_modules/filelist/node_modules/minimatch/README.md"
+    "node_modules/http-errors/node_modules/statuses/HISTORY.md"
   ]
 }
