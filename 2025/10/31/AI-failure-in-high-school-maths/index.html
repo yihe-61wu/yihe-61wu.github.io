@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yihe-61wu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="I’ve started to do more teaching in the recent years, and it has become my habit to test my AI assistants before asking my students to solve a question, especially for the formal ones as I’d like ‘s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI&#39;s Failure in High-school Level Mathematical Reasoning">
+<meta property="og:url" content="https://yihe-61wu.github.io/2025/10/31/AI-failure-in-high-school-maths/index.html">
+<meta property="og:site_name" content="云栈">
+<meta property="og:description" content="I’ve started to do more teaching in the recent years, and it has become my habit to test my AI assistants before asking my students to solve a question, especially for the formal ones as I’d like ‘s">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/maths-question.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/claude-1.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/claude-2.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/claude-3.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/gemini-1.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/gemini-2.png">
+<meta property="og:image" content="https://yihe-61wu.github.io/images/gemini-3.png">
+<meta property="article:published_time" content="2025-10-31T14:38:37.000Z">
+<meta property="article:modified_time" content="2025-10-31T16:00:59.709Z">
+<meta property="article:author" content="Yihe Lu&#x2F;苏至清">
+<meta property="article:tag" content="mathematics">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="teaching">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Gemini">
+<meta property="article:tag" content="Claude">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yihe-61wu.github.io/images/maths-question.png">
+
+
+<link rel="canonical" href="https://yihe-61wu.github.io/2025/10/31/AI-failure-in-high-school-maths/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://yihe-61wu.github.io/2025/10/31/AI-failure-in-high-school-maths/","path":"2025/10/31/AI-failure-in-high-school-maths/","title":"AI's Failure in High-school Level Mathematical Reasoning"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>AI's Failure in High-school Level Mathematical Reasoning | 云栈</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">云栈</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">an online shed of trial and error</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-blog"><a href="/blog/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#claudes-response"><span class="nav-number">1.</span> <span class="nav-text">Claude’s response</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#geminis-response"><span class="nav-number">2.</span> <span class="nav-text">Gemini’s response</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yihe Lu/苏至清</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">48</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yihe-61wu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yihe-61wu" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lu.yihe.61wu@gmail.com" title="E-Mail → mailto:lu.yihe.61wu@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://yihe-61wu.github.io/2025/10/31/AI-failure-in-high-school-maths/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yihe Lu/苏至清">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云栈">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AI's Failure in High-school Level Mathematical Reasoning
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2025-10-31 14:38:37 / Modified: 16:00:59" itemprop="dateCreated datePublished" datetime="2025-10-31T14:38:37+00:00">2025-10-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/trial/" itemprop="url" rel="index"><span itemprop="name">trial</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>I’ve started to do more teaching in the recent years, and it has
+become my habit to test my AI assistants before asking my students to
+solve a question, especially for the formal ones as I’d like ‘somebody’
+else to verify my own working.</p>
+<p>I use ChatGPT, Claude, and Gemini (ordered alphabetically) regularly.
+Apparently, there are many cases in which I can’t use them, according to
+the university policy or for my concerns over data privacy.</p>
+<p>Today, I found this interesting example, a question from the May 2020
+Pearson Edexcel Level 3 GCE paper on Further Mathematics (paper
+reference: 8FM0/01)–ChatGPT was the only one that succeeded in its first
+attempt.</p>
+<figure>
+<img src="/images/maths-question.png"
+alt="The Maths Question for a High Schooler" />
+<figcaption aria-hidden="true">The Maths Question for a High
+Schooler</figcaption>
+</figure>
+<p>You may want to attempt this question yourself before coming back and
+reading about Claude and Gemini’ failure.</p>
+<hr />
+<p>In all cases, I just pasted the above snapshot into a new chat with
+the AI, and the prompt is simply ‘Please solve this step by step’.</p>
+<p>For the record, I’m using the unpaid versions: ChatGPT-5, Claude
+Sonnet 4.5, and Gemini 2.5 Flash. Gemini 2.5 Pro also succeeded, but I
+tested this later and I’m not sure if its global memory somehow played a
+critical role.</p>
+<h1 id="claudes-response">Claude’s response</h1>
+<p><img src="/images/claude-1.png" /> <img src="/images/claude-2.png" />
+<img src="/images/claude-3.png" /></p>
+<p>If you have solved this problem, or even just attempted it with a few
+early steps, you should be able to see where it made an error
+confidently, leading to the wrong answer in the end.</p>
+<h1 id="geminis-response">Gemini’s response</h1>
+<p><img src="/images/gemini-1.png" /> <img src="/images/gemini-2.png" />
+<img src="/images/gemini-3.png" /> <img
+src="/images/gemini-4.png" /></p>
+<p>I’m not bothered to take more snapshots, as hopefully you can see the
+same error as before …</p>
+<hr />
+<p>To be fair, after spotting the error, I followed up with this
+question: ‘<em>I’m confused. z2 and z4 lie on the horizontal axis, not
+in any quadrant?</em>’ And they were able to find the error and correct
+the answer. Also, I guess any paid version would perhaps be much better
+at this high-school level mathematical reasoning.</p>
+<p>Anyway, I’m not trying to use an anecdote to undermine the advance of
+generative AI–They are helpful and powerful, and that’s why I use them
+regularly. However, I do worry about my students using AI without
+critical thinking, or, more speculatively, a future that knowledge is
+more centralised and harnessed only by those who can afford it.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mathematics/" rel="tag"># mathematics</a>
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/teaching/" rel="tag"># teaching</a>
+              <a href="/tags/ChatGPT/" rel="tag"># ChatGPT</a>
+              <a href="/tags/Gemini/" rel="tag"># Gemini</a>
+              <a href="/tags/Claude/" rel="tag"># Claude</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/08/07/matt-parker-fringe-2025/" rel="prev" title="观Matt Parker脱口秀有感">
+                  <i class="fa fa-chevron-left"></i> 观Matt Parker脱口秀有感
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-cat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yihe Lu/苏至清</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
