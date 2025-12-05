@@ -32,17 +32,21 @@ I don't mean to belittle it. My life is greatly shaped by doing my PhD. I’m an
 
 Anyway, I'm not writing here to recommend doing or not doing a PhD. 
 
-If you're a stranger bumping into this article when you're searching online for career advice, I'd encourage you to do a PhD, just like when I reply to online strangers. I have no idea about you except, sometimes, your profession or area of study. So, the merits of doing a PhD are something I genuinely think that deserves to be promoted on the Internet often flooded by cynical comments. You also know little about me, and thus I can trust you to listen to suggestions appealing to you, to do your own research, and to make your final decisions. In short, as we stay anonymous to each other, we stay liability-free to each other.
+If you're a stranger bumping into this article when you're searching online for career advice, I'd encourage you to do a PhD, just like when I make anonymous online posts. I have no idea about you. So, the merits of doing a PhD are something I genuinely think that deserves to be promoted on the Internet often flooded by cynical comments. You also know little about me, and thus I can trust you to listen to suggestions suitable to you, to do your own research, and to make your final decisions. In short, as we stay anonymous to each other, we stay liability-free to each other.
 
-However, if you're reading this article, because you know me in real life. I'd discourage you from doing a PhD. I discourage someone seeking such advice from me directly, because they probably know a bit about my work and workplace, and I probably know them relatively well, too, in addition to their profession or area of study. In most cases, they are not studying or have no plan to study something relevant to my expertise. If I were to recommend them doing a PhD in a topic that I'm confidently not well-informed, it'd be completely irresponsible of me, and the fact that we know each other, and they seek my advice at the first place would make me morally liable.
+However, if you're reading this article, because you know me in real life. I'd discourage you from doing a PhD, just like I mostly do to anyone else seeking such advice from me directly. You probably know a bit about my work and workplace, and I probably know you relatively well, too, in addition to your profession or area of study. In most cases, you are not studying or have no plan to study something relevant to my expertise. If I were to recommend you doing a PhD in a topic that I'm confidently not well-informed, it'd be completely irresponsible of me, and the fact that we know each other, and you seek my advice at the first place (or read this article) ardently would make me morally liable.
 
-As I am completely unqualified in judging one's expertise for their prospective PhD programme or project, what I can evaluate is their passion. I tell them 'Don't do it unless you must!' and emphasise by 'must' I mean one is 1000% determined, so that, even if the half-life of one's determination is just one year, they would still be over 100% sure about their initial decision after three years (about time they'd start to worry about their life and career after graduation).
+As I am completely unqualified in judging your expertise for your prospective PhD programme or project, what I can evaluate is the passion. I'd tell you, '*Don't do it unless you must!*' and emphasise by 'must' I mean one is 1000% determined, so that, even if the half-life of your determination is just one year, you would still be over 100% sure about your initial decision after three years (about time you'd start to worry about your life and career after graduation).
 
-The second and immediate suggestion I'd give is to talk to their current mentors, lecturers, or professors and other experts in their chosen fields, instead of seeking advice from me. After all, who am I that dare to advise people on life-changing matters? Indeed, the best all those experts can do is merely advising on the professional pros and cons, nobody else knows someone better than they does.
-
-# A Final Word
+The second and immediate suggestion I'd give is to talk to your past, current, or future colleagues, mentors, lecturers, or professors and other experts in your chosen fields (instead of me). After all, who am I that dare to advise you on life-changing matters? Indeed, the best all those experts can do is merely advising on the professional pros and cons, nobody else knows you better than you do.
 
 To some extent and perhaps tautologically, '*know thyself*' is really the most important thing one can get from doing a PhD, even without completing it.
+
+# Final Words
+
+Lastly, to my friends reading this article, please don't feel reluctant to chat with me about your life and career, including your thoughts on doing a PhD. I'll be more than happy to share my experience.
+
+
 
 
 
