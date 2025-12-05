@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/why-recommend-phd-but-not-to-u.md",
+                "file": "source/_posts/asa-kun.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "why-recommend-phd-but-not-to-u"
+              "title": "asa-kun"
             }
           }
         ],
@@ -154,6 +154,7 @@
   },
   "active": "a1b3f4ef7375890e",
   "lastOpenFiles": [
+    "source/_posts/why-recommend-phd-but-not-to-u.md",
     "db.json",
     "public/images/housewarming.jpg",
     "public/images/claude-3.png",
@@ -174,9 +175,7 @@
     "public/archives/2017/10/index.html",
     "public/archives/2017/10",
     "public/2017/10/19/who-responsible-for-machine/index.html",
-    "public/2017/10/19/who-responsible-for-machine",
     "source/_posts/online-shed-homepage.md",
-    "source/_posts/why-recommend-phd-but-not-to-u.md",
     "source/_posts/AI-failure-in-high-school-maths.md",
     "source/_posts/impression-monet.md",
     "source/_posts/cats-palindrome.md",
