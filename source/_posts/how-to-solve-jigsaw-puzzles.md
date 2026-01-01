@@ -76,4 +76,6 @@ For now, let's pretend there exist a perfect system capable of accurate and fast
 
 However, as human beings, my partner and I did not take this approach when solving our jigsaw puzzles. Assuming the final full picture to be rectangular, we knew pieces on the four corners were different from those on the edges and both of them different from all the rest (the majority) in shape. Starting from these minority special pieces on the corners and edges is a well-known strategy, but it didn't help us much as the final full picture wasn't available. 
 
-We thus built 'islands' first. We used visual similarity, similar to
+We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. This is a generally 'clever' strategy. Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be closely assembled and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $M!$ in total for the first pile, followed by $(N-M)!$ times for the remaining pieces, and $M! + (N-M)! < N!$ is always true!
+
+One can see this more clearly by considering a one-dimensional jigsaw puzzle.
