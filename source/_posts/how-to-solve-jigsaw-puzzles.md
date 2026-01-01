@@ -5,19 +5,23 @@ date: 2026-01-01 10:40:12
 tags:
 ---
 
-My partner and I were dealing with jet lag yesterday, Hogmaney of 2025. We pulled out an old jigsaw puzzle and cracked on it--Apparently, as you must know, a jigsaw puzzle is always initiated in a 'cracked' state, and the goal is to put (uncrack?) the pieces together. So started our quality time.
+My partner and I were dealing with jet lag yesterday, Hogmaney of 2025. We pulled out an old jigsaw puzzle and cracked on it. As you must know, a jigsaw puzzle is always initiated in a 'cracked' state, and the goal is to assemble (uncrack?) the pieces into a final, full picture. So started our quality time.
 
-There were a few challenges. The jigsaw puzzle consisted of small pieces, the Scottish daylight in this time of winter was poetically soft, and both my partner and I had had our eyesights deteriorated (luckily not too much) in the past year(s), plus everything feeling misplaced due to jet lag.
+There were a few challenges. The jigsaw puzzle consisted of small pieces, the Scottish daylight in this time of winter was poetically soft, and both my partner and I had had our eyesights deteriorated (luckily not too much) in the past year(s), plus everything feeling misplaced due to the jet lag.
 
-More seriously, we didn't have the full (completed) picture. As we produced a few 'islands' and became more frequently stuck with how to expand and/or connect them, in my mind grew a daunting idea--This old jigsaw puzzle may have lost a few pieces--It would never be complete again...
+As we became stuck more frequently and for longer, in my mind grew a daunting idea--This old jigsaw puzzle may have lost a few pieces--It would never be complete again...
 
 After an hour or two, *'One is all, All is one'*[^1]. 
 
 [^1]: A quote from *Fullmetal Alchmist*--perhaps more relevant to jigsaw puzzles figuratively than literally.
 
-Indeed, the entire process felt like conducting scientific research, similar to the analogy commonly attributed to *The Structure of Scientific Revolutions* by Thomas S. Kuhn, but different due to the lack of the full picture (the dominant paradigm). In terms of personal feelings, the most similar part was to fight against the daunting idea that failure was inevitable, to keep faith in the completeness of the puzzle, and to proceed with constant patience and intermittent enlightments.
+Indeed, the entire process felt like conducting scientific research, similar to the analogy commonly attributed to *The Structure of Scientific Revolutions* by Thomas S. Kuhn, but different due to the lack of the full picture (the dominant paradigm). In terms of personal feelings, the most similar part was to fight against the daunting idea that failure was inevitable, to keep faith in the completeness of the puzzle, and to proceed with constant patience and intermittent insights.
 
-Apparently, compared to human beings, machines are much more patient. Consequently, we try to build Articial Intelligence (AI) by assembling enlightments, strategies, tricks, etc. So this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and returned the response below:
+# Thus Spoke Artifical Intelligence
+Apparently, compared to human beings, machines are much more patient, tireless with repetitive work (if well powered and maintained). Additionally, we try to make them smart. We build Artificial Intelligence by embedding insights, strategies, tricks, etc., as algorithms
+
+
+So this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and gave the response below:
 
 ---
 
@@ -74,8 +78,34 @@ It's not trivial for a robot to recognise and assemble all the pieces--It takes 
 
 For now, let's pretend there exist a perfect system capable of accurate and fast visual recognition and precise and subtle robot manipulation to focus on the main steps. The computational problem--how to reorder all the pieces--is difficult, because, as Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. I obtain this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled, and repeat step 2 (Feature Extraction and Compatibility Measurement) for $N-K$ times.
 
-However, as human beings, my partner and I did not take this approach when solving our jigsaw puzzles. Assuming the final full picture to be rectangular, we knew pieces on the four corners were different from those on the edges and both of them different from all the rest (the majority) in shape. Starting from these minority special pieces on the corners and edges is a well-known strategy, but it didn't help us much as the final full picture wasn't available. 
+However, as human beings, my partner and I did not take this approach when solving our jigsaw puzzles. 
 
-We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. This is a generally 'clever' strategy. Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be closely assembled and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $M!$ in total for the first pile, followed by $(N-M)!$ times for the remaining pieces, and $M! + (N-M)! < N!$ is always true!
+
+
+
+
+
+
+
+We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. T
+
+
+
+
+As we produced a few 'islands' and  with how to expand and/or connect them, 
+
+Assuming the final full picture to be rectangular, we knew pieces on the four corners were different from those on the edges and both of them different from all the rest (the majority) in shape. Starting from these minority special pieces on the corners and edges is a well-known strategy. However, the strategy wasn't really useful, because we didn't have the final, full picture as a reference and it would have felt robotic to first sort all the pieces by their shape and then assemble from corners to edges and gradually to the middle (see **An AI Solution**).
+
+
+
+We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. This is a generally clever strategy. Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be closely assembled and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $M!$ in total for the first pile, followed by $(N-M)!$ times for the remaining pieces, and $M! + (N-M)! < N!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than $2$ piles based on the fast-thinking approximation.
 
 One can see this more clearly by considering a one-dimensional jigsaw puzzle.
+...
+
+It seems achieveable, if not yet achieved, to solve jigsaw puzzles by emulating such human-like fast-and-slow thinking with modern AI models, especially visual transformers. Unlike other typical visual models with some built-in spatical awareness, visual transformers (as transformers) are free from such inductive bias. They may eventually learn 
+some (subtle) tendency of things clustering given similar visual features, but that'd only be an emergent property. So, they're perhaps better at reordering disarranged jigsaw pieces.
+
+The real open question is, however, how fast can the fast-thinking approximation be.
+
+
