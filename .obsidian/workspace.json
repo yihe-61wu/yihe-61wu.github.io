@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/asa-kun.md",
+                "file": "source/_posts/how-to-solve-jigsaw-puzzles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "asa-kun"
+              "title": "how-to-solve-jigsaw-puzzles"
             }
           }
         ],
@@ -154,6 +154,14 @@
   },
   "active": "a1b3f4ef7375890e",
   "lastOpenFiles": [
+    "source/_posts/cats-palindrome.md",
+    "source/_posts/cat-poems.md",
+    "source/_posts/binary-similarity.md",
+    "source/_posts/asa-kun.md",
+    "source/_posts/also-spoke-meine-mutter.md",
+    "source/_posts/adding-mathjax.md",
+    "source/_posts/321-ed.md",
+    "source/_posts/how-to-solve-jigsaw-puzzles.md",
     "source/_posts/why-recommend-phd-but-not-to-u.md",
     "db.json",
     "public/images/housewarming.jpg",
@@ -178,13 +186,8 @@
     "source/_posts/online-shed-homepage.md",
     "source/_posts/AI-failure-in-high-school-maths.md",
     "source/_posts/impression-monet.md",
-    "source/_posts/cats-palindrome.md",
     "source/_posts/chatgpt-chinese-writing.md",
-    "source/_posts/321-ed.md",
     "source/_posts/online-shed-prologue.md",
-    "source/_posts/asa-kun.md",
-    "source/_posts/cat-poems.md",
-    "source/_posts/adding-mathjax.md",
     "source/_posts/edinburgh-lerobot-hackathon.md",
     "source/_posts/matt-parker-fringe-2025.md",
     "source/_posts/fourier-laplace-transforms.md",
@@ -196,8 +199,6 @@
     "node_modules/url-parse/README.md",
     "node_modules/serve-static/node_modules/encodeurl/README.md",
     "node_modules/send/node_modules/statuses/README.md",
-    "node_modules/send/node_modules/statuses/HISTORY.md",
-    "node_modules/send/node_modules/on-finished/README.md",
-    "node_modules/send/node_modules/on-finished/HISTORY.md"
+    "node_modules/send/node_modules/statuses/HISTORY.md"
   ]
 }
