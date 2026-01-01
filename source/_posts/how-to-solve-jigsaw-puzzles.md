@@ -17,9 +17,10 @@ After an hour or two, *'One is all, All is one'*[^1].
 
 Indeed, the entire process felt like conducting scientific research, similar to the analogy commonly attributed to *The Structure of Scientific Revolutions* by Thomas S. Kuhn, but different due to the lack of the full picture (the dominant paradigm). In terms of personal feelings, the most similar part was to fight against the daunting idea that failure was inevitable, to keep faith in the completeness of the puzzle, and to proceed with constant patience and intermittent insights.
 
-# Thus Spoke Artifical Intelligence
+# A Machine Approach
 Apparently, compared to human beings, machines are much more patient, tireless with repetitive work (if well powered and maintained). Additionally, we try to make them smart(er) by embedding Artificial Intelligence (AI) and to build AI by formalising insights, strategies, tricks, etc., as algorithms.
 
+## Thus Spoke Gemini
 So, this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and gave the response below:
 
 ---
@@ -69,26 +70,30 @@ Would you be interested in learning more about the **different types of AI algor
 
 ---
 
-I haven't verified all the details, but [Alphazzle](https://deepai.org/publication/alphazzle-jigsaw-puzzle-solver-with-deep-monte-carlo-tree-search) seemed legit[^2]. I also like Gemini's mention of physical puzzles, because it's not trivial for a robot to visually recognise and physically move all the pieces. Real-world ambient lighting is constantly changing. Small, individual pieces may not contain sufficient underlying visual features of the final picture. Perfeclty assembled pieces still have cracks--they may interfere with, if not dominate, some underlying visual features. It takes some effort to seggrate pieces from a pile, pieces facing down need to be flipped over, and during assembly pieces need to be lifted and put down. These tasks can be particularly challenging for a robot hand, because jigsaw puzzle pieces, many made of paperboard, are brittle. As ours, they can even be thin and tiny.
+The three main steps are almost the same as I had imagined. I haven't verified all the details, but [Alphazzle](https://deepai.org/publication/alphazzle-jigsaw-puzzle-solver-with-deep-monte-carlo-tree-search) seemed legit[^2]. I also like Gemini's mention of physical puzzles, because it's not trivial for a robot to visually recognise and physically move all the pieces. 
+
+## Caveats and Assumptions
+Real-world ambient lighting is constantly changing. Small, individual pieces may not contain sufficient underlying visual features of the final picture. Perfeclty assembled pieces still have cracks--they may interfere with, if not dominate, some underlying visual features. It takes some effort to seggrate pieces from a pile, pieces facing down need to be flipped over, and during assembly pieces need to be lifted and put down. These tasks can be particularly challenging for a robot hand, because jigsaw puzzle pieces, many made of paperboard, are brittle. As ours, they can even be thin and tiny.
 
 [^2]: I haven't reproduced all the results so you trust either me or the authors. It's commendable if you trust neither and try to reproduce their work--I'd appreciate it more if you let me know your results.
 
 For now, let's pretend there exist a perfect robot system capable of accurate and fast visual recognition and precise and subtle piece manipulation. In other words, let's focus solely on the computational problem of how to reorder all the pieces based on their appearance. For greater formalisation, we further assume individual pieces have the identical shape of a square--no curved sides, knobs, or sockets--so that the appearance of any piece is entirely and only determined by its pixels.
 
-Gemini's solution to the computational problem is sensible. The three main steps almost the same as I had imagined.
+
+## Model Complexity
+Despite all the abstractions and simplifications, the computational model remains difficult. As Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. 
+
+I didn't ask Gemini how this statement was obtained, as I expected this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled $K$ pieces, repeat step 2 (Feature Extraction and Compatibility Measurement) $4$ times (corresponding to $4$ directions) for each of the remaining $N-K$ pieces, and then determine the new configuration that maximises the compatibility. Therefore, $4(N-1)!$ iterations are required in total.
+
+Note the operation of picking one empty slot (that indeed needs to be filled) is feasible and inexpensive, because we assume, as most jigsaw puzzles, the final, full picture is a rectangle of $L\times W$. Even if $L$ and $W$ are unknown beforehand, one can factorise $N$. If there are multiple ways of factorisation, it's more likely for $L$ and $W$ to be as close as possible.
+
+While such weaker assumptions will lead to more iterations, I have no intention to go into the details to prove both lower and upper bounds grow exponentially--explicitly for a usual jigsaw puzzle that is 2D--as an exponential growth can be clearly shown with a 1D jigsaw puzzle.
+
+A 1D jigsaw puzzle can be easily constructed by vertically (or horizontally) cutting a rectangular (full) figure into thin slices. Again, starting with $N$ slices, the goal is to reorder them and assemble them into a final, full figure. In this 1D setup, at iteration $K$ there are exactly $2$ empty slots on the left or right of the assembled $K$ pieces, one should maximise compatibility by testing each of the remaining $N-K$ pieces exactly $2$ times (upright and upside down) in both slots, and therefore in total $4(N-1)!$ iterations, again, are required (but we do not worry about which empty slot to pick at all).
 
 
-
-
-
-
-# My Human Approach
-
-to focus on the main steps. The 
-
---is difficult, because, as Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. I obtain this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled, and repeat step 2 (Feature Extraction and Compatibility Measurement) for $N-K$ times.
-
-
+# Human(-like) Approach
+While success is guraadding jigsaw puzzle pieces one by one to a focused well-assebled group guarantees 
 
 
 
@@ -119,8 +124,11 @@ Assuming the final full picture to be rectangular, we knew pieces on the four co
 
 We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. This is a generally clever strategy. Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be closely assembled and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $M!$ in total for the first pile, followed by $(N-M)!$ times for the remaining pieces, and $M! + (N-M)! < N!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than $2$ piles based on the fast-thinking approximation.
 
-One can see this more clearly by considering a one-dimensional jigsaw puzzle.
-...
+
+88888
+
+
+
 
 It seems achieveable, if not yet achieved, to solve jigsaw puzzles by emulating such human-like fast-and-slow thinking with modern AI models, especially visual transformers. Unlike other typical visual models with some built-in spatical awareness, visual transformers (as transformers) are free from such inductive bias. They may eventually learn 
 some (subtle) tendency of things clustering given similar visual features, but that'd only be an emergent property. So, they're perhaps better at reordering disarranged jigsaw pieces.
