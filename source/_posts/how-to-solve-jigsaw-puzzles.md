@@ -93,36 +93,33 @@ A 1D jigsaw puzzle can be easily constructed by vertically (or horizontally) cut
 
 
 # Human(-like) Approach
-While success is guraadding jigsaw puzzle pieces one by one to a focused well-assebled group guarantees 
+While the machine approach guarantees success by iteratively adding jigsaw puzzle pieces one by one to a focused well-assebled group, my partner and I did not take the approach as it felt non-human and boring.
+
+We built 'islands' first. We picked small number of pieces into a handful of groups based on visual similarity, similar to compatibility but an instinct first approximation and then with trial and error assemble some pieces into an island and others into another one. We worked simultaneously with a few islands. They were isoldated and grew first at the beginning. As we proceeded, it became harder and harder to find new pieces to add to them. However, as the islands grew bigger, it became easier for us to spot a way to merge/connect two islands into a bigger one. There were two factors: the visual semantics became clearer, and there were less remaining, isolated pieces.
+
+## Improved Efficiency
+In general, this is a clever strategy (worked well for us!). Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be assembled into an island and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $4(M-1)!$ in total for the first pile, followed by $4(N-M)!$ times for the remaining pieces, and $4(M-1)! + 4(N-M)! < 4(N-1)!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than $2$ piles based on the instinct approximation.
+
+The main caveat of the above reasoning is that we have overlooked the cost of the instinct approximation completely. For rigorosity, let's assume its cost to be $c_1$ and the cost of careful compatibility measurement to be $c2$ (per piece). Then, the overall costs of the human-like and purely machine approach are $c_1 N + 4c_2 [(M-1)! + (N-M)!]$ and $4c_2 (N-1)!$.
+
+For the human-like approach to improve efficiency, 
+$$c_1 N + 4c_2 [(M-1)! + (N-M)!] - 4c_2 (N-1)! < 0$$
+which gives
+$$\frac{c_1}{c_2} < \frac{(N-1)! - (M-1)! - (N-M)!}{N/4} $$
+Note first in the right hand side (RHS) $M$ is symmetric about $(N+1)/2$, and the closer to it $M$ is, the greater the RHS is. Unless $M=1$ or $N$, even when $M=2$ or $N-1$, the RHS is 
+$$\frac{(N-1)! - 1 - (N-2)!}{N/4} = \frac{(N-2)(N-2)!-1}{N/4}$$
+which is greater than $1$, as long as $N\geq 4$. 
+
+Therefore, as $c_1<c_2$ is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency.
 
 
 
 
 
+We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. T
 
 
-
-However, as human beings, my partner and I did not take this approach when solving our jigsaw puzzles. 
-
-
-
-
-
-
-
-
-We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. T
-
-
-
-
-As we produced a few 'islands' and  with how to expand and/or connect them, 
-
-Assuming the final full picture to be rectangular, we knew pieces on the four corners were different from those on the edges and both of them different from all the rest (the majority) in shape. Starting from these minority special pieces on the corners and edges is a well-known strategy. However, the strategy wasn't really useful, because we didn't have the final, full picture as a reference and it would have felt robotic to first sort all the pieces by their shape and then assemble from corners to edges and gradually to the middle (see **An AI Solution**).
-
-
-
-We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. This is a generally clever strategy. Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be closely assembled and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $M!$ in total for the first pile, followed by $(N-M)!$ times for the remaining pieces, and $M! + (N-M)! < N!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than $2$ piles based on the fast-thinking approximation.
+We thus built 'islands' first. We used visual similarity, similar to compatibility measurement as would be formalised for AI but a 'fast-thinking' approximation. 
 
 
 88888
