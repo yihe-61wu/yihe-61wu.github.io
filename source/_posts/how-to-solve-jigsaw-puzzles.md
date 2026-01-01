@@ -18,10 +18,9 @@ After an hour or two, *'One is all, All is one'*[^1].
 Indeed, the entire process felt like conducting scientific research, similar to the analogy commonly attributed to *The Structure of Scientific Revolutions* by Thomas S. Kuhn, but different due to the lack of the full picture (the dominant paradigm). In terms of personal feelings, the most similar part was to fight against the daunting idea that failure was inevitable, to keep faith in the completeness of the puzzle, and to proceed with constant patience and intermittent insights.
 
 # Thus Spoke Artifical Intelligence
-Apparently, compared to human beings, machines are much more patient, tireless with repetitive work (if well powered and maintained). Additionally, we try to make them smart. We build Artificial Intelligence by embedding insights, strategies, tricks, etc., as algorithms
+Apparently, compared to human beings, machines are much more patient, tireless with repetitive work (if well powered and maintained). Additionally, we try to make them smart(er) by embedding Artificial Intelligence (AI) and to build AI by formalising insights, strategies, tricks, etc., as algorithms.
 
-
-So this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and gave the response below:
+So, this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and gave the response below:
 
 ---
 
@@ -70,13 +69,33 @@ Would you be interested in learning more about the **different types of AI algor
 
 ---
 
-I haven't verified all the details but [Alphazzle](https://deepai.org/publication/alphazzle-jigsaw-puzzle-solver-with-deep-monte-carlo-tree-search) seemed legit[^2]. Anyway, the three main steps are exactly the same as I had imagined, and I also like Gemini's mention of physical puzzles. 
+I haven't verified all the details, but [Alphazzle](https://deepai.org/publication/alphazzle-jigsaw-puzzle-solver-with-deep-monte-carlo-tree-search) seemed legit[^2]. I also like Gemini's mention of physical puzzles, because it's not trivial for a robot to visually recognise and physically move all the pieces. Real-world ambient lighting is constantly changing. Small, individual pieces may not contain sufficient underlying visual features of the final picture. Perfeclty assembled pieces still have cracks--they may interfere with, if not dominate, some underlying visual features. It takes some effort to seggrate pieces from a pile, pieces facing down need to be flipped over, and during assembly pieces need to be lifted and put down. These tasks can be particularly challenging for a robot hand, because jigsaw puzzle pieces, many made of paperboard, are brittle. As ours, they can even be thin and tiny.
 
 [^2]: I haven't reproduced all the results so you trust either me or the authors. It's commendable if you trust neither and try to reproduce their work--I'd appreciate it more if you let me know your results.
 
-It's not trivial for a robot to recognise and assemble all the pieces--It takes a while to seggrate pieces from a pile, pieces facing down need to be flipped over at early stages, and they need to be lifted and put down in assembly--especially for a robot hand. Note jigsaw puzzle pieces are usually made of hardboard sheets, i.e., papers, and they can be thin and tiny.
+For now, let's pretend there exist a perfect robot system capable of accurate and fast visual recognition and precise and subtle piece manipulation. In other words, let's focus solely on the computational problem of how to reorder all the pieces based on their appearance. For greater formalisation, we further assume individual pieces have the identical shape of a square--no curved sides, knobs, or sockets--so that the appearance of any piece is entirely and only determined by its pixels.
 
-For now, let's pretend there exist a perfect system capable of accurate and fast visual recognition and precise and subtle robot manipulation to focus on the main steps. The computational problem--how to reorder all the pieces--is difficult, because, as Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. I obtain this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled, and repeat step 2 (Feature Extraction and Compatibility Measurement) for $N-K$ times.
+Gemini's solution to the computational problem is sensible. The three main steps almost the same as I had imagined.
+
+
+
+
+
+
+# My Human Approach
+
+to focus on the main steps. The 
+
+--is difficult, because, as Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. I obtain this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled, and repeat step 2 (Feature Extraction and Compatibility Measurement) for $N-K$ times.
+
+
+
+
+
+
+
+
+
 
 However, as human beings, my partner and I did not take this approach when solving our jigsaw puzzles. 
 
