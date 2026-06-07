@@ -3,11 +3,11 @@ title: "Exact solutions to cable equations in branching neurons with tapering de
 collection: publications
 category: manuscripts
 permalink: /publication/2020-01-28-exact-solutions-to-cable-equations
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'This paper generalises the dendritc cable theory to tapering neurites.'
 date: 2020-01-28
 venue: 'Journal of Mathematical Neuroscience'
 paperurl: 'https://doi.org/10.1186/s13408-020-0078-z'
-citation: 'Yihe, L., & Timofeeva, Y. (2020). Exact solutions to cable equations in branching neurons with tapering dendrites. The Journal of Mathematical Neuroscience, 10(1), 1.'
+citation: '<b>Yihe, L.</b>, & Timofeeva, Y. (2020). Exact solutions to cable equations in branching neurons with tapering dendrites. <i>The Journal of Mathematical Neuroscience</i>, 10(1), 1.'
 ---
 
 ### Abstract

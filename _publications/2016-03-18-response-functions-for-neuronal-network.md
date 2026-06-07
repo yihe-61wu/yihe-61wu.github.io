@@ -3,13 +3,11 @@ title: "Response functions for electrically coupled neuronal network: a method o
 collection: publications
 category: manuscripts
 permalink: /publication/2016-03-18-response-functions-for-neuronal-network
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 'This paper develops a novel algorithm to find algebraically compact solutions of response functions on any morphological neuron modelled by dendritic cable theory.'
 date: 2016-03-18
 venue: 'Biological Cybernetics'
-# slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://doi.org/10.1007/s00422-016-0681-y'
-# bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Yihe, L., & Timofeeva, Y. (2016). Response functions for electrically coupled neuronal network: a method of local point matching and its applications. Biological cybernetics, 110(2), 117-133.'
+citation: '<b>Yihe, L.<b>, & Timofeeva, Y. (2016). Response functions for electrically coupled neuronal network: a method of local point matching and its applications. <i>Biological cybernetics</i>, 110(2), 117-133.'
 ---
 
 ### Abstract
