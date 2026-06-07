@@ -11,10 +11,17 @@ redirect_from:
 
 Education
 ======
-* PGCert in Academic Practice, University of Glasgow, <span style="float:right;">Dec 2025 - Dec 2028 (expected)</span>
-* **Ph.D in Complexity Science**, University of Warwick, 2019
-* **M.Sc. in Mathematics**, University of Warwick, 2014
-* **B.Sc. in Mathematics and Statistics**, University of Liverpool, 2013
+* PGCert in Academic Practice <span style="float:right;">Dec 2025 - Dec 2028 (expected)</span>
+  University of Glasgow
+* **Ph.D in Complexity Science** <span style="float:right;">Oct 2014 - Mar 2019 (expected)</span>
+  University of Warwick
+  * Thesis: Neuronal signal modulation by dendritic geometry. Supervisor: Prof. Yulia Timofeeva
+* **M.Sc. (Merit) in Mathematics** <span style="float:right;">Sep 2013 - Oct 2014 (expected)</span>
+  University of Warwick
+  * Dissertation: Neural computation and memory. Supervisor: Prof. Magnus Richardson
+* **B.Sc. (First-class Honours) in Mathematics and Statistics** <span style="float:right;">Sep 2011 - Jul 2013 (expected)</span>
+  University of Liverpool
+  * Final-year Project: Epidemic Modelling for Endemic Diseases. Supervisor: Prof. Damian Clancy
 
 Work experience
 ======
@@ -28,16 +35,16 @@ Work experience
 * Aug 2022 - Aug 2024: Research Associate
   * University of Eidinburgh
   <!-- * Duties included: Merging pull requests -->
-  <!-- * Advisor: Professor Barbara Webb -->
+  * Research Project: Insect-inspired artificial intelligence in autonomous vision-based navigation. Advisor: Prof. Barbara Webb FRSE
 
 * Feb 2020 - Jul 2022: Research Associate
   * Cardiff University
   <!-- * Duties included: Tagging issues -->
-  <!-- * Advisor: Professor Penelop Lewis -->
+  * Research Project: Understanding creativity and problem solving through sleep-engineering. Advisor: Prof. Penelop Lewis
 
 * Sep 2018 - Jan 2020: Research Fellow
   * University of Nottingham
-  <!-- * Advisor: Professor Mark van Rossum -->
+  * Research Project: Sleep cycling for probabilistic generative models. Advisor: Prof. Mark van Rossum
 
 * Jan 2015 - Dec 2017: Teaching Assistant
   * University of Warwick
