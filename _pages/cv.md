@@ -12,25 +12,26 @@ redirect_from:
 Education
 ======
 * PGCert in Academic Practice <span style="float:right;">Dec 2025 - Dec 2028 (expected)</span>
-  University of Glasgow
+  * University of Glasgow
 * **Ph.D in Complexity Science** <span style="float:right;">Oct 2014 - Mar 2019 (expected)</span>
-  University of Warwick
+  * University of Warwick
   * Thesis: Neuronal signal modulation by dendritic geometry. Supervisor: Prof. Yulia Timofeeva
 * **M.Sc. (Merit) in Mathematics** <span style="float:right;">Sep 2013 - Oct 2014 (expected)</span>
-  University of Warwick
+  * University of Warwick
   * Dissertation: Neural computation and memory. Supervisor: Prof. Magnus Richardson
 * **B.Sc. (First-class Honours) in Mathematics and Statistics** <span style="float:right;">Sep 2011 - Jul 2013 (expected)</span>
-  University of Liverpool
+  * University of Liverpool
   * Final-year Project: Epidemic Modelling for Endemic Diseases. Supervisor: Prof. Damian Clancy
 
 Work experience
 ======
 * Aug 2025 - present: Lifelong Learning Tutor (Mathematics)
   * University of Glasgow
-  <!-- * Duties includes: Updates and improvements to template -->
+  * Teaching Courses: Introductory Calculus for Science (SCQF-7), Access Maths (SCQF-7)
 
 * Oct 2024 - Apr 2026: Mathematics Tutor (online)
   * Elite Education Group (China)
+  * Teaching one-to-one tutorials: AS/A-level Mathematics/Mechanics
 
 * Aug 2022 - Aug 2024: Research Associate
   * University of Eidinburgh
@@ -48,6 +49,7 @@ Work experience
 
 * Jan 2015 - Dec 2017: Teaching Assistant
   * University of Warwick
+  * Teaching Courses: Introduction to System Biology (FHEQ-5), Quantitative Analysis for Management (FHEQ-4)
   
 <!-- Skills
 ======
