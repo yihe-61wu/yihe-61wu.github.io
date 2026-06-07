@@ -3,7 +3,7 @@ title: "Exact solutions to cable equations in branching neurons with tapering de
 collection: publications
 category: manuscripts
 permalink: /publication/2020-01-28-exact-solutions-to-cable-equations
-excerpt: 'This paper generalises the dendritc cable theory to tapering neurites.'
+excerpt: 'This work generalises the dendritc cable theory to tapering neurites.'
 date: 2020-01-28
 venue: 'Journal of Mathematical Neuroscience'
 paperurl: 'https://doi.org/10.1186/s13408-020-0078-z'
