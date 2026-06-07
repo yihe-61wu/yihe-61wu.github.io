@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* PGCert in Academic Practice, University of Glasgow, 2027 (expected)
-* Ph.D in Complexity Science, University of Warwick, 2019
-* M.Sc. in Mathematics, University of Warwick, 2014
-* B.Sc. in Mathematics and Statistics, University of Liverpool, 2013
+* PGCert in Academic Practice, University of Glasgow, <span style="float:right;">Dec 2025 - Dec 2028 (expected)</span>
+* **Ph.D in Complexity Science**, University of Warwick, 2019
+* **M.Sc. in Mathematics**, University of Warwick, 2014
+* **B.Sc. in Mathematics and Statistics**, University of Liverpool, 2013
 
 Work experience
 ======
