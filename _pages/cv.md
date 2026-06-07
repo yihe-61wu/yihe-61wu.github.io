@@ -11,35 +11,45 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* PGCert in Academic Practice, University of Glasgow, 2027 (expected)
+* Ph.D in Complexity Science, University of Warwick, 2019
+* M.Sc. in Mathematics, University of Warwick, 2014
+* B.Sc. in Mathematics and Statistics, University of Liverpool, 2013
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Aug 2025 - present: Lifelong Learning Tutor (Mathematics)
+  * University of Glasgow
+  <!-- * Duties includes: Updates and improvements to template -->
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Oct 2024 - Apr 2026: Mathematics Tutor (online)
+  * Elite Education Group (China)
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Aug 2022 - Aug 2024: Research Associate
+  * University of Eidinburgh
+  <!-- * Duties included: Merging pull requests -->
+  <!-- * Advisor: Professor Barbara Webb -->
+
+* Feb 2020 - Jul 2022: Research Associate
+  * Cardiff University
+  <!-- * Duties included: Tagging issues -->
+  <!-- * Advisor: Professor Penelop Lewis -->
+
+* Sep 2018 - Jan 2020: Research Fellow
+  * University of Nottingham
+  <!-- * Advisor: Professor Mark van Rossum -->
+
+* Jan 2015 - Dec 2017: Teaching Assistant
+  * University of Warwick
   
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
 Publications
 ======
@@ -59,6 +69,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
