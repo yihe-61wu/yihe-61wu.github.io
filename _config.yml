@@ -26,9 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Dr Yihe Lu, AMIMA"
   pronouns         : he/him # example: "she/her"  
-  bio              : |
-    Mathematician 
-    Bio-cyberneticist
+  bio              : "Mathematician<br>Bio-cyberneticist
   location         : "Scotland"
   employer         : "University of Glasgow"
   uri              : # URL
