@@ -4,7 +4,6 @@ date: 2026-01-01 10:40:12
 tags:
   - jigsaw-puzzle
   - AI
-# mathjax: true
 ---
 
 My partner and I were dealing with jet lag yesterday, Hogmaney of 2025. We pulled out an old jigsaw puzzle and cracked on it. As you must know, a jigsaw puzzle is always initiated in a 'cracked' state, and the goal is to assemble (uncrack?) the pieces into a final, full picture. So started our quality time.
@@ -55,7 +54,7 @@ AI systems tackle the jigsaw puzzle problem, which is essentially a challenging 
     
     - Once compatibility scores are available for all possible adjacent pairs, the system uses a **solver algorithm** to assemble the entire puzzle.
         
-    - Since the number of possible arrangements grows exponentially ($N!$ for $N$ pieces), algorithms are needed to efficiently explore the solution space.
+    - Since the number of possible arrangements grows exponentially (\\(N!\\) for $N$ pieces), algorithms are needed to efficiently explore the solution space.
         
     - Common solving strategies include:
         
@@ -83,9 +82,9 @@ For now, let's pretend there exist a perfect robot system capable of accurate an
 
 
 ## Model Complexity
-Despite all the abstractions and simplifications, the computational model remains difficult. As Gemini states, 'the number of possible arrangements grows exponentially ($N!$ for $N$ pieces)'. 
+Despite all the abstractions and simplifications, the computational model remains difficult. As Gemini states, 'the number of possible arrangements grows exponentially (\\(N!\\) for $N$ pieces)'. 
 
-I didn't ask Gemini how this statement was obtained, as I expected this $N!$ scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled $K$ pieces, repeat step 2 (Feature Extraction and Compatibility Measurement) $4$ times (corresponding to $4$ directions) for each of the remaining $N-K$ pieces, and then determine the new configuration that maximises the compatibility. Therefore, $4(N-1)!$ iterations are required in total.
+I didn't ask Gemini how this statement was obtained, as I expected this \\(N!\\) scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled $K$ pieces, repeat step 2 (Feature Extraction and Compatibility Measurement) $4$ times (corresponding to $4$ directions) for each of the remaining $N-K$ pieces, and then determine the new configuration that maximises the compatibility. Therefore, $4(N-1)!$ iterations are required in total.
 
 Note the operation of picking one empty slot (that indeed needs to be filled) is feasible and inexpensive, because we assume, as most jigsaw puzzles, the final, full picture is a rectangle of $L\times W$. Even if $L$ and $W$ are unknown beforehand, one can factorise $N$. If there are multiple ways of factorisation, it's more likely for $L$ and $W$ to be as close as possible.
 
