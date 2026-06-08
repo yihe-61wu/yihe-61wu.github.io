@@ -1,8 +1,8 @@
 ---
-title: "Introductory Calculus for Science"
+title: "Access Maths"
 collection: teaching
 type: "Undergraduate Course"
-permalink: /teaching/2025-autumn-introductory-calculus
+permalink: /teaching/2025-autumn-access-maths
 venue: "External Relations, University of Glasgow"
 date: 2025-09-01
 location: "Glasgow, UK"
@@ -12,4 +12,4 @@ SCQF level 7
 
 Course Lead
 
-Autumn Semesters, 2025 - present
+Autumn & Spring Semesters, 2025 - present
