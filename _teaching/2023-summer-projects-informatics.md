@@ -1,15 +1,15 @@
 ---
 title: "Edinburgh Informatics MSc Dissertation"
 collection: teaching
-type: "Postgraduate Supervision"
+type: "Postgraduate Supervisor"
 permalink: /teaching/2023-summer-projects-informatics
-venue: "University of Edinburgh"
+venue: "School of Informatics, University of Edinburgh"
 date: 2023-07-01
 location: "Edinburgh, UK"
 ---
 
-Summer Semesters, 2023 - 2024
-
-SCQF level 11
-
-2 projects
+* Date: Summer Semesters, 2023 - 2024
+* Level: SCQF level 11
+* 2 projects:
+    * Neural communication without synapses: ephaptic coupling in the Drosophila mushroom body
+    * Insect-inspired robot steering for vision-based route following

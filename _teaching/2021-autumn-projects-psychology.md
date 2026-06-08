@@ -1,15 +1,15 @@
 ---
 title: "Cardiff Psychology BSc Final-year Projects"
 collection: teaching
-type: "Undergraduate Supervision"
+type: "Undergraduate Supervisor"
 permalink: /teaching/2021-autumn-projects-psychology
-venue: "Cardiff University"
+venue: "School of Psychology, Cardiff University"
 date: 2021-09-01
-location: "Edinburgh, UK"
+location: "Cardiff, UK"
 ---
 
-Autumn & Summer Semesters, 2021 - 2022
-
-CQFW level 6
-
-2 projects
+* Date: Autumn & Summer Semesters, 2021 - 2022
+* Level: Year 3 (CQFW-6)
+* 2 projects:
+    * The effect of feedback frequency and feedback content on perceptual learning
+    * The impact of the COVID-19 pandemic on motor performance, as measured through sleep, wellbeing, and exercise
