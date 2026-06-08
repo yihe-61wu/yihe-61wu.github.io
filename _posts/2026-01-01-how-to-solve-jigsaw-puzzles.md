@@ -30,44 +30,43 @@ So, this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI s
 > 
 > AI systems tackle the jigsaw puzzle problem, which is essentially a challenging combinatorial optimization task, by breaking it down into several steps:
 > 
-1. **Image Processing/Piece Recognition:**
-    
-    - The system first needs to identify the individual puzzle pieces from an input image (like a scan or a photo of the scattered pieces).
-        
-    - This involves techniques like **edge detection**, **contour identification**, and **segmentation** to isolate each piece.
-        
-    - For physical puzzles, this is often handled by a robotic arm system that uses an attached camera and object detection models (like YOLO) to see and track the pieces.
-        
-2. **Feature Extraction and Compatibility Measurement:**
-    
-    - The AI extracts features from each piece, focusing on two main types of information:
-        
-        - **Shape/Geometry:** Analyzing the intricate shape of the edges (tabs and blanks) to determine which pieces physically fit together.
-            
-        - **Visual/Color Information:** Analyzing the color and pattern along the edges to see if the image flows seamlessly across the boundary.
-            
-    - **Deep Learning** models, such as **Siamese Neural Networks (SNN)**, are often trained to calculate a **compatibility measure**—a score that predicts how well two pieces should fit together both geometrically and visually.
-        
-3. **Piece Orientation and Reordering/Assembly:**
-    
-    - Once compatibility scores are available for all possible adjacent pairs, the system uses a **solver algorithm** to assemble the entire puzzle.
-        
-    - Since the number of possible arrangements grows exponentially (\\(N!\\) for \\(N\\) pieces), algorithms are needed to efficiently explore the solution space.
-        
-    - Common solving strategies include:
-        
-        - **Genetic Algorithms (GA):** These algorithms simulate natural selection, iteratively combining "parent" solutions (partial assemblies) that have high-fitness (high compatibility scores) to create better "child" solutions.
-            
-        - **Reinforcement Learning (RL) and Monte Carlo Tree Search (MCTS):** These methods treat puzzle solving as a sequential decision-making process, where the AI learns the optimal _actions_ (which piece to place next and where) to maximize the reward (a completed or highly-compatible puzzle). Examples include systems like **Alphazzle**.
-            
-        - **Combinatorial Optimization:** Framing the problem as finding the shortest path in a graph or a linear assignment problem, which can be solved using efficient algorithms like **Dijkstra's algorithm** or techniques like **Quadratic Programming**.
-            
+> 1. **Image Processing/Piece Recognition:**
+>     
+>     - The system first needs to identify the individual puzzle pieces from an input image (like a scan or a photo of the scattered pieces).
+>         
+>     - This involves techniques like **edge detection**, **contour identification**, and **segmentation** to isolate each piece.
+>         
+>     - For physical puzzles, this is often handled by a robotic arm system that uses an attached camera and object detection models (like YOLO) to see and track the pieces.
+>         
+> 2. **Feature Extraction and Compatibility Measurement:**
+>     
+>     - The AI extracts features from each piece, focusing on two main types of information:
+>         
+>         - **Shape/Geometry:** Analyzing the intricate shape of the edges (tabs and blanks) to determine which pieces physically fit together.
+>             
+>         - **Visual/Color Information:** Analyzing the color and pattern along the edges to see if the image flows seamlessly across the boundary.
+>             
+>     - **Deep Learning** models, such as **Siamese Neural Networks (SNN)**, are often trained to calculate a **compatibility measure**—a score that predicts how well two pieces should fit together both geometrically and visually.
+>         
+> 3. **Piece Orientation and Reordering/Assembly:**
+>     
+>     - Once compatibility scores are available for all possible adjacent pairs, the system uses a **solver algorithm** to assemble the entire puzzle.
+>         
+>     - Since the number of possible arrangements grows exponentially (\\(N!\\) for \\(N\\) pieces), algorithms are needed to efficiently explore the solution space.
+>         
+>     - Common solving strategies include:
+>         
+>         - **Genetic Algorithms (GA):** These algorithms simulate natural selection, iteratively combining "parent" solutions (partial assemblies) that have high-fitness (high compatibility scores) to create better "child" solutions.
+>             
+>         - **Reinforcement Learning (RL) and Monte Carlo Tree Search (MCTS):** These methods treat puzzle solving as a sequential decision-making process, where the AI learns the optimal _actions_ (which piece to place next and where) to maximize the reward (a completed or highly-compatible puzzle). Examples include systems like **Alphazzle**.
+>             
+>         - **Combinatorial Optimization:** Framing the problem as finding the shortest path in a graph or a linear assignment problem, which can be solved using efficient algorithms like **Dijkstra's algorithm** or techniques like **Quadratic Programming**.
+>             
+> 
+> These systems can range from purely software-based tools that solve digital versions of puzzles, to **AI-powered robotic systems** that physically manipulate real-world puzzle pieces.
+> 
+> Would you be interested in learning more about the **different types of AI algorithms** used for puzzle solving, like Genetic Algorithms versus Deep Reinforcement Learning?
 
-These systems can range from purely software-based tools that solve digital versions of puzzles, to **AI-powered robotic systems** that physically manipulate real-world puzzle pieces.
-
-Would you be interested in learning more about the **different types of AI algorithms** used for puzzle solving, like Genetic Algorithms versus Deep Reinforcement Learning?
-
----
 
 The three main steps are almost the same as I had imagined. I haven't verified all the details, but [Alphazzle](https://deepai.org/publication/alphazzle-jigsaw-puzzle-solver-with-deep-monte-carlo-tree-search) seemed legit[^2]. I also like Gemini's mention of physical puzzles, because it's not trivial for a robot to visually recognise and physically move all the pieces. 
 
