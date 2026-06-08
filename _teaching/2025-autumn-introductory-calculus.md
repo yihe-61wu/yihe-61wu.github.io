@@ -8,8 +8,6 @@ date: 2025-09-01
 location: "Glasgow, UK"
 ---
 
-**Course Lead**
-* Autumn Semesters, 2025 - present
-
+Autumn Semesters, 2025 - present
 
 SCQF level 7

@@ -10,3 +10,4 @@ location: "Edinburgh, UK"
 
 Summer Semesters, 2025 - present
 
+SCQF level 8
