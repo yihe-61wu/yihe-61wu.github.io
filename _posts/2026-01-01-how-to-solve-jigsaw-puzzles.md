@@ -54,7 +54,7 @@ AI systems tackle the jigsaw puzzle problem, which is essentially a challenging 
     
     - Once compatibility scores are available for all possible adjacent pairs, the system uses a **solver algorithm** to assemble the entire puzzle.
         
-    - Since the number of possible arrangements grows exponentially (\\(N!\\) for $N$ pieces), algorithms are needed to efficiently explore the solution space.
+    - Since the number of possible arrangements grows exponentially (\\(N!\\) for \\(N\\) pieces), algorithms are needed to efficiently explore the solution space.
         
     - Common solving strategies include:
         
@@ -82,15 +82,15 @@ For now, let's pretend there exist a perfect robot system capable of accurate an
 
 
 ## Model Complexity
-Despite all the abstractions and simplifications, the computational model remains difficult. As Gemini states, 'the number of possible arrangements grows exponentially (\\(N!\\) for $N$ pieces)'. 
+Despite all the abstractions and simplifications, the computational model remains difficult. As Gemini states, 'the number of possible arrangements grows exponentially (\\(N!\\) for \\(N\\) pieces)'. 
 
-I didn't ask Gemini how this statement was obtained, as I expected this \\(N!\\) scaling by considering the following: Whenever $K$ pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled $K$ pieces, repeat step 2 (Feature Extraction and Compatibility Measurement) $4$ times (corresponding to $4$ directions) for each of the remaining $N-K$ pieces, and then determine the new configuration that maximises the compatibility. Therefore, $4(N-1)!$ iterations are required in total.
+I didn't ask Gemini how this statement was obtained, as I expected this \\(N!\\) scaling by considering the following: Whenever \\(K\\) pieces are correctly assembled, one can arbitrarily pick one empty slot adjacent to the assembled \\(K\\) pieces, repeat step 2 (Feature Extraction and Compatibility Measurement) \\(4\\) times (corresponding to \\(4\\) directions) for each of the remaining \\(N-K\\) pieces, and then determine the new configuration that maximises the compatibility. Therefore, \\(4(N-1)!\\) iterations are required in total.
 
-Note the operation of picking one empty slot (that indeed needs to be filled) is feasible and inexpensive, because we assume, as most jigsaw puzzles, the final, full picture is a rectangle of $L\times W$. Even if $L$ and $W$ are unknown beforehand, one can factorise $N$. If there are multiple ways of factorisation, it's more likely for $L$ and $W$ to be as close as possible.
+Note the operation of picking one empty slot (that indeed needs to be filled) is feasible and inexpensive, because we assume, as most jigsaw puzzles, the final, full picture is a rectangle of \\(L\times W\\). Even if \\(L\\) and \\(W\\) are unknown beforehand, one can factorise \\(N\\). If there are multiple ways of factorisation, it's more likely for \\(L\\) and \\(W\\) to be as close as possible.
 
 While such weaker assumptions will lead to more iterations, I have no intention to go into the details to prove both lower and upper bounds grow exponentially--explicitly for a usual jigsaw puzzle that is 2D--as an exponential growth can be clearly shown with a 1D jigsaw puzzle.
 
-A 1D jigsaw puzzle can be easily constructed by vertically (or horizontally) cutting a rectangular (full) figure into thin slices. Again, starting with $N$ slices, the goal is to reorder them and assemble them into a final, full figure. In this 1D setup, at iteration $K$ there are exactly $2$ empty slots on the left or right of the assembled $K$ pieces, one should maximise compatibility by testing each of the remaining $N-K$ pieces exactly $2$ times (upright and upside down) in both slots, and therefore in total $4(N-1)!$ iterations, again, are required (but we do not worry about which empty slot to pick at all).
+A 1D jigsaw puzzle can be easily constructed by vertically (or horizontally) cutting a rectangular (full) figure into thin slices. Again, starting with \\(N\\) slices, the goal is to reorder them and assemble them into a final, full figure. In this 1D setup, at iteration \\(K\\) there are exactly \\(2\\) empty slots on the left or right of the assembled \\(K\\) pieces, one should maximise compatibility by testing each of the remaining \\(N-K\\) pieces exactly \\(2\\) times (upright and upside down) in both slots, and therefore in total \\(4(N-1)!\\) iterations, again, are required (but we do not worry about which empty slot to pick at all).
 
 
 # A Human(-like) Approach
@@ -101,7 +101,7 @@ We built 'islands' first. We picked small number of pieces into a handful of gro
 Amongst modern AI models, visual transforms may be a particularly effectivfe candidate for solving jigsaw puzzles by emulating such human-like fast-and-slow thinking. Unlike other visual recognition tasks, solving jigsaw puzzles requires inferring spatial proximity from visual semantics. Most other visual AI models have built-in inductive bias of spatial proximity--they learn semantics based on spatial proximity, a one-way relation, while a visual transform are free from such bias and learns a two-way relation.
 
 ## Improved Efficiency
-In general, this is a clever strategy (worked well for us!). Assuming the total $N$ pieces can be quickly sorted into $2$ piles, one consisting of $M$ pieces that will be assembled into an island and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $4(M-1)!$ in total for the first pile, followed by $4(N-M)!$ times for the remaining pieces, and $4(M-1)! + 4(N-M)! < 4(N-1)!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than $2$ piles based on the instinct approximation.
+In general, this is a clever strategy (worked well for us!). Assuming the total \\(N\\) pieces can be quickly sorted into \\(2\\) piles, one consisting of $M$ pieces that will be assembled into an island and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $4(M-1)!$ in total for the first pile, followed by $4(N-M)!$ times for the remaining pieces, and $4(M-1)! + 4(N-M)! < 4(N-1)!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than \\(2\\) piles based on the instinct approximation.
 
 The main caveat of the above reasoning is that we have overlooked the cost of the instinct approximation completely. For rigorosity, let's assume its cost to be $c_1$ and the cost of careful compatibility measurement to be $c_2$ (per piece). Then, the overall costs of the human-like and purely machine approach are $c_1 N + 4c_2 [(M-1)! + (N-M)!]$ and $4c_2 (N-1)!$.
 
@@ -113,13 +113,13 @@ which gives
 
 $$ \frac{c_1}{c_2} < \frac{(N-1)! - (M-1)! - (N-M)!}{N/4} $$
 
-Note first in the right hand side (RHS) $M$ is symmetric about $(N+1)/2$, and the closer to it $M$ is, the greater the RHS is. Unless $M=1$ or $N$, even when $M=2$ or $N-1$, the RHS is 
+Note first in the right hand side (RHS) $M$ is symmetric about $(N+1)/2$, and the closer to it $M$ is, the greater the RHS is. Unless $M=1$ or \\(N\\), even when $M=2$ or $N-1$, the RHS is 
 
 $$ \frac{(N-1)! - 1 - (N-2)!}{N/4} = \frac{(N-2)(N-2)!-1}{N/4} $$
 
 which is greater than $1$, as long as $N\geq 4$. 
 
-Therefore, as $c_1<c_2$ is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency. This is perhaps not surprising, as $c_1$ incurs a cost linear but  $c_2$ factorial in the number of pieces ($N$).
+Therefore, as $c_1<c_2$ is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency. This is perhaps not surprising, as $c_1$ incurs a cost linear but  $c_2$ factorial in the number of pieces (\\(N\\)).
 
 
 
