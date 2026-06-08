@@ -1,6 +1,6 @@
 ---
 title: Lessons I Learned from Reformatting LaTex Reference
-category: log
+# category: log
 date: 2025-07-07 13:58:45
 tags:
   - LaTeX

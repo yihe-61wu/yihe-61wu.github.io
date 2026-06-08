@@ -1,7 +1,6 @@
 ---
 title: Lessons I Learned from Fourier and Laplace Transforms
-mathjax: true
-category: log
+# mathjax: true
 date: 2020-09-01 22:22:22
 tags:
   - mathematics

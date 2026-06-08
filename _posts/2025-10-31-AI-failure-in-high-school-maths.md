@@ -1,6 +1,5 @@
 ---
 title: AI's Failure in High-school Level Mathematical Reasoning
-category: trial
 date: 2025-10-31 14:38:37
 tags:
   - mathematics

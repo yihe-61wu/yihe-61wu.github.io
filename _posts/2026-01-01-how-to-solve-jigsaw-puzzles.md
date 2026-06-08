@@ -1,11 +1,10 @@
 ---
 title: How to Solve Jigsaw Puzzles
-category: reflection
 date: 2026-01-01 10:40:12
 tags:
   - jigsaw-puzzle
   - AI
-mathjax: true
+# mathjax: true
 ---
 
 My partner and I were dealing with jet lag yesterday, Hogmaney of 2025. We pulled out an old jigsaw puzzle and cracked on it. As you must know, a jigsaw puzzle is always initiated in a 'cracked' state, and the goal is to assemble (uncrack?) the pieces into a final, full picture. So started our quality time.

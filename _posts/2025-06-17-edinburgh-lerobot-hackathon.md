@@ -1,6 +1,5 @@
 ---
 title: Edinburgh LeRobot Hackathon
-category: log
 date: 2025-06-17 10:30:24
 tags:
   - robot

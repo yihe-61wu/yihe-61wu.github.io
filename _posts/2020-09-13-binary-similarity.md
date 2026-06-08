@@ -1,6 +1,5 @@
 ---
 title: Thoughts on Similarity Measure for Binary Vectors
-category: log
 date: 2020-09-13 22:22:22
 tags:
   - similarity
