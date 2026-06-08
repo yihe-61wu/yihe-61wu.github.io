@@ -1,9 +1,9 @@
 ---
 title: "Introductory Calculus for Science"
 collection: teaching
-type: "Undergraduate Course"
+type: "Course Lead"
 permalink: /teaching/2025-autumn-introductory-calculus
-venue: "External Relations, University of Glasgow"
+venue: "University of Glasgow"
 date: 2025-09-01
 location: "Glasgow, UK"
 ---
