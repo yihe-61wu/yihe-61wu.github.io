@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Systems Biology"
+title: "Quantitative Methods for Management"
 collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/2015-autumn-quantitative-methods
