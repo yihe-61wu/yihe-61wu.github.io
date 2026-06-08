@@ -30,9 +30,9 @@ Education
 Work experience
 ======
 * **Lifelong Learning Tutor (Mathematics)**
-  * University of Glasgow
+  * External Relations, University of Glasgow
   * Aug 2025 - present
-  * Course Lead: Introductory Calculus for Science (SCQF-7), Access Maths (SCQF-7)
+  * Course Lead: [Introductory Calculus for Science](/teaching/2025-autumn-introductory-calculus) (SCQF-7), Access Maths (SCQF-7)
 
 * **Mathematics Tutor (online)**
   * Elite Education Group (China)
@@ -40,17 +40,17 @@ Work experience
   * One-to-one Tutor: AS/A-level Mathematics
 
 * **Research Associate**
-  * University of Edinburgh
+  * School of Informatics, University of Edinburgh
   * Aug 2022 - Aug 2024
   * Research Project: Insect-inspired artificial intelligence in autonomous vision-based navigation. Advisor: Prof. Barbara Webb FRSE
 
 * **Research Associate**
-  * Cardiff University
+  * School of Psychology, Cardiff University
   * Feb 2020 - Jul 2022
   * Research Project: Understanding creativity and problem solving through sleep-engineering. Advisor: Prof. Penelope Lewis
 
 * **Research Fellow**
-  * University of Nottingham
+  * School of Psychology, University of Nottingham
   * Sep 2018 - Jan 2020
   * Research Project: Sleep cycling for probabilistic generative models. Advisor: Prof. Mark van Rossum
 

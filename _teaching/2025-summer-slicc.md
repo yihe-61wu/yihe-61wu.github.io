@@ -9,4 +9,4 @@ location: "Edinburgh, UK"
 ---
 
 * Date: Summer Semesters, 2025 - present
-* Level: Year 2 (SCQF-8)
+* Level: Undergraduate Year 2 (SCQF-8)
