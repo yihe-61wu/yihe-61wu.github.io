@@ -1,5 +1,5 @@
 ---
-title: "School of Informatics MSc Dissertation"
+title: "Edinburgh Informatics MSc Dissertation"
 collection: teaching
 type: "Postgraduate Supervision"
 permalink: /teaching/2023-summer-projects-informatics

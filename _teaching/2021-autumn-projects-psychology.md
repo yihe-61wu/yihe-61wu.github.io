@@ -1,5 +1,5 @@
 ---
-title: "School of Psychology BSc Final-year Projects"
+title: "Cardiff Psychology BSc Final-year Projects"
 collection: teaching
 type: "Undergraduate Supervision"
 permalink: /teaching/2021-autumn-projects-psychology
