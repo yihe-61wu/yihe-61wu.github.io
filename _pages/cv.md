@@ -27,7 +27,7 @@ Education
   * Sep 2011 - Jul 2013
   * Final-year Project: *Epidemic Modelling for Endemic Diseases*. Supervisor: Prof. Damian Clancy
 
-Work experience
+Academic Experience
 ======
 * **Lifelong Learning Tutor (Mathematics)**
   * External Relations, University of Glasgow
@@ -43,11 +43,13 @@ Work experience
   * School of Informatics, University of Edinburgh
   * Aug 2022 - Aug 2024
   * Research Project: *Insect-inspired artificial intelligence in autonomous vision-based navigation*. Advisor: Prof. Barbara Webb FRSE
+  * [Postgraduate Supervision](/teaching/2023-summer-projects-informatics)
 
 * **Research Associate**
   * School of Psychology, Cardiff University
   * Feb 2020 - Jul 2022
   * Research Project: *Understanding creativity and problem solving through sleep-engineering*. Advisor: Prof. Penelope Lewis
+  * [Undergraduate Supervision](/teaching/20021-autumn-projects-psychology)
 
 * **Research Fellow**
   * School of Psychology, University of Nottingham
@@ -80,11 +82,11 @@ Talks
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 <!-- Service and leadership
 ======
