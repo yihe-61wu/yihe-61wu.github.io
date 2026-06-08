@@ -1,6 +1,5 @@
 ---
 title: Why I Recommend Doing a PhD but not to You
-category: reflection
 date: 2025-12-05 10:10:05
 tags:
   - PhD
