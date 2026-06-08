@@ -101,9 +101,9 @@ We built 'islands' first. We picked small number of pieces into a handful of gro
 Amongst modern AI models, visual transforms may be a particularly effectivfe candidate for solving jigsaw puzzles by emulating such human-like fast-and-slow thinking. Unlike other visual recognition tasks, solving jigsaw puzzles requires inferring spatial proximity from visual semantics. Most other visual AI models have built-in inductive bias of spatial proximity--they learn semantics based on spatial proximity, a one-way relation, while a visual transform are free from such bias and learns a two-way relation.
 
 ## Improved Efficiency
-In general, this is a clever strategy (worked well for us!). Assuming the total \\(N\\) pieces can be quickly sorted into \\(2\\) piles, one consisting of $M$ pieces that will be assembled into an island and the rest $N-M$ pieces not so clear. Now step 2 needs to be repeated for $4(M-1)!$ in total for the first pile, followed by $4(N-M)!$ times for the remaining pieces, and $4(M-1)! + 4(N-M)! < 4(N-1)!$ is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than \\(2\\) piles based on the instinct approximation.
+In general, this is a clever strategy (worked well for us!). Assuming the total \\(N\\) pieces can be quickly sorted into \\(2\\) piles, one consisting of \\(M\\) pieces that will be assembled into an island and the rest \\(N-M\\) pieces not so clear. Now step 2 needs to be repeated for \\(4(M-1)!\\) in total for the first pile, followed by \\(4(N-M)!\\) times for the remaining pieces, and \\(4(M-1)! + 4(N-M)! < 4(N-1)!\\) is always true! Following the same reasoning, one can conclude quicker reordering (less iterations of step 2) is achieveable if all the pieces can be sorted into more than \\(2\\) piles based on the instinct approximation.
 
-The main caveat of the above reasoning is that we have overlooked the cost of the instinct approximation completely. For rigorosity, let's assume its cost to be $c_1$ and the cost of careful compatibility measurement to be $c_2$ (per piece). Then, the overall costs of the human-like and purely machine approach are $c_1 N + 4c_2 [(M-1)! + (N-M)!]$ and $4c_2 (N-1)!$.
+The main caveat of the above reasoning is that we have overlooked the cost of the instinct approximation completely. For rigorosity, let's assume its cost to be \\(c_1\\) and the cost of careful compatibility measurement to be \\(c_2\\) (per piece). Then, the overall costs of the human-like and purely machine approach are \\(c_1 N + 4c_2 [(M-1)! + (N-M)!]\\) and \\(4c_2 (N-1)!\\).
 
 For the human-like approach to improve efficiency, 
 
@@ -113,11 +113,11 @@ which gives
 
 $$ \frac{c_1}{c_2} < \frac{(N-1)! - (M-1)! - (N-M)!}{N/4} $$
 
-Note first in the right hand side (RHS) $M$ is symmetric about $(N+1)/2$, and the closer to it $M$ is, the greater the RHS is. Unless $M=1$ or \\(N\\), even when $M=2$ or $N-1$, the RHS is 
+Note first in the right hand side (RHS) \\(M\\) is symmetric about \\((N+1)/2\\), and the closer to it \\(M\\) is, the greater the RHS is. Unless $M=1$ or \\(N\\), even when $M=2$ or $N-1$, the RHS is 
 
 $$ \frac{(N-1)! - 1 - (N-2)!}{N/4} = \frac{(N-2)(N-2)!-1}{N/4} $$
 
-which is greater than $1$, as long as $N\geq 4$. 
+which is greater than \\(1\\), as long as \\(N\geq 4\\). 
 
 Therefore, as $c_1<c_2$ is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency. This is perhaps not surprising, as $c_1$ incurs a cost linear but  $c_2$ factorial in the number of pieces (\\(N\\)).
 
