@@ -1,7 +1,7 @@
 ---
 title: "Access Maths"
 collection: teaching
-type: "Course Lead"
+type: "Undergraduate Course"
 permalink: /teaching/2025-autumn-access-maths
 venue: "University of Glasgow"
 date: 2025-09-01

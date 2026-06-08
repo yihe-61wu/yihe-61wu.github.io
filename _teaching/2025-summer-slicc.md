@@ -1,7 +1,7 @@
 ---
 title: "Student-Led Individually-Created Courses"
 collection: teaching
-type: "Mentor"
+type: "Undergraduate Mentorship"
 permalink: /teaching/2025-summer-slicc
 venue: "University of Edinburgh"
 date: 2025-07-01
