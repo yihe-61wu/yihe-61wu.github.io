@@ -24,14 +24,12 @@ Apparently, compared to human beings, machines are much more patient, tireless w
 ## Thus Spoke Gemini
 So, this morning I asked Gemini (3 Flash, as on 01/01/2026), 'are there any AI system that can solve jigsaw puzzles'? Gemini did some online search and gave the response below:
 
----
-
-Yes, there are AI systems that can solve jigsaw puzzles. This is an active area of research and development in **computer vision** and **machine learning**, especially using techniques like deep learning and genetic algorithms.
-
-### 🧩 How AI Solves Jigsaw Puzzles
-
-AI systems tackle the jigsaw puzzle problem, which is essentially a challenging combinatorial optimization task, by breaking it down into several steps:
-
+> Yes, there are AI systems that can solve jigsaw puzzles. This is an active area of research and development in **computer vision** and **machine learning**, especially using techniques like deep learning and genetic algorithms.
+>
+> ### 🧩 How AI Solves Jigsaw Puzzles
+> 
+> AI systems tackle the jigsaw puzzle problem, which is essentially a challenging combinatorial optimization task, by breaking it down into several steps:
+> 
 1. **Image Processing/Piece Recognition:**
     
     - The system first needs to identify the individual puzzle pieces from an input image (like a scan or a photo of the scattered pieces).
@@ -119,7 +117,8 @@ $$ \frac{(N-1)! - 1 - (N-2)!}{N/4} = \frac{(N-2)(N-2)!-1}{N/4} $$
 
 which is greater than \\(1\\), as long as \\(N\geq 4\\). 
 
-Therefore, as $c_1<c_2$ is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency. This is perhaps not surprising, as $c_1$ incurs a cost linear but  $c_2$ factorial in the number of pieces (\\(N\\)).
+Therefore, as \\(c_1 < c_2\\) is implicitly assumed, the human-like approach is guaranteed to improve the overall efficiency. 
+This is perhaps not surprising, as \\(c_1\\) incurs a cost linear but \\(c_2\\) factorial in the number of pieces (\\(N\\)).
 
 
 
