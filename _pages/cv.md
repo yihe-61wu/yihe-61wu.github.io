@@ -11,45 +11,59 @@ redirect_from:
 
 Education
 ======
-* PGCert in Academic Practice <span style="float:right;">Dec 2025 - Dec 2028 (expected)</span>
+* PGCert in Academic Practice
   * University of Glasgow
-* **Ph.D in Complexity Science** <span style="float:right;">Oct 2014 - Mar 2019 (expected)</span>
+  * Dec 2025 - Dec 2028 (expected)
+* **Ph.D in Complexity Science**
   * University of Warwick
-  * Thesis: Neuronal signal modulation by dendritic geometry. Supervisor: Prof. Yulia Timofeeva
-* **M.Sc. (Merit) in Mathematics** <span style="float:right;">Sep 2013 - Oct 2014 (expected)</span>
+  * Oct 2014 - Mar 2019
+  * Thesis: Neuronal signal modulation by dendritic geometry. 
+    * Supervisor: Prof. Yulia Timofeeva
+* **M.Sc. (Merit) in Mathematics**
   * University of Warwick
-  * Dissertation: Neural computation and memory. Supervisor: Prof. Magnus Richardson
-* **B.Sc. (First-class Honours) in Mathematics and Statistics** <span style="float:right;">Sep 2011 - Jul 2013 (expected)</span>
+  * Sep 2013 - Oct 2014
+  * Dissertation: Neural computation and memory. 
+    * Supervisor: Prof. Magnus Richardson
+* **B.Sc. (First-class Honours) in Mathematics and Statistics**
   * University of Liverpool
-  * Final-year Project: Epidemic Modelling for Endemic Diseases. Supervisor: Prof. Damian Clancy
+  * Sep 2011 - Jul 2013
+  * Final-year Project: Epidemic Modelling for Endemic Diseases. 
+    * Supervisor: Prof. Damian Clancy
 
 Work experience
 ======
-* Aug 2025 - present: Lifelong Learning Tutor (Mathematics)
+* **Lifelong Learning Tutor (Mathematics)**
   * University of Glasgow
-  * Teaching Courses: Introductory Calculus for Science (SCQF-7), Access Maths (SCQF-7)
+  * Aug 2025 - present
+  * Course Lead: Introductory Calculus for Science (SCQF-7), Access Maths (SCQF-7)
 
-* Oct 2024 - Apr 2026: Mathematics Tutor (online)
+* **Mathematics Tutor (online)**
   * Elite Education Group (China)
-  * Teaching one-to-one tutorials: AS/A-level Mathematics/Mechanics
+  * Oct 2024 - Apr 2026
+  * One-to-one Tutor: AS/A-level Mathematics/Mechanics
 
-* Aug 2022 - Aug 2024: Research Associate
+* **Research Associate**
   * University of Eidinburgh
-  <!-- * Duties included: Merging pull requests -->
-  * Research Project: Insect-inspired artificial intelligence in autonomous vision-based navigation. Advisor: Prof. Barbara Webb FRSE
+  * Aug 2022 - Aug 2024
+  * Research Project: Insect-inspired artificial intelligence in autonomous vision-based navigation. 
+    * Advisor: Prof. Barbara Webb FRSE
 
-* Feb 2020 - Jul 2022: Research Associate
+* **Research Associate**
   * Cardiff University
-  <!-- * Duties included: Tagging issues -->
-  * Research Project: Understanding creativity and problem solving through sleep-engineering. Advisor: Prof. Penelop Lewis
+  * Feb 2020 - Jul 2022
+  * Research Project: Understanding creativity and problem solving through sleep-engineering. 
+    * Advisor: Prof. Penelop Lewis
 
-* Sep 2018 - Jan 2020: Research Fellow
+* **Research Fellow**
   * University of Nottingham
-  * Research Project: Sleep cycling for probabilistic generative models. Advisor: Prof. Mark van Rossum
+  * Sep 2018 - Jan 2020
+  * Research Project: Sleep cycling for probabilistic generative models. 
+    * Advisor: Prof. Mark van Rossum
 
-* Jan 2015 - Dec 2017: Teaching Assistant
+* **Teaching Assistant**
   * University of Warwick
-  * Teaching Courses: Introduction to System Biology (FHEQ-5), Quantitative Analysis for Management (FHEQ-4)
+  * Jan 2015 - Dec 2017
+  * Group Tutor: Introduction to System Biology (FHEQ-5), Quantitative Analysis for Management (FHEQ-4)
   
 <!-- Skills
 ======
