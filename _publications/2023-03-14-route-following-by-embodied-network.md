@@ -3,10 +3,10 @@ title: "Vision-based route following by an embodied insect-inspired sparse neura
 collection: publications
 category: preprints
 permalink: /publication/2023-03-14-route-following-by-embodied-network
-excerpt: 'Accepted by and presented at ICLR 2023 Workshop on Sparsity in Neural Networks'
+excerpt: 'Accepted by and presented at <i>ICLR 2023 Workshop on Sparsity in Neural Networks</i>'
 date: 2023-03-14
 venue: 'arXiv preprint'
-paperurl: 'https://arxiv.org/abs/2601.16806'
+paperurl: 'https://arxiv.org/abs/2303.08109'
 citation: '<b>Yihe, L.</b>, Maroun, R. A., & Webb, B. (2023). Vision-based route following by an embodied insect-inspired sparse neural network. <i>arXiv preprint</i> arXiv:2303.08109.'
 ---
 
