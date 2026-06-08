@@ -7,4 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-I am an insect AI researcher and a mathematics educator.
+Trained as a mathematician, I have conducted research in computational neuroscience and biologically inspired artificial intelligence.
+My ongoing research focuses on insect neuroethology and insect-inspired artificial intelligence.
