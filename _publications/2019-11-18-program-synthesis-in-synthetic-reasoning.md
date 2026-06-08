@@ -3,7 +3,7 @@ title: "Program synthesis performance constrained by non-linear spatial relation
 collection: publications
 category: preprints
 permalink: /publication/2019-11-18-program-synthesis-in-synthetic-reasoning
-excerpt: 'Accepted by and presented at <i>ICLR 2023 Workshop on Sparsity in Neural Networks</i>'
+# excerpt: 'Accepted by and presented at <i>ICLR 2023 Workshop on Sparsity in Neural Networks</i>'
 date: 2019-11-18
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/1911.07721'
