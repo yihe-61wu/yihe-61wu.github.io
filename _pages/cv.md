@@ -40,7 +40,7 @@ Work experience
   * One-to-one Tutor: AS/A-level Mathematics
 
 * **Research Associate**
-  * University of Eidinburgh
+  * University of Edinburgh
   * Aug 2022 - Aug 2024
   * Research Project: Insect-inspired artificial intelligence in autonomous vision-based navigation. Advisor: Prof. Barbara Webb FRSE
 
