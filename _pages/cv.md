@@ -32,7 +32,7 @@ Work experience
 * **Lifelong Learning Tutor (Mathematics)**
   * External Relations, University of Glasgow
   * Aug 2025 - present
-  * Course Lead: [Introductory Calculus for Science](/teaching/2025-autumn-introductory-calculus) (SCQF-7), [Access Maths](/teaching/2025-autumn-access-maths) (SCQF-7)
+  * Course Lead: [*Introductory Calculus for Science*](/teaching/2025-autumn-introductory-calculus) (SCQF-7), [*Access Maths*](/teaching/2025-autumn-access-maths) (SCQF-7)
 
 * **Mathematics Tutor (online)**
   * Elite Education Group (China)
