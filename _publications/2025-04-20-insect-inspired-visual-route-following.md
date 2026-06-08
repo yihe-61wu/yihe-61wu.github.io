@@ -3,7 +3,7 @@ title: "Insect-inspired embodied visual route following"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-04-20-insect-inspired-visual-route-following
-excerpt: 'This work develops an insect-inspired model for visual route following and tests it on virtual and real robots.'
+# excerpt: 'This work develops an insect-inspired model for visual route following and tests it on virtual and real robots.'
 date: 2025-04-20
 venue: 'Journal of Bionic Engineering'
 paperurl: 'https://doi.org/10.1007/s42235-025-00695-8'

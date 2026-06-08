@@ -3,7 +3,7 @@ title: "Response functions for electrically coupled neuronal network: a method o
 collection: publications
 category: manuscripts
 permalink: /publication/2016-03-18-response-functions-for-neuronal-network
-excerpt: 'This work develops a novel algorithm to find algebraically compact solutions of response functions on any morphological neuron modelled by dendritic cable theory.'
+# excerpt: 'This work develops a novel algorithm to find algebraically compact solutions of response functions on any morphological neuron modelled by dendritic cable theory.'
 date: 2016-03-18
 venue: 'Biological Cybernetics'
 paperurl: 'https://doi.org/10.1007/s00422-016-0681-y'
