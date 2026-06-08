@@ -5,7 +5,7 @@ category: preprints
 permalink: /publication/2026-01-23-insect-inspired-point-goal-navigation
 excerpt: 'Submitted for possible publication.'
 date: 2026-01-23
-venue: 'Journal 1'
+venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/abs/2601.16806'
 citation: '<b>Yihe, L.</b>, & Webb, B. (2026). An Efficient Insect-inspired Approach for Visual Point-goal Navigation. <i>arXiv preprint</i> arXiv:2601.16806.'
 ---
