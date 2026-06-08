@@ -9,4 +9,4 @@ location: "Glasgow, UK"
 ---
 
 * Date: Autumn Semesters, 2025 - present
-* Level: Year 1 (SCQF-7)
+* Level: Undergraduate Year 1 (SCQF-7)

@@ -9,7 +9,7 @@ location: "Cardiff, UK"
 ---
 
 * Date: Autumn & Summer Semesters, 2021 - 2022
-* Level: Year 3 (CQFW-6)
+* Level: Undergraduate Year 3 (CQFW-6)
 * 2 projects:
     * The effect of feedback frequency and feedback content on perceptual learning
     * The impact of the COVID-19 pandemic on motor performance, as measured through sleep, wellbeing, and exercise

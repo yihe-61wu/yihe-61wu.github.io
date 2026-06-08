@@ -9,7 +9,7 @@ location: "Edinburgh, UK"
 ---
 
 * Date: Summer Semesters, 2023 - 2024
-* Level: SCQF level 11
+* Level: Postgraduate (SCQF-11)
 * 2 projects:
     * Neural communication without synapses: ephaptic coupling in the Drosophila mushroom body
     * Insect-inspired robot steering for vision-based route following
