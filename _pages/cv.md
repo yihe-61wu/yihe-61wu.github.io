@@ -17,7 +17,7 @@ Education
 * **Ph.D in Complexity Science**
   * University of Warwick
   * Oct 2014 - Mar 2019
-  * Thesis: Neuronal signal modulation by dendritic geometry. Supervisor: Prof. Yulia Timofeeva
+  * Thesis: [Neuronal signal modulation by dendritic geometry](https://wrap.warwick.ac.uk/id/eprint/129215/). Supervisor: Prof. Yulia Timofeeva
 * **M.Sc. (Merit) in Mathematics**
   * University of Warwick
   * Sep 2013 - Oct 2014
@@ -47,7 +47,7 @@ Work experience
 * **Research Associate**
   * Cardiff University
   * Feb 2020 - Jul 2022
-  * Research Project: Understanding creativity and problem solving through sleep-engineering. Advisor: Prof. Penelop Lewis
+  * Research Project: Understanding creativity and problem solving through sleep-engineering. Advisor: Prof. Penelope Lewis
 
 * **Research Fellow**
   * University of Nottingham
