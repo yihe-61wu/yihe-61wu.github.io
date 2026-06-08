@@ -27,7 +27,7 @@ author:
   name             : "Dr Yihe Lu, AMIMA"
   pronouns         : he/him # example: "she/her"  
   bio              : "Mathematician / Bio-cyberneticist"
-  location         : "Scotland"
+  location         : "Scotland, UK"
   employer         : "University of Glasgow"
   uri              : # URL
   email            : "yihe.lu@glasgow.ac.uk" 
@@ -35,7 +35,7 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=Y1WAJKUAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-1615-4915"
