@@ -7,7 +7,7 @@ excerpt: ''
 date: 2024-10-28
 venue: 'bioRxiv preprint'
 paperurl: 'https://doi.org/10.1101/2024.10.28.620229'
-citation: '<b>Yihe, L.</b>, Földes, T., & Lewis, P. A. (2024). Exploring the roles of memory replay in targeted memory reactivation and birdsong development: Insights from computational models of complementary learning systems. <i>bioRxiv</i>, 2024-10.'
+citation: '<b>Yihe, L.</b>, Földes, T., & Lewis, P. A. (2024). Exploring the roles of memory replay in targeted memory reactivation and birdsong development: insights from computational models of complementary learning systems. <i>bioRxiv</i>, 2024-10.'
 ---
 
 ### Abstract

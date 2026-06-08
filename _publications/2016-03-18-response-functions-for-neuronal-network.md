@@ -7,7 +7,7 @@ permalink: /publication/2016-03-18-response-functions-for-neuronal-network
 date: 2016-03-18
 venue: 'Biological Cybernetics'
 paperurl: 'https://doi.org/10.1007/s00422-016-0681-y'
-citation: '<b>Yihe, L.</b>, & Timofeeva, Y. (2016). Response functions for electrically coupled neuronal network: a method of local point matching and its applications. <i>Biological cybernetics</i>, 110(2), 117-133.'
+citation: '<b>Yihe, L.</b>, & Timofeeva, Y. (2016). Response functions for electrically coupled neuronal network: a method of local point matching and its applications. <i>Biological Cybernetics</i>, 110(2), 117-133.'
 ---
 
 ### Abstract
