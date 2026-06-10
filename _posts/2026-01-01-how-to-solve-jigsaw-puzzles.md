@@ -14,7 +14,7 @@ As we became stuck more frequently and for longer, in my mind grew a daunting id
 
 After an hour or two, *'One is all, All is one'*[^1]. 
 
-[^1]: A quote from *Fullmetal Alchmist*--perhaps more relevant to jigsaw puzzles figuratively than literally.
+[^1]: A quote from *Fullmetal Alchemist*--perhaps more relevant to jigsaw puzzles figuratively than literally.
 
 Indeed, the entire process felt like conducting scientific research, similar to the analogy commonly attributed to *The Structure of Scientific Revolutions* by Thomas S. Kuhn, but different due to the lack of the full picture (the dominant paradigm). In terms of personal feelings, the most similar part was to fight against the daunting idea that failure was inevitable, to keep faith in the completeness of the puzzle, and to proceed with constant patience and intermittent insights.
 
