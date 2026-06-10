@@ -110,7 +110,7 @@ which gives
 
 $$ \frac{c_1}{c_2} < \frac{(N-1)! - (M-1)! - (N-M)!}{N/4} $$
 
-Note first in the right hand side (RHS) \\(M\\) is symmetric about \\((N+1)/2\\), and the closer to it \\(M\\) is, the greater the RHS is. Unless $M=1$ or \\(N\\), even when $M=2$ or $N-1$, the RHS is 
+Note first in the right hand side (RHS) \\(M\\) is symmetric about \\((N+1)/2\\), and the closer to it \\(M\\) is, the greater the RHS is. Unless \\(M=1\\) or \\(N\\), even when \\(M=2\\) or \\(N-1\\), the RHS is 
 
 $$ \frac{(N-1)! - 1 - (N-2)!}{N/4} = \frac{(N-2)(N-2)!-1}{N/4} $$
 
