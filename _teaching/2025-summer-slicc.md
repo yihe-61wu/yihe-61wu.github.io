@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Mentor"
 permalink: /teaching/2025-summer-slicc
 venue: "University of Edinburgh"
-date: 2025-07-01
+date: 2026-06-10
 location: "Edinburgh, UK"
 ---
 
